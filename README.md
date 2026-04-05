@@ -30,7 +30,7 @@ The calibration model was trained on **3,000 resolved markets** from 2024–2025
 | Logistic Regression | 0.2312      |
 | **Random Forest**   | **0.2161**  |
 
-The Random Forest achieves a **12.9% improvement** over the raw market probability, suggesting Polymarket has systematic calibration biases — particularly the longshot bias (overpricing unlikely events).
+The Random Forest achieves a **12.9% improvement** over the raw market probability, suggesting Polymarket has systematic calibration biases; particularly the longshot bias (overpricing unlikely events).
 
 ![Reliability Diagram](data/calibration_analysis.png)
 
