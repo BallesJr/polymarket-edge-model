@@ -3,3 +3,4 @@ __pycache__/
 data/*.csv
 
 !data/calibration_analysis.png
+!data/backtest_results.png
