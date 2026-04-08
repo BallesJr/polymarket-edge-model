@@ -102,7 +102,7 @@ def _save_metrics_snapshot(portfolio: dict) -> None:
 # One full bot cycle
 def run_cycle(model, feature_cols: list[str]) -> dict:
     cycle_start = datetime.now(timezone.utc)
-    logger.info(f"---Cycle start: {cycle_start.strftime("%Y-%m-%d %H:%M UTC")}---")
+    logger.info(f"---Cycle start: {cycle_start.strftime('%Y-%m-%d %H:%M UTC')}---")
 
     # STEP 1: Generate signals
     try:
