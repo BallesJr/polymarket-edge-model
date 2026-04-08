@@ -1,0 +1,17 @@
+market_id,question,end_date,prob_market,prob_model,edge,kelly_fraction,direction,spread,liquidity,source
+566760,Will Trump pardon Ghislaine Maxwell by end of 2026?,2026-12-31 00:00:00+00:00,0.055,0.5853,0.5303,0.2806,BUY YES,0.01,35298.322,calibration_model
+556062,MegaETH market cap (FDV) >$2B one day after launch?,2025-12-31 00:00:00+00:00,0.095,0.575,0.48,0.2652,BUY YES,0.01,92714.9352,calibration_model
+568116,Will Trump be impeached by end of 2026?,2026-12-31 00:00:00+00:00,0.12,0.5927,0.4727,0.2686,BUY YES,0.02,35210.3134,calibration_model
+563650,"SCOTUS accepts sports event contract case by July 31, 2026?     ",2026-07-31 00:00:00+00:00,0.125,0.5295,0.4045,0.2311,BUY YES,0.01,6999.5105,calibration_model
+568117,"Will Trump resign by December 31, 2026?",2026-12-31 00:00:00+00:00,0.065,0.4678,0.4028,0.0,BUY YES,0.01,131334.7227,calibration_model
+559651,Xi Jinping out before 2027?,2026-12-31 00:00:00+00:00,0.0775,0.4715,0.394,0.0,BUY YES,0.001,301443.30326,calibration_model
+567621,Will China invade Taiwan by end of 2026?,2026-12-31 00:00:00+00:00,0.0985,0.4715,0.373,0.0,BUY YES,0.001,536278.61546,calibration_model
+567689,Zelenskyy out as Ukraine president by end of 2026?,2026-12-31 00:00:00+00:00,0.195,0.552,0.357,0.2217,BUY YES,0.01,142619.7592,calibration_model
+560317,"Putin out as President of Russia by December 31, 2026?",2026-12-31 18:30:00+00:00,0.105,0.4534,0.3484,0.0,BUY YES,0.01,339730.0121,calibration_model
+567690,"Erdoğan out by December 31, 2026?",2026-12-31 00:00:00+00:00,0.165,0.4585,0.2935,0.0,BUY YES,0.01,31499.1218,calibration_model
+569454,Will any presidential candidate win outright in the first round of the Colombia's election?,2026-05-31 14:00:00+00:00,0.14,0.3785,0.2385,0.0,BUY YES,0.02,6086.5251,calibration_model
+567687,Russia x Ukraine ceasefire by end of 2026?,2026-12-31 00:00:00+00:00,0.295,0.5055,0.2105,0.1493,BUY YES,0.01,489539.5621,calibration_model
+567688,Netanyahu out by end of 2026?,2026-12-31 00:00:00+00:00,0.395,0.5438,0.1488,0.123,BUY YES,0.01,75526.3848,calibration_model
+540843,Will China invades Taiwan before GTA VI?,2026-07-31 12:00:00+00:00,0.515,0.6329,0.1179,0.1215,BUY YES,0.01,98856.0509,calibration_model
+556108,Will MegaETH perform an airdrop by June 30? ,2026-02-01 05:00:00+00:00,0.56,0.6613,0.1013,0.1152,BUY YES,0.02,12252.85613,calibration_model
+540818,New Playboi Carti Album before GTA VI?,2026-07-31 12:00:00+00:00,0.575,0.6452,0.0702,0.0826,BUY YES,0.01,23495.1195,calibration_model

@@ -1,0 +1,3 @@
+market_id,question,end_date,prob_market,prob_model,edge,kelly_fraction,direction,spread,liquidity,volume_total,competitive,source,match_title,match_votes,match_url
+559651,Xi Jinping out before 2027?,2026-12-31 00:00:00+00:00,0.0845,0.2631,0.1786,0.0975,BUY YES,0.001,171588.5918,7557685.393841688,0.8527764589352957,manifold,Will Xi Jinping cease to be China's leader before the end of 2027?,31,https://manifold.markets/cash/will-xi-jinping-cease-to-be-chinas-dc30a08f527f
+560317,"Putin out as President of Russia by December 31, 2026?",2026-12-31 18:30:00+00:00,0.125,0.2727,0.1477,0.0844,BUY YES,0.01,218849.4544,3238691.5819329764,0.8767123287671234,manifold,Russia x Ukraine ceasefire in 2026?,59,https://manifold.markets/HillaryClinton/russia-x-ukraine-ceasefire-in-2026

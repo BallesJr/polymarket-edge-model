@@ -1,0 +1,10 @@
+market_id,question,end_date,prob_market,prob_model,edge,kelly_fraction,direction,spread,liquidity,source
+559651,Xi Jinping out before 2027?,2026-12-31 00:00:00+00:00,0.0815,0.5445,0.463,0.2521,BUY YES,0.001,183430.92446,calibration_model
+556062,MegaETH market cap (FDV) >$2B one day after launch?,2025-12-31 00:00:00+00:00,0.105,0.5454,0.4404,0.2461,BUY YES,0.01,98209.4503,calibration_model
+563650,"SCOTUS accepts sports event contract case by July 31, 2026?     ",2026-07-31 00:00:00+00:00,0.125,0.5607,0.4357,0.249,BUY YES,0.01,6999.5105,calibration_model
+560317,"Putin out as President of Russia by December 31, 2026?",2026-12-31 18:30:00+00:00,0.115,0.5346,0.4196,0.237,BUY YES,0.01,317849.2634,calibration_model
+540817,New Rihanna Album before GTA VI?,2026-07-31 12:00:00+00:00,0.625,0.3337,-0.2913,0.0,BUY NO,0.01,32630.5652,calibration_model
+531202,BitBoy convicted?,2026-03-31 12:00:00+00:00,0.0895,0.3339,0.2444,0.0,BUY YES,0.019,24043.805,calibration_model
+540820,Trump out as President before GTA VI?,2026-07-31 12:00:00+00:00,0.53,0.3065,-0.2235,0.0,BUY NO,0.02,41918.9662,calibration_model
+540818,New Playboi Carti Album before GTA VI?,2026-07-31 12:00:00+00:00,0.585,0.4053,-0.1797,0.0,BUY NO,0.03,27063.0538,calibration_model
+556108,Will MegaETH perform an airdrop by June 30? ,2026-02-01 05:00:00+00:00,0.4565,0.5592,0.1027,0.0945,BUY YES,0.023,9278.26897,calibration_model

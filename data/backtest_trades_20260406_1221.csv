@@ -1,0 +1,522 @@
+date,question,direction,prob_market,edge,kelly,position_size,outcome,won,pnl,bankroll
+2024-05-26 12:00:00+00:00,Will Andrius Mazuronis win the 2024 Lithuanian presidential election?,BUY NO,0.5,-0.1399,0.1,50.0,0,1,50.0,10050.0
+2024-05-27 12:00:00+00:00,'The Garfield Movie' <$26m Opening Weekend?,BUY YES,0.5,0.1961,0.1,50.0,1,1,50.0,10100.0
+2024-05-27 12:00:00+00:00,'The Garfield Movie' between $26-30m Opening Weekend?,BUY NO,0.5,-0.1707,0.1,50.0,0,1,50.0,10150.0
+2024-05-27 12:00:00+00:00,'Furiosa: A Mad Max Saga' between $38-44m Opening Weekend?,BUY YES,0.5,0.0483,0.0483,50.0,0,0,-50.0,10100.0
+2024-05-27 12:00:00+00:00,'The Garfield Movie' >$30m Opening Weekend?,BUY YES,0.5,0.0389,0.0389,50.0,0,0,-50.0,10050.0
+2024-05-28 12:00:00+00:00,Mavericks vs. Timberwolves: Game 4,BUY YES,0.5,0.1768,0.1,50.0,0,0,-50.0,10000.0
+2024-05-28 12:00:00+00:00,Was Caitlyn Jenner hacked?,BUY YES,0.5,0.0312,0.0312,50.0,0,0,-50.0,9950.0
+2024-05-29 12:00:00+00:00,Will Andrew Tate tweet less than 45 times?,BUY NO,0.5,-0.1285,0.1,50.0,0,1,50.0,10000.0
+2024-05-29 12:00:00+00:00,South Africa Election: Will ANC win a majority of seats?,BUY NO,0.5,-0.0525,0.0525,50.0,0,1,50.0,10050.0
+2024-05-29 12:00:00+00:00,Will Andrew Tate tweet 105 or more times?,BUY NO,0.5,-0.1707,0.1,50.0,1,0,-50.0,10000.0
+2024-05-29 12:00:00+00:00,Will Andrew Tate tweet 65-74 times?,BUY NO,0.5,-0.1611,0.1,50.0,0,1,50.0,10050.0
+2024-05-30 00:00:00+00:00,Will Real Sociedad win the 2023-24 Champions League?,BUY NO,0.5,-0.1885,0.1,500.0,0,1,500.0,10550.0
+2024-05-30 00:00:00+00:00,Will packym last the longest-lasting of the listed Cryptothegame participants?,BUY NO,0.5,-0.1268,0.1,271.93,0,1,271.93,10821.93
+2024-05-30 00:00:00+00:00,Will funghibull last the longest-lasting of the listed Cryptothegame participant,BUY NO,0.5,-0.087,0.087,199.8,1,0,-199.8,10622.13
+2024-05-30 00:00:00+00:00,Will Jesse Pollak last the longest-lasting of the listed Cryptothegame participa,BUY NO,0.5,-0.1241,0.1,448.3,0,1,448.3,11070.43
+2024-05-30 00:00:00+00:00,Will 3lau last the longest-lasting of the listed Cryptothegame participants?,BUY NO,0.5,-0.1262,0.1,218.8,0,1,218.8,11289.23
+2024-05-30 00:00:00+00:00,Will mgiuelpf last the longest-lasting of the listed Cryptothegame participants?,BUY NO,0.5,-0.1587,0.1,319.85,0,1,319.85,11609.07
+2024-05-30 00:00:00+00:00,Will Paris Rouzati last the longest-lasting of the listed Cryptothegame particip,BUY NO,0.5,-0.155,0.1,281.14,0,1,281.14,11890.21
+2024-05-30 00:00:00+00:00,Will Larry Sukernik last the longest-lasting of the listed Cryptothegame partici,BUY NO,0.5,-0.1484,0.1,392.84,0,1,392.84,12283.05
+2024-05-30 00:00:00+00:00,Will web3brett last the longest-lasting of the listed Cryptothegame participants,BUY NO,0.5,-0.1501,0.1,303.48,0,1,303.48,12586.52
+2024-05-30 00:00:00+00:00,Will Lito Coen last the longest-lasting of the listed Cryptothegame participants,BUY NO,0.5,-0.0964,0.0964,214.67,0,1,214.67,12801.19
+2024-05-30 00:00:00+00:00,Will Copenhagen win the 2023-24 Champions League?,BUY NO,0.5,-0.1804,0.1,500.0,0,1,500.0,13301.19
+2024-05-30 00:00:00+00:00,Mexican Presidential Election: Will Claudia Sheinbaum win?,BUY YES,0.5,0.0763,0.0763,50.0,1,1,50.0,13351.19
+2024-05-30 00:00:00+00:00,Will Lazio win the 2023-24 Champions League?,BUY NO,0.5,-0.1134,0.1,500.0,0,1,500.0,13851.19
+2024-05-30 00:00:00+00:00,Will Real Madrid win the 2023-24 Champions League?,BUY YES,0.5,0.0604,0.0604,50.0,1,1,50.0,13901.19
+2024-05-30 00:00:00+00:00,Mexican Presidential Election: Will Xóchitl Gálvez win?,BUY YES,0.5,0.0723,0.0723,50.0,0,0,-50.0,13851.19
+2024-05-30 00:00:00+00:00,Will RB Leipzig win the 2023-24 Champions League?,BUY NO,0.5,-0.1163,0.1,500.0,0,1,500.0,14351.19
+2024-05-30 00:00:00+00:00,Will Arsenal win the 2023-24 Champions League?,BUY YES,0.5,0.0841,0.0841,50.0,0,0,-50.0,14301.19
+2024-05-30 00:00:00+00:00,Will Dortmund win the 2023-24 Champions League?,BUY YES,0.5,0.0741,0.0741,50.0,0,0,-50.0,14251.19
+2024-05-30 00:00:00+00:00,Mexican Presidential Election: Will Jorge Álvarez Máynez win?,BUY YES,0.5,0.0635,0.0635,50.0,0,0,-50.0,14201.19
+2024-05-30 00:00:00+00:00,Will PSV win the 2023-24 Champions League?,BUY NO,0.5,-0.093,0.093,50.0,0,1,50.0,14251.19
+2024-05-30 12:00:00+00:00,Will Nic Carter vs. David Hoffman have no winner?,BUY NO,0.98,-0.5417,0.1,50.0,1,0,-50.0,14201.19
+2024-05-30 12:00:00+00:00,Will H3CZ win the Founding Fathers Lan?,BUY NO,0.5,-0.152,0.1,50.0,0,1,50.0,14251.19
+2024-05-30 12:00:00+00:00,Mexican Presidential Election: Will another candidate win?,BUY YES,0.5,0.0561,0.0561,50.0,0,0,-50.0,14201.19
+2024-05-30 12:00:00+00:00,Will FaZe Banks win the Founding Fathers Lan?,BUY NO,0.5,-0.1288,0.1,50.0,1,0,-50.0,14151.19
+2024-05-30 12:00:00+00:00,Will Nadeshot win the Founding Fathers Lan?,BUY YES,0.5,0.086,0.086,50.0,0,0,-50.0,14101.19
+2024-05-31 00:00:00+00:00,Will Gabriel Haines win Crypto: The Game?,BUY NO,0.5,-0.1038,0.1,185.13,0,1,185.13,14286.32
+2024-05-31 00:00:00+00:00,Will Nikki Haley drop out in May?,BUY NO,0.5,-0.1627,0.1,210.08,0,1,210.08,14496.4
+2024-05-31 00:00:00+00:00,Will DeeZe win Crypto: The Game?,BUY NO,0.5,-0.1032,0.1,205.93,0,1,205.93,14702.33
+2024-05-31 00:00:00+00:00,Will lito.eth win Crypto: The Game?,BUY NO,0.5,-0.1245,0.1,249.57,0,1,249.57,14951.9
+2024-05-31 00:00:00+00:00,Dutch government formed before June?,BUY NO,0.5,-0.1041,0.1,50.0,1,0,-50.0,14901.9
+2024-05-31 00:00:00+00:00,Will Girona win La Liga 2023-24?,BUY NO,0.5,-0.1327,0.1,50.0,0,1,50.0,14951.9
+2024-05-31 00:00:00+00:00,Will Packy McCormick win Crypto: The Game?,BUY NO,0.5,-0.121,0.1,51.67,0,1,51.67,15003.57
+2024-05-31 00:00:00+00:00,Will Anish Agnihotri win Crypto: The Game?,BUY NO,0.5,-0.1519,0.1,318.26,0,1,318.26,15321.83
+2024-05-31 00:00:00+00:00,Will Jesse Pollak win Crypto: The Game?,BUY NO,0.5,-0.1011,0.1,169.68,0,1,169.68,15491.5
+2024-05-31 00:00:00+00:00,Will Goldy win Crypto: The Game?,BUY NO,0.5,-0.1054,0.1,134.87,0,1,134.87,15626.37
+2024-05-31 00:00:00+00:00,Will BeraMVP win Crypto: The Game?,BUY NO,0.5,-0.1192,0.1,191.95,0,1,191.95,15818.32
+2024-05-31 12:00:00+00:00,21 Savage drops music in May?,BUY NO,0.5,-0.1288,0.1,50.0,0,1,50.0,15868.32
+2024-05-31 12:00:00+00:00,Haney vs Garcia ruled no-contest?,BUY YES,0.5,0.0487,0.0487,50.0,0,0,-50.0,15818.32
+2024-05-31 12:00:00+00:00,Trump violates gag order by May 31?,BUY NO,0.5,-0.1105,0.1,50.0,1,0,-50.0,15768.32
+2024-05-31 12:00:00+00:00,Lil Wayne drops music in May?,BUY NO,0.5,-0.138,0.1,50.0,0,1,50.0,15818.32
+2024-05-31 12:00:00+00:00,Will Nikki Haley endorse Trump before June?,BUY NO,0.5,-0.18,0.1,50.0,1,0,-50.0,15768.32
+2024-05-31 12:00:00+00:00,Will Bitcoin dip below $45k before June?,BUY NO,0.5,-0.1694,0.1,50.0,0,1,50.0,15818.32
+2024-05-31 12:00:00+00:00,Will Fantano rate new Tswift album above 5?,BUY NO,0.5,-0.1754,0.1,50.0,0,1,50.0,15868.32
+2024-05-31 12:00:00+00:00,Will Bitcoin dip below $50k before June?,BUY NO,0.5,-0.0643,0.0643,50.0,0,1,50.0,15918.32
+2024-05-31 12:00:00+00:00,Will Bitcoin dip below $55k before June?,BUY NO,0.5,-0.1779,0.1,50.0,0,1,50.0,15968.32
+2024-05-31 12:00:00+00:00,Will Bitcoin dip below $60k before June?,BUY NO,0.5,-0.1222,0.1,50.0,1,0,-50.0,15918.32
+2024-05-31 12:00:00+00:00,Nicki Minaj drops music in May?,BUY NO,0.5,-0.1037,0.1,50.0,0,1,50.0,15968.32
+2024-05-31 12:00:00+00:00,Young Thug drops music in May?,BUY NO,0.5,-0.0314,0.0314,50.0,0,1,50.0,16018.32
+2024-05-31 12:00:00+00:00,Beyonce drops music in May?,BUY NO,0.5,-0.1518,0.1,50.0,0,1,50.0,16068.32
+2024-05-31 12:00:00+00:00,YoungBoy drops music in May?,BUY NO,0.5,-0.1272,0.1,50.0,1,0,-50.0,16018.32
+2024-05-31 12:00:00+00:00,Shafik out as Columbia President by May 31?,BUY YES,0.5,0.0646,0.0646,50.0,0,0,-50.0,15968.32
+2024-05-31 12:00:00+00:00,"Will Bitcoin reach $70,000 in May?",BUY NO,0.5,-0.1305,0.1,50.0,1,0,-50.0,15918.32
+2024-05-31 12:00:00+00:00,"Will Bitcoin reach $75,000 in May?",BUY NO,0.5,-0.195,0.1,50.0,0,1,50.0,15968.32
+2024-05-31 12:00:00+00:00,Will Columbia divest from Israel by end of May?,BUY NO,0.5,-0.0441,0.0441,50.0,0,1,50.0,16018.32
+2024-05-31 12:00:00+00:00,Will $BOME hit $5 Billion FDV before June?,BUY NO,0.5,-0.0354,0.0354,50.0,0,1,50.0,16068.32
+2024-05-31 12:00:00+00:00,Will $MFER hit $1 Billion FDV before June?,BUY NO,0.5,-0.0352,0.0352,50.0,0,1,50.0,16118.32
+2024-05-31 12:00:00+00:00,Joseph Kony found by May 31?,BUY YES,0.5,0.0375,0.0375,50.0,0,0,-50.0,16068.32
+2024-05-31 12:00:00+00:00,Bad Bunny drops music in May?,BUY NO,0.5,-0.1225,0.1,50.0,0,1,50.0,16118.32
+2024-05-31 12:00:00+00:00,The Weekend drops music in May?,BUY NO,0.5,-0.1224,0.1,50.0,0,1,50.0,16168.32
+2024-05-31 12:00:00+00:00,Will Elon tweet between 105 and 114 times?,BUY YES,0.5,0.0399,0.0399,50.0,0,0,-50.0,16118.32
+2024-05-31 12:00:00+00:00,$DJT market cap $6-7b on May 31?,BUY YES,0.5,0.0619,0.0619,50.0,0,0,-50.0,16068.32
+2024-05-31 12:00:00+00:00,Ilya doesn't announce plans by May 31?,BUY NO,0.5,-0.0729,0.0729,50.0,1,0,-50.0,16018.32
+2024-05-31 12:00:00+00:00,Will Ilya join another company?,BUY YES,0.5,0.0265,0.0265,50.0,0,0,-50.0,15968.32
+2024-05-31 12:00:00+00:00,Will Ilya join Apple?,BUY NO,0.5,-0.1856,0.1,50.0,0,1,50.0,16018.32
+2024-05-31 12:00:00+00:00,Will Ilya join Google?,BUY NO,0.5,-0.0373,0.0373,50.0,0,1,50.0,16068.32
+2024-05-31 12:00:00+00:00,Will Ilya join Anthropic?,BUY NO,0.5,-0.0691,0.0691,50.0,0,1,50.0,16118.32
+2024-05-31 12:00:00+00:00,$DJT market cap less than $4b on May 31?,BUY YES,0.5,0.0368,0.0368,50.0,0,0,-50.0,16068.32
+2024-05-31 12:00:00+00:00,Will Trump sue 'The Apprentice' in May?,BUY YES,0.5,0.0975,0.0975,50.0,0,0,-50.0,16018.32
+2024-05-31 12:00:00+00:00,Scarlett Johansson sues OpenAI in May?,BUY YES,0.5,0.073,0.073,50.0,0,0,-50.0,15968.32
+2024-05-31 12:00:00+00:00,Erik ten Hag out as Manchester United manager?,BUY NO,0.5,-0.159,0.1,50.0,0,1,50.0,16018.32
+2024-05-31 12:00:00+00:00, Pochettino out as Chelsea manger?,BUY NO,0.5,-0.1078,0.1,50.0,1,0,-50.0,15968.32
+2024-05-31 12:00:00+00:00,Will Elon tweet between 85 and 94 times?,BUY YES,0.5,0.063,0.063,50.0,0,0,-50.0,15918.32
+2024-05-31 12:00:00+00:00,Ilya joins a new company?,BUY NO,0.5,-0.1659,0.1,50.0,0,1,50.0,15968.32
+2024-05-31 12:00:00+00:00,$DJT market cap $8-9b on May 31?,BUY YES,0.5,0.1134,0.1,50.0,1,1,50.0,16018.32
+2024-05-31 12:00:00+00:00,Will Elon tweet 115 or more times?,BUY NO,0.5,-0.0918,0.0918,50.0,0,1,50.0,16068.32
+2024-05-31 12:00:00+00:00,Fantasy Top Hero arrested by end of May?,BUY NO,0.5,-0.1283,0.1,50.0,0,1,50.0,16118.32
+2024-05-31 12:00:00+00:00,Will Israel halt Rafah operation in May?,BUY YES,0.5,0.0888,0.0888,50.0,0,0,-50.0,16068.32
+2024-05-31 12:00:00+00:00,Will May 2024 show an increase greater than 1.30C?,BUY NO,0.5,-0.1101,0.1,50.0,0,1,50.0,16118.32
+2024-05-31 12:00:00+00:00,Will Elon tweet between 75 and 84 times?,BUY YES,0.5,0.0291,0.0291,50.0,0,0,-50.0,16068.32
+2024-05-31 12:00:00+00:00,Will Elon tweet between 65 and 74 times?,BUY YES,0.5,0.0846,0.0846,50.0,0,0,-50.0,16018.32
+2024-05-31 12:00:00+00:00,Will Santhosh be the biggest winner on Day 4?,BUY YES,0.5,0.1503,0.1,50.0,0,0,-50.0,15968.32
+2024-05-31 12:00:00+00:00,Will Elon tweet between 55 and 64 times?,BUY YES,0.5,0.0837,0.0837,50.0,0,0,-50.0,15918.32
+2024-05-31 12:00:00+00:00,Will Elon tweet less than 55 times?,BUY YES,0.5,0.0395,0.0395,50.0,1,1,50.0,15968.32
+2024-05-31 12:00:00+00:00,"Bitcoin above $68,000 on May 31?",BUY YES,0.5,0.1802,0.1,50.0,0,0,-50.0,15918.32
+2024-05-31 12:00:00+00:00,"Ethereum above $3,700 on May 31?",BUY NO,0.5,-0.0997,0.0997,50.0,1,0,-50.0,15868.32
+2024-05-31 12:00:00+00:00,Will China invade Taiwan in May?,BUY YES,0.5,0.039,0.039,50.0,0,0,-50.0,15818.32
+2024-05-31 12:00:00+00:00,Will SOL hit $200 in May?,BUY YES,0.5,0.0846,0.0846,50.0,0,0,-50.0,15768.32
+2024-05-31 12:00:00+00:00,Did Keith Gill (RoaringKitty) sell his X account?,BUY NO,0.5,-0.0366,0.0366,50.0,0,1,50.0,15818.32
+2024-05-31 12:00:00+00:00,Postecoglou out as Tottenham Manager?,BUY NO,0.5,-0.1469,0.1,50.0,0,1,50.0,15868.32
+2024-05-31 12:00:00+00:00,Biden campaign accepts crypto donations in May?,BUY YES,0.5,0.0395,0.0395,50.0,0,0,-50.0,15818.32
+2024-05-31 12:00:00+00:00,Will Trump announce his VP pick in May?,BUY NO,0.5,-0.0495,0.0495,50.0,0,1,50.0,15868.32
+2024-05-31 12:00:00+00:00,Another state bans lab-grown meat in May?,BUY YES,0.5,0.0365,0.0365,50.0,0,0,-50.0,15818.32
+2024-05-31 12:00:00+00:00,Tuchel out as Bayern Munich Manager?,BUY NO,0.5,-0.0378,0.0378,50.0,1,0,-50.0,15768.32
+2024-05-31 12:00:00+00:00,Ethereum all time high in May?,BUY NO,0.5,-0.0666,0.0666,50.0,0,1,50.0,15818.32
+2024-05-31 12:00:00+00:00,Will Milady flip BAYC in May?,BUY YES,0.5,0.1113,0.1,50.0,0,0,-50.0,15768.32
+2024-05-31 12:00:00+00:00,Drake drop music in May?,BUY NO,0.5,-0.1156,0.1,50.0,1,0,-50.0,15718.32
+2024-05-31 12:00:00+00:00,Ben Affleck and Jennifer Lopez divorce in May?,BUY NO,0.5,-0.118,0.1,50.0,0,1,50.0,15768.32
+2024-05-31 12:00:00+00:00,Thunder vs. Mavericks Series Winner,BUY NO,0.5,-0.1013,0.1,50.0,0,1,50.0,15818.32
+2024-05-31 12:00:00+00:00,Celtics vs. Cavaliers Series Winner,BUY NO,0.5,-0.0855,0.0855,50.0,1,0,-50.0,15768.32
+2024-05-31 12:00:00+00:00,U.S. drop charges against Assange before June?  ,BUY NO,0.5,-0.0478,0.0478,50.0,0,1,50.0,15818.32
+2024-05-31 12:00:00+00:00,X relaunches Vine before June?,BUY NO,0.5,-0.1729,0.1,50.0,0,1,50.0,15868.32
+2024-05-31 12:00:00+00:00,Mike Johnson out as Speaker before June?,BUY NO,0.5,-0.1118,0.1,50.0,0,1,50.0,15918.32
+2024-05-31 12:00:00+00:00,Diddy arrested in May?,BUY YES,0.5,0.0689,0.0689,50.0,0,0,-50.0,15868.32
+2024-05-31 12:00:00+00:00,Will Nick Fuentes admit he's gay?,BUY YES,0.5,0.0487,0.0487,50.0,0,0,-50.0,15818.32
+2024-05-31 12:00:00+00:00,AOC and MTG debate in May?,BUY YES,0.5,0.1113,0.1,50.0,0,0,-50.0,15768.32
+2024-05-31 12:00:00+00:00,Will Coinbase list $WIF in May?,BUY YES,0.5,0.0289,0.0289,50.0,0,0,-50.0,15718.32
+2024-05-31 12:00:00+00:00,Drake's secret daughter confirmed by May 31?,BUY NO,0.5,-0.1806,0.1,50.0,0,1,50.0,15768.32
+2024-05-31 12:00:00+00:00,Pump.fun exploiter returns funds before June?,BUY NO,0.5,-0.0729,0.0729,50.0,0,1,50.0,15818.32
+2024-05-31 12:00:00+00:00,archEthereum all time high in May?,BUY NO,0.5,-0.076,0.076,50.0,0,1,50.0,15868.32
+2024-05-31 12:00:00+00:00,Will Trump lead Biden by less than 0.4 in RCP on May 31?,BUY NO,0.5,-0.1407,0.1,50.0,0,1,50.0,15918.32
+2024-05-31 12:00:00+00:00,Will Trump lead Biden by 0.8-1.1 in RCP on May 31?,BUY NO,0.5,-0.1569,0.1,50.0,1,0,-50.0,15868.32
+2024-05-31 12:00:00+00:00,GALA hacker returns >50% of funds in May?,BUY NO,0.5,-0.0842,0.0842,50.0,1,0,-50.0,15818.32
+2024-05-31 12:00:00+00:00,Aave removes DAI as collateral before June?,BUY NO,0.5,-0.0721,0.0721,50.0,0,1,50.0,15868.32
+2024-05-31 12:00:00+00:00,Will Trump lead Biden by 1.2-1.5 in RCP on May 31?,BUY NO,0.5,-0.1569,0.1,50.0,0,1,50.0,15918.32
+2024-05-31 12:00:00+00:00,Will Elon tweet between 95 and 104 times?,BUY YES,0.5,0.0389,0.0389,50.0,0,0,-50.0,15868.32
+2024-05-31 12:00:00+00:00,Will Trump lead Biden by 1.6-1.9 or more in RCP on May 31?,BUY NO,0.5,-0.1385,0.1,50.0,0,1,50.0,15918.32
+2024-05-31 12:00:00+00:00,Will Trump lead Biden by 2.0 or more in RCP on May 31?,BUY NO,0.5,-0.061,0.061,50.0,0,1,50.0,15968.32
+2024-05-31 12:00:00+00:00,Will the Port of Baltimore reopen in May?,BUY NO,0.5,-0.1442,0.1,50.0,0,1,50.0,16018.32
+2024-05-31 12:00:00+00:00,North Korea nuke by May 31?,BUY NO,0.5,-0.078,0.078,50.0,0,1,50.0,16068.32
+2024-06-01 12:00:00+00:00,2024 May hottest on record?,BUY NO,0.5,-0.1758,0.1,50.0,1,0,-50.0,16018.32
+2024-06-01 12:00:00+00:00,Real Madrid vs. Dortmund: Champions League Final,BUY NO,0.5,-0.0773,0.0773,50.0,1,0,-50.0,15968.32
+2024-06-01 12:00:00+00:00,Will the NDA lose?,BUY NO,0.5,-0.065,0.065,50.0,0,1,50.0,16018.32
+2024-06-01 12:00:00+00:00,Will the NDA win by 0%-5%?,BUY NO,0.5,-0.1043,0.1,50.0,1,0,-50.0,15968.32
+2024-06-01 12:00:00+00:00,Will May 2024 show an increase between 1.10°C-1.16°C,BUY NO,0.5,-0.1089,0.1,50.0,1,0,-50.0,15918.32
+2024-06-01 12:00:00+00:00,Will May 2024 show an increase between 1.03°C-1.09°C,BUY NO,0.5,-0.195,0.1,50.0,0,1,50.0,15968.32
+2024-06-01 12:00:00+00:00,Will May 2024 show an increase of less than 1.03C?,BUY NO,0.5,-0.0855,0.0855,50.0,0,1,50.0,16018.32
+2024-06-01 12:00:00+00:00,Indian election: NDA wins 400+ seats?,BUY NO,0.5,-0.0749,0.0749,50.0,0,1,50.0,16068.32
+2024-06-01 12:00:00+00:00,Will Trump tweet again by June 1?,BUY NO,0.5,-0.0996,0.0996,50.0,0,1,50.0,16118.32
+2024-06-03 12:00:00+00:00,Western Conference Finals: Timberwolves vs. Mavericks,BUY NO,0.5,-0.1865,0.1,50.0,0,1,50.0,16168.32
+2024-06-04 12:00:00+00:00,Will the NDA win 376-400 seats?,BUY NO,0.5,-0.0945,0.0945,50.0,0,1,50.0,16218.32
+2024-06-04 12:00:00+00:00,Will the NDA win by 10%-15%?,BUY NO,0.5,-0.0451,0.0451,50.0,0,1,50.0,16268.32
+2024-06-04 12:00:00+00:00,Will the NDA win by over 20%?,BUY NO,0.5,-0.0681,0.0681,50.0,0,1,50.0,16318.32
+2024-06-04 12:00:00+00:00,Will the NDA win more than 400 seats?,BUY NO,0.5,-0.0965,0.0965,50.0,0,1,50.0,16368.32
+2024-06-04 12:00:00+00:00,Will the NDA win less than 300 seats?,BUY NO,0.5,-0.1255,0.1,50.0,1,0,-50.0,16318.32
+2024-06-04 12:00:00+00:00,Will the NDA win 300-325 seats?,BUY NO,0.5,-0.0822,0.0822,50.0,0,1,50.0,16368.32
+2024-06-04 12:00:00+00:00,Will the NDA win 326-350 seats?,BUY NO,0.5,-0.123,0.1,50.0,0,1,50.0,16418.32
+2024-06-04 12:00:00+00:00,Will the NDA win 351-375 seats?,BUY NO,0.5,-0.1093,0.1,50.0,0,1,50.0,16468.32
+2024-06-04 12:00:00+00:00,Will the NDA win by 5%-10%?,BUY NO,0.5,-0.0576,0.0576,50.0,0,1,50.0,16518.32
+2024-06-04 12:00:00+00:00,Will the NDA win by 15%-20%?,BUY NO,0.5,-0.0221,0.0221,50.0,0,1,50.0,16568.32
+2024-06-06 00:00:00+00:00,Will New York Knicks be 2023-24 NBA Champions?,BUY NO,0.5,-0.0859,0.0859,50.0,0,1,50.0,16618.32
+2024-06-06 00:00:00+00:00,Will Philadelphia 76ers be 2023-24 NBA Champions?,BUY NO,0.5,-0.1488,0.1,50.0,0,1,50.0,16668.32
+2024-06-06 00:00:00+00:00,Will Cleveland Cavaliers be  2023-24 NBA Champions?,BUY NO,0.5,-0.1624,0.1,50.0,0,1,50.0,16718.32
+2024-06-06 00:00:00+00:00,Will Milwaukee Bucks be 2023-24 NBA Champions?,BUY NO,0.5,-0.1182,0.1,50.0,0,1,50.0,16768.32
+2024-06-06 00:00:00+00:00,Will Chicago Bulls be 2023-24 NBA Champions?,BUY NO,0.5,-0.1511,0.1,50.0,0,1,50.0,16818.32
+2024-06-06 00:00:00+00:00,Will New Orleans Pelicans be 2023-24 NBA Champions?,BUY NO,0.5,-0.1498,0.1,50.0,0,1,50.0,16868.32
+2024-06-06 00:00:00+00:00,Will Oklahoma City Thunder be 2023-24 NBA Champions?,BUY NO,0.5,-0.114,0.1,50.0,0,1,50.0,16918.32
+2024-06-06 00:00:00+00:00,Will Golden State Warriors be 2023-24 NBA Champions?,BUY NO,0.5,-0.154,0.1,50.0,0,1,50.0,16968.32
+2024-06-06 00:00:00+00:00,Will LA Clippers be 2023-24 NBA Champions?,BUY NO,0.5,-0.1556,0.1,50.0,0,1,50.0,17018.32
+2024-06-06 00:00:00+00:00,Will Phoenix Suns be 2023-24 NBA Champions?,BUY NO,0.5,-0.1785,0.1,50.0,0,1,50.0,17068.32
+2024-06-06 00:00:00+00:00,Will Sacramento Kings be 2023-24 NBA Champions?,BUY NO,0.5,-0.1785,0.1,50.0,0,1,50.0,17118.32
+2024-06-06 00:00:00+00:00,Will Atlanta Hawks be 2023-24 NBA Champions?,BUY NO,0.5,-0.1643,0.1,50.0,0,1,50.0,17168.32
+2024-06-06 00:00:00+00:00,Will Miami Heat be 2023-24 NBA Champions?,BUY NO,0.5,-0.1498,0.1,50.0,0,1,50.0,17218.32
+2024-06-07 12:00:00+00:00,Will US add less than 150k jobs in May?,BUY NO,0.5,-0.152,0.1,50.0,0,1,50.0,17268.32
+2024-06-07 12:00:00+00:00,Will US add more than 300k jobs in May?,BUY NO,0.5,-0.1611,0.1,50.0,0,1,50.0,17318.32
+2024-06-07 12:00:00+00:00,Will US add between 150-200k jobs in May?,BUY NO,0.5,-0.1225,0.1,50.0,0,1,50.0,17368.32
+2024-06-07 12:00:00+00:00,Will US add between 250-300k jobs in May?,BUY NO,0.5,-0.1531,0.1,50.0,1,0,-50.0,17318.32
+2024-06-09 12:00:00+00:00,Will PS win the most seats in the Belgian federal elections?,BUY NO,0.5,-0.0352,0.0352,50.0,0,1,50.0,17368.32
+2024-06-09 12:00:00+00:00,Will VB win the most seats in the Belgian federal elections?,BUY NO,0.5,-0.1366,0.1,50.0,0,1,50.0,17418.32
+2024-06-09 12:00:00+00:00,Will the SPD receive more than 15% of votes?,BUY NO,0.5,-0.1729,0.1,50.0,0,1,50.0,17468.32
+2024-06-09 12:00:00+00:00,Will another player win the 2024 French Open Men's Singles?,BUY YES,0.5,0.0277,0.0277,50.0,0,0,-50.0,17418.32
+2024-06-09 12:00:00+00:00,Will Casper Ruud win the 2024 French Open Men's Singles?,BUY NO,0.5,-0.1381,0.1,50.0,0,1,50.0,17468.32
+2024-06-09 12:00:00+00:00,Will Carlos Alcaraz win the 2024 French Open Men's Singles?,BUY NO,0.5,-0.1617,0.1,50.0,1,0,-50.0,17418.32
+2024-06-09 12:00:00+00:00,Will Daniil Medvedev win the 2024 French Open Men's Singles?,BUY YES,0.5,0.0406,0.0406,50.0,0,0,-50.0,17368.32
+2024-06-09 12:00:00+00:00,Will Jannik Sinner win the 2024 French Open Men's Singles?,BUY NO,0.5,-0.1089,0.1,50.0,0,1,50.0,17418.32
+2024-06-09 12:00:00+00:00,Will Novak Djokovic win the 2024 French Open Men's Singles?,BUY NO,0.5,-0.1592,0.1,50.0,0,1,50.0,17468.32
+2024-06-09 12:00:00+00:00,Will the EPP win 200 or more seats in the European Parliament?,BUY YES,0.5,0.0886,0.0886,50.0,0,0,-50.0,17418.32
+2024-06-09 12:00:00+00:00,Will the EPP win 150-159 seats in the European Parliament?,BUY YES,0.5,0.1136,0.1,50.0,0,0,-50.0,17368.32
+2024-06-09 12:00:00+00:00,Will the EPP win 180-189 seats in the European Parliament?,BUY NO,0.5,-0.075,0.075,50.0,1,0,-50.0,17318.32
+2024-06-09 12:00:00+00:00,Will the EPP win 170-179 seats in the European Parliament?,BUY YES,0.5,0.1136,0.1,50.0,0,0,-50.0,17268.32
+2024-06-09 12:00:00+00:00,Will MR win the most seats in the Belgian federal elections?,BUY NO,0.5,-0.151,0.1,50.0,0,1,50.0,17318.32
+2024-06-09 12:00:00+00:00,Will another party win the most seats in European Parliament?,BUY NO,0.5,-0.0356,0.0356,50.0,0,1,50.0,17368.32
+2024-06-09 12:00:00+00:00,Will Andrey Rublev win the 2024 French Open Men's Singles?,BUY NO,0.5,-0.0547,0.0547,50.0,0,1,50.0,17418.32
+2024-06-09 12:00:00+00:00,Will Renew win the most seats in European Parliament?,BUY NO,0.5,-0.032,0.032,50.0,0,1,50.0,17468.32
+2024-06-09 12:00:00+00:00,Will the S&D win the most seats in European Parliament?,BUY NO,0.5,-0.0472,0.0472,50.0,0,1,50.0,17518.32
+2024-06-09 12:00:00+00:00,Will the EPP win the most seats in European Parliament?,BUY YES,0.5,0.0532,0.0532,50.0,1,1,50.0,17568.32
+2024-06-09 12:00:00+00:00,Will another party win the most seats in the Belgian federal elections?,BUY NO,0.5,-0.1351,0.1,50.0,0,1,50.0,17618.32
+2024-06-09 12:00:00+00:00,Will Vooruit win the most seats in the Belgian federal elections?,BUY NO,0.5,-0.0819,0.0819,50.0,0,1,50.0,17668.32
+2024-06-09 12:00:00+00:00,Will Open Vld win the most seats in the Belgian federal elections?,BUY NO,0.5,-0.1381,0.1,50.0,0,1,50.0,17718.32
+2024-06-09 12:00:00+00:00,Will PTB win the most seats in the Belgian federal elections?,BUY NO,0.5,-0.0213,0.0213,50.0,0,1,50.0,17768.32
+2024-06-09 12:00:00+00:00,Will CD&V win the most seats in the Belgian federal elections?,BUY NO,0.5,-0.1275,0.1,50.0,0,1,50.0,17818.32
+2024-06-09 12:00:00+00:00,Will Groen win the most seats in the Belgian federal elections?,BUY NO,0.5,-0.1401,0.1,50.0,0,1,50.0,17868.32
+2024-06-09 12:00:00+00:00,Will Ecolo win the most seats in the Belgian federal elections?,BUY NO,0.5,-0.0677,0.0677,50.0,0,1,50.0,17918.32
+2024-06-09 12:00:00+00:00,Will Hubert Hurkacz win the 2024 French Open Men's Singles?,BUY NO,0.5,-0.069,0.069,50.0,0,1,50.0,17968.32
+2024-06-09 12:00:00+00:00,Will the ECR win the most seats in European Parliament?,BUY NO,0.5,-0.0401,0.0401,50.0,0,1,50.0,18018.32
+2024-06-09 12:00:00+00:00,Will Alexander Zverev win the 2024 French Open Men's Singles?,BUY NO,0.5,-0.1617,0.1,50.0,0,1,50.0,18068.32
+2024-06-12 00:00:00+00:00,Fed rate cut by June 12?,BUY YES,0.5,0.0919,0.0919,50.0,0,0,-50.0,18018.32
+2024-06-12 12:00:00+00:00,Fed decreases interest rates by 50+ bps after June 2024 meeting?,BUY NO,0.5,-0.0668,0.0668,50.0,0,1,50.0,18068.32
+2024-06-12 12:00:00+00:00,Fed decreases interest rates by 25 bps after June 2024 meeting?,BUY NO,0.5,-0.0668,0.0668,50.0,0,1,50.0,18118.32
+2024-06-12 12:00:00+00:00,No change in Fed interest rates after 2024 June meeting?,BUY NO,0.5,-0.0668,0.0668,50.0,1,0,-50.0,18068.32
+2024-06-12 12:00:00+00:00,US inflation >0.1% from April to May 2024?,BUY YES,0.5,0.0406,0.0406,50.0,0,0,-50.0,18018.32
+2024-06-12 12:00:00+00:00,Fed increases interest rates by 25+ bps after June 2024 meeting?,BUY NO,0.5,-0.0668,0.0668,50.0,0,1,50.0,18068.32
+2024-06-15 12:00:00+00:00,Will UK Election on July 4 be cancelled?,BUY NO,0.5,-0.1421,0.1,50.0,0,1,50.0,18118.32
+2024-06-15 12:00:00+00:00,New EU country recognizes Palestine before July?,BUY YES,0.5,0.0697,0.0697,50.0,1,1,50.0,18168.32
+2024-06-15 12:00:00+00:00,BitBoy vs. Smic - Crypto Fight Night,BUY NO,0.5,-0.1023,0.1,50.0,1,0,-50.0,18118.32
+2024-06-15 12:00:00+00:00,Will Caitlyn Jenner sue Sahil?,BUY NO,0.5,-0.1311,0.1,50.0,0,1,50.0,18168.32
+2024-06-24 12:00:00+00:00,Vegas Golden Knights win the 2024 Stanley Cup?,BUY NO,0.5,-0.1643,0.1,50.0,0,1,50.0,18218.32
+2024-06-24 12:00:00+00:00,Nashville Predators win the 2024 Stanley Cup?,BUY NO,0.5,-0.0758,0.0758,50.0,0,1,50.0,18268.32
+2024-06-24 12:00:00+00:00,Edmonton Oilers win the 2024 Stanley Cup?,BUY NO,0.5,-0.0518,0.0518,50.0,0,1,50.0,18318.32
+2024-06-24 12:00:00+00:00,Dallas Stars win the 2024 Stanley Cup?,BUY NO,0.5,-0.1021,0.1,50.0,0,1,50.0,18368.32
+2024-06-24 12:00:00+00:00,Toronto Maple Leafs win the 2024 Stanley Cup?,BUY NO,0.5,-0.1445,0.1,50.0,0,1,50.0,18418.32
+2024-06-24 12:00:00+00:00,Vancouver Canucks win the 2024 Stanley Cup?,BUY NO,0.5,-0.0956,0.0956,50.0,0,1,50.0,18468.32
+2024-06-24 12:00:00+00:00,New York Rangers win the 2024 Stanley Cup?,BUY NO,0.5,-0.0777,0.0777,50.0,0,1,50.0,18518.32
+2024-06-24 12:00:00+00:00,Florida Panthers win the 2024 Stanley Cup?,BUY NO,0.5,-0.0823,0.0823,50.0,1,0,-50.0,18468.32
+2024-06-24 12:00:00+00:00,Carolina Hurricanes win the 2024 Stanley Cup?,BUY NO,0.5,-0.1417,0.1,50.0,0,1,50.0,18518.32
+2024-06-24 12:00:00+00:00,Boston Bruins win the 2024 Stanley Cup?,BUY NO,0.5,-0.111,0.1,50.0,0,1,50.0,18568.32
+2024-06-24 12:00:00+00:00,Colorado Avalanche win the 2024 Stanley Cup?,BUY NO,0.5,-0.1199,0.1,50.0,0,1,50.0,18618.32
+2024-06-25 00:00:00+00:00,George Santos wins NY-1 Republican Primary?,BUY YES,0.5,0.0867,0.0867,50.0,0,0,-50.0,18568.32
+2024-06-25 00:00:00+00:00,Trump wins every state in Rep. Nomination?,BUY YES,0.5,0.1553,0.1,50.0,0,0,-50.0,18518.32
+2024-06-25 12:00:00+00:00,Will Jamaal Bowman win the NY-16 Democratic House Primary?,BUY NO,0.5,-0.0741,0.0741,50.0,0,1,50.0,18568.32
+2024-06-25 12:00:00+00:00,Will George Latimer win the NY-16 Democratic House Primary?,BUY YES,0.5,0.0367,0.0367,50.0,1,1,50.0,18618.32
+2024-06-25 12:00:00+00:00,Will another candidate win the NY-16 Democratic House Primary?,BUY NO,0.5,-0.1342,0.1,50.0,0,1,50.0,18668.32
+2024-06-25 12:00:00+00:00,Will Billy Football win NY-3 Republican Primary?,BUY NO,0.5,-0.0614,0.0614,50.0,0,1,50.0,18718.32
+2024-06-25 12:00:00+00:00,Will another candidate win the NY-14 Democratic House Primary?,BUY NO,0.5,-0.0964,0.0964,50.0,0,1,50.0,18768.32
+2024-06-25 12:00:00+00:00,Will Marty Dolan win the NY-14 Democratic House Primary?,BUY YES,0.5,0.1113,0.1,50.0,0,0,-50.0,18718.32
+2024-06-25 12:00:00+00:00,Will Alexandria Ocasio-Cortez win the NY-14 Democratic House Primary?,BUY YES,0.5,0.0393,0.0393,50.0,1,1,50.0,18768.32
+2024-06-27 00:00:00+00:00,Will Bronny James be drafted?,BUY NO,0.5,-0.0379,0.0379,50.0,1,0,-50.0,18718.32
+2024-06-27 12:00:00+00:00,Biden takes drug test before Trump debate?,BUY NO,0.5,-0.195,0.1,50.0,0,1,50.0,18768.32
+2024-06-27 12:00:00+00:00,Trump says boden in debate?,BUY NO,0.5,-0.1117,0.1,50.0,0,1,50.0,18818.32
+2024-06-27 12:00:00+00:00,Trump + Biden debate on June 27 as planned?,BUY NO,0.5,-0.1384,0.1,50.0,1,0,-50.0,18768.32
+2024-06-28 00:00:00+00:00,Aleo airdrop by June 30?,BUY YES,0.5,0.0615,0.0615,50.0,0,0,-50.0,18718.32
+2024-06-28 00:00:00+00:00,Aevo airdrop by June 30?,BUY NO,0.5,-0.104,0.1,50.0,1,0,-50.0,18668.32
+2024-06-28 12:00:00+00:00,Rainbow airdrop by June 30?,BUY NO,0.5,-0.062,0.062,50.0,0,1,50.0,18718.32
+2024-06-28 12:00:00+00:00,Berachain airdrop by June 30?,BUY NO,0.5,-0.067,0.067,50.0,0,1,50.0,18768.32
+2024-06-28 12:00:00+00:00,MarginFi airdrop by June 30?,BUY NO,0.5,-0.0541,0.0541,50.0,0,1,50.0,18818.32
+2024-06-28 12:00:00+00:00,zkSync airdrop by June 30?,BUY YES,0.5,0.0786,0.0786,50.0,1,1,50.0,18868.32
+2024-06-28 12:00:00+00:00,LayerZero airdrop by June 30?,BUY YES,0.5,0.0763,0.0763,50.0,1,1,50.0,18918.32
+2024-06-28 12:00:00+00:00,Saga airdrop by June 30?,BUY NO,0.5,-0.1054,0.1,50.0,1,0,-50.0,18868.32
+2024-06-28 12:00:00+00:00,Rabby airdrop by June 30?,BUY NO,0.5,-0.067,0.067,50.0,0,1,50.0,18918.32
+2024-06-28 12:00:00+00:00,Base airdrop by June 30?,BUY YES,0.5,0.0616,0.0616,50.0,0,0,-50.0,18868.32
+2024-06-28 12:00:00+00:00,Blast airdrop by June 30?,BUY YES,0.5,0.056,0.056,50.0,1,1,50.0,18918.32
+2024-06-28 12:00:00+00:00,Pudgy Penguins airdrop by June 30?,BUY NO,0.5,-0.0599,0.0599,50.0,0,1,50.0,18968.32
+2024-06-28 12:00:00+00:00,Tensor airdrop by June 30?,BUY NO,0.5,-0.0968,0.0968,50.0,1,0,-50.0,18918.32
+2024-06-29 00:00:00+00:00,No Wormhole airdrop before July?,BUY NO,0.5,-0.1012,0.1,67.82,0,1,67.82,18986.14
+2024-06-29 00:00:00+00:00,TikTok banned in the US by June 30?,BUY YES,0.5,0.0419,0.0419,50.0,0,0,-50.0,18936.14
+2024-06-29 12:00:00+00:00,Taylor Swift #1 album for 9 weeks?,BUY NO,0.5,-0.0316,0.0316,50.0,0,1,50.0,18986.14
+2024-06-29 12:00:00+00:00,Linea airdrop by June 30?,BUY NO,0.5,-0.0667,0.0667,50.0,0,1,50.0,19036.14
+2024-06-29 12:00:00+00:00,Will Shein IPO at a $90b valuation?,BUY NO,0.5,-0.1111,0.1,50.0,0,1,50.0,19086.14
+2024-06-29 12:00:00+00:00,Taylor Swift #1 album for 8 weeks?,BUY NO,0.5,-0.0888,0.0888,50.0,0,1,50.0,19136.14
+2024-06-29 12:00:00+00:00,Taylor Swift #1 album for 10 or more weeks?,BUY NO,0.5,-0.0318,0.0318,50.0,1,0,-50.0,19086.14
+2024-06-29 12:00:00+00:00,Taylor Swift #1 album for 2 weeks?,BUY NO,0.5,-0.0979,0.0979,50.0,0,1,50.0,19136.14
+2024-06-29 12:00:00+00:00,Taylor Swift #1 album for 0 weeks?,BUY NO,0.5,-0.1306,0.1,50.0,0,1,50.0,19186.14
+2024-06-29 12:00:00+00:00,Taylor Swift #1 album for 1 week?,BUY NO,0.5,-0.1053,0.1,50.0,0,1,50.0,19236.14
+2024-06-29 12:00:00+00:00,Taylor Swift #1 album for 5 weeks?,BUY NO,0.5,-0.0888,0.0888,50.0,0,1,50.0,19286.14
+2024-06-29 12:00:00+00:00,Taylor Swift #1 album for 4 weeks?,BUY NO,0.5,-0.1053,0.1,50.0,0,1,50.0,19336.14
+2024-06-29 12:00:00+00:00,Taylor Swift #1 album for 7 weeks?,BUY NO,0.5,-0.0337,0.0337,50.0,0,1,50.0,19386.14
+2024-06-29 12:00:00+00:00,Taylor Swift #1 album for 6 weeks?,BUY NO,0.5,-0.0428,0.0428,50.0,0,1,50.0,19436.14
+2024-06-29 12:00:00+00:00,Scroll airdrop by June 30?,BUY NO,0.5,-0.0371,0.0371,50.0,0,1,50.0,19486.14
+2024-06-30 00:00:00+00:00,US congress stock trading ban by June 30?,BUY NO,0.5,-0.0593,0.0593,50.0,0,1,50.0,19536.14
+2024-06-30 00:00:00+00:00,Will Maersk resume shipping through Red Sea by June 30?,BUY YES,0.5,0.0708,0.0708,50.0,1,1,50.0,19586.14
+2024-06-30 00:00:00+00:00,Netanyahu out by June 30?,BUY YES,0.5,0.0363,0.0363,50.0,0,0,-50.0,19536.14
+2024-06-30 00:00:00+00:00,"Will a nuclear weapon detonate by June 30, 2024?",BUY NO,0.5,-0.081,0.081,50.0,0,1,50.0,19586.14
+2024-06-30 00:00:00+00:00,Will Elon Musk own X through June 30?,BUY YES,0.5,0.0728,0.0728,50.0,1,1,50.0,19636.14
+2024-06-30 00:00:00+00:00,Will Kraken IPO by June?,BUY NO,0.5,-0.0341,0.0341,50.0,0,1,50.0,19686.14
+2024-06-30 00:00:00+00:00,Will Circle IPO by June?,BUY YES,0.5,0.0288,0.0288,50.0,0,0,-50.0,19636.14
+2024-06-30 00:00:00+00:00,Will Jim Jordan be the next Speaker?,BUY YES,0.5,0.0892,0.0892,50.0,0,0,-50.0,19586.14
+2024-06-30 00:00:00+00:00,Ceasefire between Russia and Ukraine by June 30?,BUY YES,0.5,0.0363,0.0363,50.0,0,0,-50.0,19536.14
+2024-06-30 00:00:00+00:00,Elizabeth Warren crypto bill become law by June?,BUY NO,0.5,-0.0244,0.0244,50.0,0,1,50.0,19586.14
+2024-06-30 00:00:00+00:00,NATO/EU troops fighting in Ukraine before July?,BUY YES,0.5,0.0701,0.0701,50.0,0,0,-50.0,19536.14
+2024-06-30 00:00:00+00:00,Will Pope Francis remain Pope through June 30?,BUY NO,0.5,-0.0717,0.0717,50.0,1,0,-50.0,19486.14
+2024-06-30 00:00:00+00:00,Ethereum all time high in Q2 2024?,BUY YES,0.5,0.0677,0.0677,50.0,0,0,-50.0,19436.14
+2024-06-30 00:00:00+00:00,Will Satoshi Nakamoto's identity be proven in Q2 2024?,BUY YES,0.5,0.054,0.054,50.0,0,0,-50.0,19386.14
+2024-06-30 00:00:00+00:00,Craig Wright proven to be Satoshi before July?,BUY YES,0.5,0.0519,0.0519,50.0,0,0,-50.0,19336.14
+2024-06-30 00:00:00+00:00,Will the US confirm that aliens exist by June?,BUY NO,0.5,-0.0677,0.0677,50.0,0,1,50.0,19386.14
+2024-06-30 00:00:00+00:00,Ayatollah Khamenei still in power in Iran by June 30?,BUY NO,0.5,-0.0833,0.0833,50.0,1,0,-50.0,19336.14
+2024-06-30 07:00:00+00:00,MH370 underwater wreckage found before July?,BUY NO,0.5,-0.0909,0.0909,50.0,0,1,50.0,19386.14
+2024-06-30 12:00:00+00:00,Will Trump mention $boden before July?,BUY NO,0.5,-0.0295,0.0295,50.0,0,1,50.0,19436.14
+2024-06-30 12:00:00+00:00,Puffer airdrop by June 30?,BUY NO,0.5,-0.0606,0.0606,50.0,0,1,50.0,19486.14
+2024-06-30 12:00:00+00:00,Etherfi airdrop by June 30?,BUY NO,0.5,-0.1004,0.1,50.0,1,0,-50.0,19436.14
+2024-06-30 12:00:00+00:00,Taiko airdrop by June 30?,BUY YES,0.5,0.0843,0.0843,50.0,1,1,50.0,19486.14
+2024-06-30 12:00:00+00:00,Astaria airdrop by June 30?,BUY NO,0.5,-0.0696,0.0696,50.0,0,1,50.0,19536.14
+2024-06-30 12:00:00+00:00,Azuro airdrop by June 30?,BUY NO,0.5,-0.0541,0.0541,50.0,1,0,-50.0,19486.14
+2024-06-30 12:00:00+00:00,Will Porzingis return by end of Eastern Conf. Finals?,BUY NO,0.5,-0.1474,0.1,50.0,0,1,50.0,19536.14
+2024-06-30 12:00:00+00:00,Will the Port of Baltimore reopen in June?,BUY NO,0.5,-0.1281,0.1,50.0,0,1,50.0,19586.14
+2024-06-30 12:00:00+00:00,Story Protocol airdrop by June 30?,BUY YES,0.5,0.1301,0.1,50.0,0,0,-50.0,19536.14
+2024-06-30 12:00:00+00:00,Nillion airdrop by June 30?,BUY YES,0.5,0.1301,0.1,50.0,0,0,-50.0,19486.14
+2024-06-30 12:00:00+00:00,Will X start charging new users before July?,BUY NO,0.5,-0.0828,0.0828,50.0,0,1,50.0,19536.14
+2024-06-30 12:00:00+00:00,Will Matt Gaetz be expelled from Congress before July?,BUY NO,0.5,-0.1498,0.1,50.0,0,1,50.0,19586.14
+2024-06-30 12:00:00+00:00,MetaMask airdrop by June 30?,BUY NO,0.5,-0.0482,0.0482,50.0,0,1,50.0,19636.14
+2024-06-30 12:00:00+00:00,Phantom airdrop by June 30?,BUY NO,0.5,-0.0862,0.0862,50.0,0,1,50.0,19686.14
+2024-06-30 12:00:00+00:00,Argent airdrop by June 30?,BUY NO,0.5,-0.0758,0.0758,50.0,0,1,50.0,19736.14
+2024-06-30 12:00:00+00:00,pump.fun airdrop by June 30?,BUY NO,0.5,-0.0961,0.0961,50.0,0,1,50.0,19786.14
+2024-06-30 12:00:00+00:00,GPT-5 announced in Q2 2024?,BUY NO,0.5,-0.1103,0.1,50.0,0,1,50.0,19836.14
+2024-06-30 12:00:00+00:00,Jumper airdrop by June 30?,BUY NO,0.5,-0.1111,0.1,50.0,0,1,50.0,19886.14
+2024-06-30 12:00:00+00:00,Zora airdrop by June 30?,BUY NO,0.5,-0.1044,0.1,50.0,0,1,50.0,19936.14
+2024-06-30 12:00:00+00:00,Sam Altman out as OpenAI CEO before July?,BUY YES,0.5,0.0633,0.0633,50.0,0,0,-50.0,19886.14
+2024-06-30 12:00:00+00:00,EigenLayer airdrop by June 30?,BUY YES,0.5,0.0506,0.0506,50.0,0,0,-50.0,19836.14
+2024-06-30 12:00:00+00:00,Magic Eden airdrop by June 30?,BUY NO,0.5,-0.1044,0.1,50.0,0,1,50.0,19886.14
+2024-06-30 12:00:00+00:00,Microsoft buys Steam before July?,BUY YES,0.5,0.0619,0.0619,50.0,0,0,-50.0,19836.14
+2024-06-30 12:00:00+00:00,Zerion airdrop by June 30?,BUY NO,0.5,-0.1419,0.1,50.0,0,1,50.0,19886.14
+2024-06-30 12:00:00+00:00,Initia airdrop by June 30?,BUY NO,0.5,-0.0374,0.0374,50.0,0,1,50.0,19936.14
+2024-06-30 12:00:00+00:00,Will Trump announce his VP pick in June?,BUY NO,0.5,-0.0929,0.0929,50.0,0,1,50.0,19986.14
+2024-06-30 12:00:00+00:00,Rysk airdrop by June 30?,BUY NO,0.5,-0.1555,0.1,50.0,0,1,50.0,20036.14
+2024-06-30 12:00:00+00:00,Zircuit airdrop by June 30?,BUY NO,0.5,-0.0459,0.0459,50.0,0,1,50.0,20086.14
+2024-06-30 12:00:00+00:00,Mantle airdrop by June 30?,BUY NO,0.5,-0.1395,0.1,50.0,0,1,50.0,20136.14
+2024-06-30 12:00:00+00:00,Backpack airdrop by June 30?,BUY NO,0.5,-0.1156,0.1,50.0,0,1,50.0,20186.14
+2024-06-30 12:00:00+00:00,Foundation airdrop by June 30?,BUY NO,0.5,-0.0783,0.0783,50.0,0,1,50.0,20236.14
+2024-06-30 12:00:00+00:00,PartyDAO airdrop by June 30?,BUY NO,0.5,-0.1555,0.1,50.0,0,1,50.0,20286.14
+2024-07-01 00:00:00+00:00,"Will $ETH hit $1,800 or $2,200 first?",BUY YES,0.5,0.1071,0.1,50.0,0,0,-50.0,20236.14
+2024-07-01 12:00:00+00:00,Will Trump be Speaker by July 1?,BUY NO,0.5,-0.0779,0.0779,50.0,0,1,50.0,20286.14
+2024-07-04 12:00:00+00:00,"Will Donald Trump be President of the USA on July 4, 2024?",BUY NO,0.5,-0.0521,0.0521,50.0,0,1,50.0,20336.14
+2024-07-04 12:00:00+00:00,Will Kemi Badenoch be next UK prime minister?,BUY NO,0.5,-0.0283,0.0283,50.0,0,1,50.0,20386.14
+2024-07-04 12:00:00+00:00,Will Keir Starmer be next UK prime minister?,BUY NO,0.5,-0.1315,0.1,50.0,1,0,-50.0,20336.14
+2024-07-04 12:00:00+00:00,Will another person be next UK prime minister?,BUY NO,0.5,-0.1858,0.1,50.0,0,1,50.0,20386.14
+2024-07-04 12:00:00+00:00,Labour wins 45-50% of votes?,BUY NO,0.5,-0.0517,0.0517,50.0,0,1,50.0,20436.14
+2024-07-04 12:00:00+00:00,Will Tom Tugendhat be next UK prime minister?,BUY NO,0.5,-0.0274,0.0274,50.0,0,1,50.0,20486.14
+2024-07-04 12:00:00+00:00,Will Grant Shapps be next UK prime minister?,BUY NO,0.5,-0.1758,0.1,50.0,0,1,50.0,20536.14
+2024-07-04 12:00:00+00:00,Will Jeremy Hunt be next UK prime minister?,BUY YES,0.5,0.0227,0.0227,50.0,0,0,-50.0,20486.14
+2024-07-04 12:00:00+00:00,Will Suella Braverman be next UK prime minister?,BUY YES,0.5,0.0667,0.0667,50.0,0,0,-50.0,20436.14
+2024-07-04 12:00:00+00:00,Will Rishi Sunak be next UK prime minister?,BUY NO,0.5,-0.1703,0.1,50.0,0,1,50.0,20486.14
+2024-07-04 12:00:00+00:00,Will Conservative Party win less than 125 seats in the next UK Election?,BUY NO,0.5,-0.1296,0.1,50.0,1,0,-50.0,20436.14
+2024-07-04 12:00:00+00:00,Will Conservative Party win 140-154 seats in the next UK Election?,BUY YES,0.5,0.0347,0.0347,50.0,0,0,-50.0,20386.14
+2024-07-04 12:00:00+00:00,Jeremy Corbyn elected to parliament in UK election?,BUY YES,0.5,0.0367,0.0367,50.0,1,1,50.0,20436.14
+2024-07-04 12:00:00+00:00,Will Boris Johnson be next UK prime minister?,BUY NO,0.5,-0.1798,0.1,50.0,0,1,50.0,20486.14
+2024-07-04 12:00:00+00:00,Will Conservative Party win 170-184 seats in the next UK Election?,BUY YES,0.5,0.0406,0.0406,50.0,0,0,-50.0,20436.14
+2024-07-04 12:00:00+00:00,Will James Cleverly be next UK prime minister?,BUY YES,0.5,0.0433,0.0433,50.0,0,0,-50.0,20386.14
+2024-07-04 12:00:00+00:00,Will Robert Jenrick be next UK prime minister?,BUY NO,0.5,-0.1893,0.1,50.0,0,1,50.0,20436.14
+2024-07-13 00:00:00+00:00,Will Donald J. Trump win the 2024 Republican presidential nomination?,BUY YES,0.5,0.0528,0.0528,50.0,1,1,50.0,20486.14
+2024-07-13 00:00:00+00:00,Will Ron DeSantis win the 2024 Republican Presidential Nomination?,BUY YES,0.5,0.0438,0.0438,50.0,0,0,-50.0,20436.14
+2024-07-13 00:00:00+00:00,Will Vivek Ramaswamy win the 2024 Republican Presidential Nomination?,BUY YES,0.5,0.0431,0.0431,50.0,0,0,-50.0,20386.14
+2024-07-13 00:00:00+00:00,Will Nikki Haley win the 2024 Republican Presidential Nomination?,BUY YES,0.5,0.0505,0.0505,50.0,0,0,-50.0,20336.14
+2024-07-13 00:00:00+00:00,Will Donald Trump Jr. win the 2024 Republican Presidential Nomination?,BUY YES,0.5,0.0505,0.0505,50.0,0,0,-50.0,20286.14
+2024-07-13 00:00:00+00:00,Will someone else win the 2024 Republican Presidential Nomination?,BUY YES,0.5,0.0505,0.0505,50.0,0,0,-50.0,20236.14
+2024-07-15 00:00:00+00:00,Will Nikki Haley drop out in July by the start of the Republican National Conven,BUY NO,0.5,-0.074,0.074,247.47,0,1,247.47,20483.61
+2024-07-15 00:00:00+00:00,Will Nikki Haley not drop out before the Republican National Convention?,BUY NO,0.5,-0.1399,0.1,500.0,0,1,500.0,20983.61
+2024-07-18 12:00:00+00:00,Will Doug Burgum win the 2024 Republican VP nomination?,BUY YES,0.5,0.0407,0.0407,50.0,0,0,-50.0,20933.61
+2024-07-18 12:00:00+00:00,Will Mike Lee win the 2024 Republican VP nomination?,BUY YES,0.5,0.0367,0.0367,50.0,0,0,-50.0,20883.61
+2024-07-18 12:00:00+00:00,Will Michael Flynn win the 2024 Republican VP nomination?,BUY YES,0.5,0.028,0.028,50.0,0,0,-50.0,20833.61
+2024-07-18 12:00:00+00:00,Will Tom Cotton win the 2024 Republican VP nomination?,BUY YES,0.5,0.0257,0.0257,50.0,0,0,-50.0,20783.61
+2024-07-18 12:00:00+00:00,Will Greg Abbott win the 2024 Republican VP nomination?,BUY YES,0.5,0.0219,0.0219,50.0,0,0,-50.0,20733.61
+2024-07-18 12:00:00+00:00,Will Glenn Youngkin win the 2024 Republican VP nomination?,BUY YES,0.5,0.028,0.028,50.0,0,0,-50.0,20683.61
+2024-07-18 12:00:00+00:00,Will Michael Waltz win the 2024 Republican VP nomination?,BUY YES,0.5,0.0266,0.0266,50.0,0,0,-50.0,20633.61
+2024-07-18 12:00:00+00:00,Will another candidate win the 2024 Republican VP nomination?,BUY NO,0.5,-0.0591,0.0591,50.0,1,0,-50.0,20583.61
+2024-07-18 12:00:00+00:00,Will Tulsi Gabbard win the 2024 Republican VP nomination?,BUY YES,0.5,0.0407,0.0407,50.0,0,0,-50.0,20533.61
+2024-07-18 12:00:00+00:00,Will Devin Nunes win the 2024 Republican VP nomination?,BUY YES,0.5,0.0219,0.0219,50.0,0,0,-50.0,20483.61
+2024-07-20 12:00:00+00:00,Will another person be the next President of Iran?,BUY NO,0.5,-0.0751,0.0751,50.0,1,0,-50.0,20433.61
+2024-07-20 12:00:00+00:00,Will Moshen Rezaee be the next President of Iran?,BUY YES,0.5,0.116,0.1,50.0,0,0,-50.0,20383.61
+2024-07-20 12:00:00+00:00,Will Saeed Jalili be the next President of Iran?,BUY NO,0.5,-0.1332,0.1,50.0,0,1,50.0,20433.61
+2024-07-20 12:00:00+00:00,Will Ali Larijani be the next President of Iran?,BUY NO,0.5,-0.0657,0.0657,50.0,0,1,50.0,20483.61
+2024-07-20 12:00:00+00:00,Will Javad Zarif be the next President of Iran?,BUY YES,0.5,0.0434,0.0434,50.0,0,0,-50.0,20433.61
+2024-07-20 12:00:00+00:00,Will Abdolnaser Hemmati be the next President of Iran?,BUY NO,0.5,-0.0372,0.0372,50.0,0,1,50.0,20483.61
+2024-07-20 12:00:00+00:00,Will Ali Shamkhani be the next President of Iran?,BUY NO,0.5,-0.0811,0.0811,50.0,0,1,50.0,20533.61
+2024-07-20 12:00:00+00:00,Will Mohammad Bagher Ghalibaf be the next President of Iran?,BUY YES,0.5,0.0368,0.0368,50.0,0,0,-50.0,20483.61
+2024-07-20 12:00:00+00:00,Will Mojtaba Khamenei be the next President of Iran?,BUY YES,0.5,0.1162,0.1,50.0,0,0,-50.0,20433.61
+2024-07-20 12:00:00+00:00,Will Hassan Rouhani be the next President of Iran?,BUY NO,0.5,-0.1272,0.1,50.0,0,1,50.0,20483.61
+2024-07-31 00:00:00+00:00,Saudi Aramco's 2023 net income >$120 billion?,BUY YES,0.5,0.0881,0.0881,50.0,1,1,50.0,20533.61
+2024-07-31 12:00:00+00:00,Will Lebron and Bronny join the same team? ,BUY NO,0.5,-0.1053,0.1,50.0,1,0,-50.0,20483.61
+2024-07-31 12:00:00+00:00,Will Trump announce his VP pick in July?,BUY NO,0.5,-0.0438,0.0438,50.0,1,0,-50.0,20433.61
+2024-07-31 12:00:00+00:00,Will Trump announce his VP pick later?,BUY NO,0.5,-0.0232,0.0232,50.0,0,1,50.0,20483.61
+2024-08-08 12:00:00+00:00,Tesla Robotaxi unveiling delayed?,BUY NO,0.5,-0.0368,0.0368,50.0,1,0,-50.0,20433.61
+2024-08-22 00:00:00+00:00,Will Sherrone Moore be the next head coach of the Michigan Wolverines?,BUY NO,0.5,-0.1557,0.1,18.8,1,0,-18.8,20414.81
+2024-08-22 00:00:00+00:00,Will Jim Harbaugh be the next head coach of the Michigan Wolverines?,BUY NO,0.5,-0.1217,0.1,280.96,0,1,280.96,20695.77
+2024-08-22 00:00:00+00:00,Will Chris Klieman be the next head coach of the Michigan Wolverines?,BUY NO,0.5,-0.1776,0.1,19.82,0,1,19.82,20715.59
+2024-08-22 00:00:00+00:00,Will someone else be the next head coach of the Michigan Wolverines?,BUY NO,0.5,-0.1171,0.1,478.61,0,1,478.61,21194.2
+2024-08-22 12:00:00+00:00,Trump and Biden both lose nomination?,BUY NO,0.5,-0.1343,0.1,50.0,0,1,50.0,21244.2
+2024-08-31 12:00:00+00:00,Someone else next Chelsea manager?,BUY YES,0.5,0.0348,0.0348,50.0,1,1,50.0,21294.2
+2024-08-31 12:00:00+00:00,Robert De Zerbi next Chelsea manager?,BUY NO,0.5,-0.1707,0.1,50.0,0,1,50.0,21344.2
+2024-08-31 12:00:00+00:00,UK election in August or earlier? ,BUY NO,0.5,-0.093,0.093,50.0,1,0,-50.0,21294.2
+2024-08-31 12:00:00+00:00,Thomas Tuchel next Chelsea manager?,BUY NO,0.5,-0.0369,0.0369,50.0,0,1,50.0,21344.2
+2024-08-31 12:00:00+00:00,Kieran McKenna next Chelsea manager?,BUY YES,0.5,0.0764,0.0764,50.0,0,0,-50.0,21294.2
+2024-09-01 00:00:00+00:00,Will Mbappé sign for Real Madrid?,BUY NO,0.5,-0.0838,0.0838,50.0,1,0,-50.0,21244.2
+2024-09-03 00:00:00+00:00,Will another team sign Kirk Cousins? ,BUY NO,0.5,-0.074,0.074,50.0,0,1,50.0,21294.2
+2024-09-03 00:00:00+00:00,Will the Denver Broncos sign Kirk Cousins? ,BUY NO,0.5,-0.0801,0.0801,50.0,0,1,50.0,21344.2
+2024-09-03 00:00:00+00:00,Will the Atlanta Falcons sign Kirk Cousins? ,BUY NO,0.5,-0.1222,0.1,50.0,1,0,-50.0,21294.2
+2024-09-03 00:00:00+00:00,Will the Washington Commanders sign Kirk Cousins? ,BUY NO,0.5,-0.074,0.074,50.0,0,1,50.0,21344.2
+2024-09-03 12:00:00+00:00,Will none of The Squad lose their primaries?,BUY NO,0.5,-0.0809,0.0809,50.0,0,1,50.0,21394.2
+2024-09-04 00:00:00+00:00,Will Belichick not be head coach in the 2024-25 NFL season?,BUY NO,0.9825,-0.5038,0.1,50.0,1,0,-50.0,21344.2
+2024-09-04 12:00:00+00:00,Will Nancy Mace win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,21294.2
+2024-09-04 12:00:00+00:00,Will Katie Britt win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,21244.2
+2024-09-04 12:00:00+00:00,Will JD Vance win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,1,1,50.0,21294.2
+2024-09-04 12:00:00+00:00,Will Marjorie Taylor Greene win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,21244.2
+2024-09-04 12:00:00+00:00,Will Sarah Huckabee Sanders win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,21194.2
+2024-09-05 04:00:00+00:00,Falcons guilty of tampering with Kirk Cousins?,BUY NO,0.5,-0.0786,0.0786,50.0,1,0,-50.0,21144.2
+2024-09-05 12:00:00+00:00,Will Ben Carson win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,21094.2
+2024-09-05 12:00:00+00:00,Will Robert F. Kennedy Jr. win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,21044.2
+2024-09-05 12:00:00+00:00,Will Ron DeSantis win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20994.2
+2024-09-05 12:00:00+00:00,Will Byron Donalds win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20944.2
+2024-09-05 12:00:00+00:00,Will Nikki Haley win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20894.2
+2024-09-05 12:00:00+00:00,Will Vivek Ramaswamy win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20844.2
+2024-09-05 12:00:00+00:00,Will Kristi Noem win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20794.2
+2024-09-05 12:00:00+00:00,Will Tucker Carlson win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20744.2
+2024-09-05 12:00:00+00:00,Will Kari Lake win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20694.2
+2024-09-05 12:00:00+00:00,Will Tim Scott win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20644.2
+2024-09-05 12:00:00+00:00,Will Elise Stefanik win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20594.2
+2024-09-08 12:00:00+00:00,Will another man win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20544.2
+2024-09-08 12:00:00+00:00,Will Mike Pence win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20494.2
+2024-09-08 12:00:00+00:00,Will a Trump family member win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20444.2
+2024-09-08 12:00:00+00:00,Will Lee Zeldin win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20394.2
+2024-09-08 12:00:00+00:00,Will another woman win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20344.2
+2024-09-08 12:00:00+00:00,Will Wesley Hunt win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20294.2
+2024-09-08 12:00:00+00:00,Will Marco Rubio win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20244.2
+2024-09-08 12:00:00+00:00,Will Mike Pompeo win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20194.2
+2024-09-08 12:00:00+00:00,Will Henry McMaster win the 2024 Republican VP nomination?,BUY YES,0.5,0.0528,0.0528,50.0,0,0,-50.0,20144.2
+2024-09-09 00:00:00+00:00,[Single Market] Will Tim Scott win the U.S. 2024 Republican vice presidential no,BUY NO,0.5,-0.0618,0.0618,50.0,0,1,50.0,20194.2
+2024-09-09 12:00:00+00:00,Will Republican VP nominee be a woman?,BUY YES,0.5,0.0419,0.0419,50.0,0,0,-50.0,20144.2
+2024-09-10 00:00:00+00:00,[Single Market] Will Ben Shapiro win the U.S. 2024 Republican presidential nomin,BUY NO,0.5,-0.1343,0.1,50.0,0,1,50.0,20194.2
+2024-09-10 00:00:00+00:00,[Single Market] Will Nikki Haley win the U.S. 2024 Republican presidential nomin,BUY YES,0.5,0.114,0.1,50.0,0,0,-50.0,20144.2
+2024-09-10 00:00:00+00:00,[Single Market] Will Tucker Carlson win the U.S. 2024 Republican presidential no,BUY NO,0.5,-0.0835,0.0835,50.0,0,1,50.0,20194.2
+2024-09-10 00:00:00+00:00,[Single Market] Will Chris Christie win the 2024 Republican presidential nominat,BUY NO,0.5,-0.0729,0.0729,50.0,0,1,50.0,20244.2
+2024-09-10 00:00:00+00:00,[Single Market] Will Joe Rogan win the U.S. 2024 Republican presidential nominat,BUY NO,0.5,-0.0355,0.0355,50.0,0,1,50.0,20294.2
+2024-09-10 00:00:00+00:00,[Single Market] Will Kanye West win the U.S. 2024 Republican presidential nomina,BUY NO,0.5,-0.1116,0.1,50.0,0,1,50.0,20344.2
+2024-09-10 00:00:00+00:00,[Single Market] Will Donald Trump Jr. win the U.S. 2024 Republican presidential ,BUY NO,0.5,-0.0484,0.0484,50.0,0,1,50.0,20394.2
+2024-09-10 00:00:00+00:00,[Single Market] Will Mike Pence win the U.S. 2024 Republican presidential nomina,BUY YES,0.5,0.0351,0.0351,50.0,0,0,-50.0,20344.2
+2024-09-10 00:00:00+00:00,[Single Market] Will Donald J. Trump win the U.S. 2024 Republican presidential n,BUY YES,0.5,0.0528,0.0528,50.0,1,1,50.0,20394.2
+2024-09-10 00:00:00+00:00,[Single Market] Will Ron DeSantis win the U.S. 2024 Republican presidential nomi,BUY YES,0.5,0.0431,0.0431,50.0,0,0,-50.0,20344.2
+2024-09-30 00:00:00+00:00,Bitcoin all time high in Q3?,BUY NO,0.5,-0.0918,0.0918,205.51,0,1,205.51,20549.71
+2024-09-30 12:00:00+00:00,UK election in September? ,BUY NO,0.5,-0.0938,0.0938,50.0,0,1,50.0,20599.71
+2024-10-22 12:00:00+00:00,Steve Clifford next Lakers head coach?,BUY YES,0.5,0.0814,0.0814,50.0,0,0,-50.0,20549.71
+2024-10-22 12:00:00+00:00,Sam Cassell next Lakers head coach?,BUY YES,0.5,0.1208,0.1,50.0,0,0,-50.0,20499.71
+2024-10-22 12:00:00+00:00,Someone else next Lakers head coach?,BUY YES,0.5,0.1175,0.1,50.0,0,0,-50.0,20449.71
+2024-10-22 12:00:00+00:00,Terry Stotts next Lakers head coach?,BUY YES,0.5,0.1201,0.1,50.0,0,0,-50.0,20399.71
+2024-10-22 12:00:00+00:00,Phil Handy next Lakers head coach?,BUY YES,0.5,0.1208,0.1,50.0,0,0,-50.0,20349.71
+2024-10-22 12:00:00+00:00,Quin Snyder next Lakers head coach?,BUY NO,0.5,-0.1342,0.1,50.0,0,1,50.0,20399.71
+2024-10-22 12:00:00+00:00,JJ Redick next Lakers head coach?,BUY YES,0.5,0.1201,0.1,50.0,1,1,50.0,20449.71
+2024-10-22 12:00:00+00:00,Mike Budenholzer next Lakers head coach?,BUY YES,0.5,0.1162,0.1,50.0,0,0,-50.0,20399.71
+2024-10-22 12:00:00+00:00,Kenny Atkinson next Lakers head coach?,BUY YES,0.5,0.0962,0.0962,50.0,0,0,-50.0,20349.71
+2024-10-31 12:00:00+00:00,UK election in October? ,BUY NO,0.5,-0.1163,0.1,50.0,0,1,50.0,20399.71
+2024-11-04 00:00:00+00:00,Will Shirley Weber replace Feinstein?,BUY YES,0.5,0.0728,0.0728,50.0,0,0,-50.0,20349.71
+2024-11-04 12:00:00+00:00,Trump and Biden debate before Election?,BUY YES,0.5,0.0431,0.0431,50.0,1,1,50.0,20399.71
+2024-11-04 12:00:00+00:00,Biden drops out of presidential race?,BUY YES,0.5,0.0528,0.0528,50.0,1,1,50.0,20449.71
+2024-11-04 12:00:00+00:00,Trump convicted of felony before Election?,BUY NO,0.5,-0.0221,0.0221,50.0,1,0,-50.0,20399.71
+2024-11-04 12:00:00+00:00,Supreme Court votes in favor of Trump absolute immunity?,BUY NO,0.5,-0.0893,0.0893,50.0,0,1,50.0,20449.71
+2024-11-04 12:00:00+00:00,Will Trump testify in hush money trial?,BUY NO,0.5,-0.0865,0.0865,50.0,0,1,50.0,20499.71
+2024-11-04 12:00:00+00:00,Supreme Court unanimous vote in Trump immunity case?,BUY NO,0.5,-0.0873,0.0873,50.0,0,1,50.0,20549.71
+2024-11-05 00:00:00+00:00,Will Biden or Haley drop out first?,BUY YES,0.5,0.1111,0.1,50.0,0,0,-50.0,20499.71
+2024-11-05 00:00:00+00:00,Will Vivek Ramaswamy be the next major GOP presidential race dropout?,BUY NO,0.5,-0.0852,0.0852,133.95,1,0,-133.95,20365.76
+2024-11-05 00:00:00+00:00,Will Nikki Haley be the next major GOP presidential race dropout?,BUY NO,0.5,-0.0835,0.0835,382.27,0,1,382.27,20748.03
+2024-11-05 00:00:00+00:00,Will Donald Trump be the next major GOP presidential race dropout?,BUY NO,0.5,-0.1276,0.1,500.0,0,1,500.0,21248.03
+2024-11-05 00:00:00+00:00,Will Ron DeSantis be the next major GOP presidential race dropout?,BUY NO,0.5,-0.0844,0.0844,80.55,0,1,80.55,21328.58
+2024-11-05 05:00:00+00:00,Will Robert F. Kennedy Jr. announce Andrew Yang as running mate?,BUY NO,0.5,-0.1116,0.1,50.0,0,1,50.0,21378.58
+2024-11-05 05:00:00+00:00,Will Robert F. Kennedy Jr. announce Tulsi Gabbard as running mate?,BUY NO,0.5,-0.1163,0.1,50.0,0,1,50.0,21428.58
+2024-11-05 05:00:00+00:00,Will Robert F. Kennedy Jr. announce Mike Rowe as running mate?,BUY NO,0.5,-0.1462,0.1,50.0,0,1,50.0,21478.58
+2024-11-05 05:00:00+00:00,Will Robert F. Kennedy Jr. announce Tricia Lindsay as running mate?,BUY NO,0.5,-0.0729,0.0729,50.0,0,1,50.0,21528.58
+2024-11-05 05:00:00+00:00,Will Robert F. Kennedy Jr. announce someone else as running mate?,BUY NO,0.5,-0.0722,0.0722,50.0,1,0,-50.0,21478.58
+2024-11-05 05:00:00+00:00,Will Robert F. Kennedy Jr. announce Aaron Rodgers as running mate?,BUY NO,0.5,-0.0792,0.0792,50.0,0,1,50.0,21528.58
+2024-11-05 12:00:00+00:00,Will a Republican win New Hampshire Governor Election?,BUY NO,0.81,-0.3974,0.1,50.0,1,0,-50.0,21478.58
+2024-11-05 12:00:00+00:00,Will a Democrat win Rhode Island US Senate Election?,BUY NO,0.99,-0.5733,0.1,50.0,1,0,-50.0,21428.58
+2024-11-05 12:00:00+00:00,Will a Democrat win Delaware US Senate Election?,BUY NO,0.986,-0.5526,0.1,50.0,1,0,-50.0,21378.58
+2024-11-05 12:00:00+00:00,Will a Republican win Indiana US Senate Election?,BUY NO,0.95,-0.5333,0.1,50.0,1,0,-50.0,21328.58
+2024-11-05 12:00:00+00:00,Will a Republican win Mississippi US Senate Election?,BUY NO,0.9555,-0.5292,0.1,50.0,1,0,-50.0,21278.58
+2024-11-05 12:00:00+00:00,Will a Republican win Tennessee US Senate Election?,BUY NO,0.9885,-0.5551,0.1,50.0,1,0,-50.0,21228.58
+2024-11-05 12:00:00+00:00,Will a Democrat win Maine's 1st congressional district?,BUY NO,0.986,-0.5592,0.1,50.0,1,0,-50.0,21178.58
+2024-11-05 12:00:00+00:00,Will a Republican win Nebraska's 3rd congressional district?,BUY NO,0.988,-0.5662,0.1,50.0,1,0,-50.0,21128.58
+2024-11-05 12:00:00+00:00,Will a Democrat win Vermont US Senate Election?,BUY NO,0.955,-0.5227,0.1,50.0,1,0,-50.0,21078.58
+2024-11-05 12:00:00+00:00,Will a Republican win North Dakota Governor Election?,BUY NO,0.5055,-0.0799,0.0791,50.0,1,0,-50.0,21028.58
+2024-11-05 12:00:00+00:00,Will a Republican win Nebraska Presidential Election?,BUY NO,0.99,-0.5382,0.1,50.0,1,0,-50.0,20978.58
+2024-11-05 12:00:00+00:00,Trump found guilty in hush money case?,BUY YES,0.5,0.0215,0.0215,50.0,1,1,50.0,21028.58
+2024-11-30 12:00:00+00:00,UK election in November?,BUY NO,0.5,-0.1116,0.1,50.0,0,1,50.0,21078.58
+2024-12-29 00:00:00+00:00,Will the median gas price per blob be between 0.0001 and 0.001 ETH one month aft,BUY NO,0.5,-0.0774,0.0774,50.0,0,1,50.0,21128.58
+2024-12-29 00:00:00+00:00,EIP-4844 doesn't launch by end of 2024?,BUY NO,0.5,-0.0782,0.0782,50.0,0,1,50.0,21178.58
+2024-12-29 00:00:00+00:00,Will the median gas price per blob be >=0.1 ETH one month after EIP-4844?,BUY NO,0.5,-0.0744,0.0744,50.0,0,1,50.0,21228.58
+2024-12-29 00:00:00+00:00,Will Reddit IPO at between $5b-7.5b valuation?,BUY NO,0.5,-0.0829,0.0829,50.0,0,1,50.0,21278.58
+2024-12-29 00:00:00+00:00,Will the median gas price per blob be <0.0001 ETH one month after EIP-4844?,BUY NO,0.5,-0.0742,0.0742,50.0,1,0,-50.0,21228.58
+2024-12-29 00:00:00+00:00,Will Ben Armstrong (Bitboy) beat More Light?,BUY NO,0.5,-0.126,0.1,439.32,1,0,-439.32,20789.26
+2024-12-29 00:00:00+00:00,Will More Light beat Ben Armstrong?,BUY NO,0.5,-0.1124,0.1,419.89,0,1,419.89,21209.16
+2024-12-29 00:00:00+00:00,Will Ben Armstrong vs. More Light have no official winner?,BUY NO,0.5,-0.1137,0.1,482.97,0,1,482.97,21692.12
+2024-12-29 00:00:00+00:00,Wormhole token FDV less than 4 billion a week after airdrop?,BUY NO,0.5,-0.0838,0.0838,50.0,0,1,50.0,21742.12
+2024-12-29 00:00:00+00:00,Wormhole token FDV between 4-5 billion a week after airdrop?,BUY NO,0.5,-0.1343,0.1,50.0,0,1,50.0,21792.12
+2024-12-29 00:00:00+00:00,Wormhole token FDV between 5-6 billion a week after airdrop?,BUY NO,0.5,-0.1116,0.1,50.0,0,1,50.0,21842.12
+2024-12-29 00:00:00+00:00,Wormhole token FDV between 6-7 billion a week after airdrop?,BUY NO,0.5,-0.114,0.1,50.0,0,1,50.0,21892.12
+2024-12-29 00:00:00+00:00,Wormhole token FDV more than 7 billion a week after airdrop?,BUY NO,0.5,-0.0838,0.0838,50.0,1,0,-50.0,21842.12
+2024-12-30 23:00:00+00:00,archSBF sentenced to more than 50 years?,BUY NO,0.5,-0.074,0.074,38.42,0,1,38.42,21880.54
+2024-12-30 23:00:00+00:00,archSBF sentenced to between 40 and 50 years?,BUY NO,0.5,-0.0819,0.0819,17.5,0,1,17.5,21898.04
+2024-12-31 00:00:00+00:00,Bitcoin all time high in Q4?,BUY NO,0.5,-0.0838,0.0838,192.87,0,1,192.87,22090.91
+2024-12-31 12:00:00+00:00,Biden vetos Bill repealing crypto accounting rule?,BUY NO,0.5,-0.1116,0.1,50.0,1,0,-50.0,22040.91
+2024-12-31 12:00:00+00:00,Will John Steenhuisen be the next President of South Africa?,BUY NO,0.5,-0.0843,0.0843,50.0,0,1,50.0,22090.91
+2024-12-31 12:00:00+00:00,Will Jacob Zuma be the next President of South Africa?,BUY NO,0.5,-0.0871,0.0871,50.0,0,1,50.0,22140.91
+2024-12-31 12:00:00+00:00,Will Julius Malema be the next President of South Africa?,BUY NO,0.5,-0.037,0.037,50.0,0,1,50.0,22190.91
+2024-12-31 12:00:00+00:00,Will Velenkosini Hlabisa be the next President of South Africa?,BUY NO,0.5,-0.0453,0.0453,50.0,0,1,50.0,22240.91
+2024-12-31 12:00:00+00:00,Will Pieter Groenewald be the next President of South Africa?,BUY NO,0.5,-0.037,0.037,50.0,0,1,50.0,22290.91
+2024-12-31 12:00:00+00:00,Will another non-ANC candidate be the next President of South Africa?,BUY NO,0.5,-0.0833,0.0833,50.0,0,1,50.0,22340.91
+2024-12-31 12:00:00+00:00,Will another ANC candidate be the next President of South Africa?,BUY NO,0.5,-0.1245,0.1,50.0,0,1,50.0,22390.91
+2024-12-31 12:00:00+00:00,UK election in January 2025 or later?,BUY NO,0.5,-0.114,0.1,50.0,0,1,50.0,22440.91
+2024-12-31 12:00:00+00:00,Will Cyril Ramaphosa be the next President of South Africa?,BUY NO,0.5,-0.0353,0.0353,50.0,1,0,-50.0,22390.91
+2024-12-31 12:00:00+00:00,FriendTech market cap more than $10b one day after launch?,BUY NO,0.5,-0.0802,0.0802,50.0,0,1,50.0,22440.91
+2024-12-31 12:00:00+00:00,FriendTech market cap $5-10b one day after launch?,BUY NO,0.5,-0.0802,0.0802,50.0,0,1,50.0,22490.91
+2024-12-31 12:00:00+00:00,Ethena token (FDV) more than 15 billion a day after launch?,BUY NO,0.5,-0.0841,0.0841,50.0,0,1,50.0,22540.91
+2024-12-31 12:00:00+00:00,Ethena token FDV between 12.5b and 15b one day after launch?,BUY NO,0.5,-0.1124,0.1,50.0,0,1,50.0,22590.91
+2024-12-31 12:00:00+00:00,Ethena token FDV between 10b and 12.5b one day after launch?,BUY NO,0.5,-0.0704,0.0704,50.0,1,0,-50.0,22540.91
+2024-12-31 12:00:00+00:00,Ethena token FDV between 7.5b and 10b one day after launch?,BUY NO,0.5,-0.114,0.1,50.0,0,1,50.0,22590.91
+2024-12-31 12:00:00+00:00,Ethena token FDV between 5b and 7.5b one day after launch?,BUY NO,0.5,-0.075,0.075,50.0,0,1,50.0,22640.91
+2024-12-31 12:00:00+00:00,Bob Menendez convicted?,BUY NO,0.5,-0.076,0.076,50.0,1,0,-50.0,22590.91
+2024-12-31 12:00:00+00:00,Ethena token FDV less than 5 billion one day after launch?,BUY NO,0.5,-0.076,0.076,50.0,0,1,50.0,22640.91
+2024-12-31 12:00:00+00:00,Will the $SAFE market cap be between $4-5b one week after launch?,BUY NO,0.5,-0.1114,0.1,50.0,0,1,50.0,22690.91
+2024-12-31 12:00:00+00:00,Will the $SAFE market cap be between $3-4b one week after launch?,BUY NO,0.5,-0.114,0.1,50.0,0,1,50.0,22740.91
+2024-12-31 12:00:00+00:00,Will the $SAFE market cap be between $2-3b one week after launch?,BUY NO,0.5,-0.1245,0.1,50.0,0,1,50.0,22790.91
+2024-12-31 12:00:00+00:00,Will the $SAFE market cap be between $1-2b one week after launch?,BUY NO,0.5,-0.114,0.1,50.0,1,0,-50.0,22740.91
+2024-12-31 12:00:00+00:00,Will the $SAFE market cap be less than $1b one week after launch? ,BUY NO,0.5,-0.0843,0.0843,50.0,0,1,50.0,22790.91
+2024-12-31 12:00:00+00:00,Will Bayern Munich win the Bundesliga 2023-24?,BUY NO,0.5,-0.1253,0.1,50.0,0,1,50.0,22840.91
+2024-12-31 12:00:00+00:00,Will the $SAFE market cap be greater than $5b one week after launch?,BUY NO,0.5,-0.0744,0.0744,50.0,0,1,50.0,22890.91
+2024-12-31 12:00:00+00:00,Will MEW reach $1b first?,BUY YES,0.5,0.0363,0.0363,50.0,0,0,-50.0,22840.91
+2024-12-31 12:00:00+00:00,FriendTech market cap $4-5b one day after launch?,BUY NO,0.5,-0.1116,0.1,50.0,0,1,50.0,22890.91
+2024-12-31 12:00:00+00:00,FriendTech market cap $3-4b one day after launch?,BUY NO,0.5,-0.1116,0.1,50.0,0,1,50.0,22940.91
+2024-12-31 12:00:00+00:00,Will HOBBES reach $1b first?,BUY YES,0.5,0.0505,0.0505,50.0,0,0,-50.0,22890.91
+2024-12-31 12:00:00+00:00,Will Keycat reach $1b first?,BUY YES,0.5,0.0465,0.0465,50.0,0,0,-50.0,22840.91
+2024-12-31 12:00:00+00:00,Will POPCAT reach $1b first?,BUY YES,0.5,0.0431,0.0431,50.0,1,1,50.0,22890.91
+2024-12-31 12:00:00+00:00,Will Shark Cat reach $1b first?,BUY YES,0.5,0.0465,0.0465,50.0,0,0,-50.0,22840.91
+2024-12-31 12:00:00+00:00,Will TOSHI reach $1b first?,BUY YES,0.5,0.0363,0.0363,50.0,0,0,-50.0,22790.91
+2024-12-31 12:00:00+00:00,Will another cat memecoin reach $1b first?,BUY YES,0.5,0.0431,0.0431,50.0,0,0,-50.0,22740.91
+2024-12-31 12:00:00+00:00,FriendTech market cap $2-3b one day after launch?,BUY NO,0.5,-0.1245,0.1,50.0,0,1,50.0,22790.91
+2025-01-28 12:00:00+00:00,Reform wins the most seats in next UK election? ,BUY YES,0.5,0.0431,0.0431,50.0,0,0,-50.0,22740.91
+2025-01-28 12:00:00+00:00,Liberal Democrats wins the most seats in next UK election? ,BUY YES,0.5,0.0215,0.0215,50.0,0,0,-50.0,22690.91
+2025-01-28 12:00:00+00:00,Conservatives wins the most seats in next UK election? ,BUY YES,0.5,0.0312,0.0312,50.0,0,0,-50.0,22640.91
+2025-01-28 12:00:00+00:00,Labour wins the most seats in next UK election? ,BUY YES,0.5,0.0363,0.0363,50.0,1,1,50.0,22690.91
+2025-01-28 12:00:00+00:00,Other party wins the most seats in next UK election? ,BUY YES,0.5,0.0431,0.0431,50.0,0,0,-50.0,22640.91
+2025-01-31 12:00:00+00:00,Will Labour win 325-349 seats in the next UK Election?,BUY YES,0.5,0.0395,0.0395,50.0,0,0,-50.0,22590.91
+2025-01-31 12:00:00+00:00,Rishi Sunak out before next UK election?,BUY NO,0.5,-0.0782,0.0782,50.0,0,1,50.0,22640.91
+2025-01-31 12:00:00+00:00,Will Labour win 350-374 seats in the next UK Election?,BUY YES,0.5,0.0476,0.0476,50.0,0,0,-50.0,22590.91
+2025-01-31 12:00:00+00:00,Will Labour win 375-399 seats in the next UK Election?,BUY YES,0.5,0.1113,0.1,50.0,0,0,-50.0,22540.91
+2025-01-31 12:00:00+00:00,Will Labour win 425-449 seats in the next UK Election?,BUY YES,0.5,0.0727,0.0727,50.0,0,0,-50.0,22490.91
+2025-01-31 12:00:00+00:00,Will Labour win 450 or more seats in the next UK Election?,BUY NO,0.5,-0.0418,0.0418,50.0,0,1,50.0,22540.91
