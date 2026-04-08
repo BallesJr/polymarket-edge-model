@@ -110,7 +110,7 @@ def generate_signals(
     total = len(df_tradeable)
 
     print(f"[Engine] Generating signals for {total} markets"
-        f"{" (with external search)" if use_external else ""}")
+        f"{' (with external search)' if use_external else ''}")
      
     for i, (idx, row) in enumerate(df_tradeable.iterrows()):
         prob_market = float(row.get("prob_yes_market", row.get("prob_market", np.nan)))
