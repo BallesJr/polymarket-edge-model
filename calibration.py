@@ -384,3 +384,46 @@ if __name__ == "__main__":
         path = f"data/calibration_signals_{ts}.csv"
         df_signals.to_csv(path, index=False)
         print(f"\nSaved to: {path}")
+
+# PRODUCTION MODEL (Canonical Random Forest trainer)
+# train_model() above is a research function: it compares Logistic Regression vs Random Forest and picks the winner
+# That comparison showed RF wins consistently on Polymarket data
+# So I promote it here as the single canonical production model
+
+# Both backtester.py and signal_engine.py import this function
+# This function guarantees by construction that we backtest is what runs live
+# If I ever want to change hyperparameters, I change them once here
+
+# Trains the canonical production Random Forest on the provided dataset
+# This is the single source of truth for the model used across the projecte:
+# - backtester.py calls this to validate historical performance
+# - signal_engine.py calls this to generate live trading signals
+# Keeping both callers on the same function means the backtest results are a faithful estimate of live performance
+def train_random_forest(df: pd.DataFrame, feature_cols: list[str]) -> Pipeline:
+    df_clean = df[feature_cols + ["outcome"]].dropna()
+
+    if len(df_clean) < 50:
+        raise ValueError(
+            f"Only {len(df_clean)} clean samples available after dropping Nan."
+            f"Need at least 50 to train a reliable model."
+        ) 
+    
+    X = df_clean[feature_cols]
+    y = df_clean["outcome"].values # 1 = YES won, 0 = NO won
+
+    pipeline = Pipeline([
+        ("scaler", StandardScaler()),
+        ("model", RandomForestClassifier(
+            n_estimators=100, # Stable predictions without excessive training time
+            min_samples_leaf=5, # Prevent overfitting on small market subsets
+            class_weight="balanced", # Corrects the NO/YES imbalance in resolved Polymarket markets
+            random_state=42, # Fully reproducible results across runs
+        ))
+    ])
+
+    pipeline.fit(X, y)
+
+    brier = brier_score_loss(y, pipeline.predict_proba(X)[:, 1])
+    print(f"[RF] Trained on {len(df_clean)} markets | Brier (train): {brier:.4f}")
+
+    return pipeline

@@ -1,0 +1,36 @@
+2026-04-08 03:51:09,813 [__main__] INFO - Loading / training calibration model...
+2026-04-08 03:51:43,972 [__main__] INFO - ---Cycle start: 2026-04-08 01&M UTC---
+2026-04-08 03:51:46,433 [__main__] INFO - Signals generated: 10
+2026-04-08 03:51:46,447 [paper_trader] INFO - OPENED BUY YES  | $500 | edge=+0.477 | conf=MEDIUM | Xi Jinping out before 2027?
+2026-04-08 03:51:46,449 [paper_trader] INFO - OPENED BUY YES  | $500 | edge=+0.405 | conf=MEDIUM | SCOTUS accepts sports event contract case by July 31, 2
+2026-04-08 03:51:46,450 [paper_trader] INFO - OPENED BUY YES  | $500 | edge=+0.402 | conf=MEDIUM | MegaETH market cap (FDV) >$2B one day after launch?
+2026-04-08 03:51:46,451 [paper_trader] INFO - OPENED BUY YES  | $500 | edge=+0.145 | conf=MEDIUM | Will MegaETH perform an airdrop by June 30? 
+2026-04-08 03:51:46,454 [paper_trader] INFO - OPENED BUY YES  | $500 | edge=+0.116 | conf=MEDIUM | Russia-Ukraine Ceasefire before GTA VI?
+2026-04-08 03:51:46,455 [paper_trader] INFO - OPENED BUY YES  | $500 | edge=+0.113 | conf=MEDIUM | Trump out as President before GTA VI?
+2026-04-08 03:51:46,455 [paper_trader] INFO - OPENED BUY YES  | $500 | edge=+0.109 | conf=MEDIUM | Will China invades Taiwan before GTA VI?
+2026-04-08 03:51:46,458 [paper_trader] INFO - OPENED BUY YES  | $500 | edge=+0.097 | conf=MEDIUM | New Playboi Carti Album before GTA VI?
+2026-04-08 03:51:46,459 [paper_trader] INFO - OPENED BUY YES  | $500 | edge=+0.087 | conf=MEDIUM | New Rihanna Album before GTA VI?
+2026-04-08 03:51:46,462 [paper_trader] INFO - OPENED BUY NO   | $378 | edge=-0.067 | conf=MEDIUM | Will bitcoin hit $1m before GTA VI?
+2026-04-08 03:51:46,462 [paper_trader] INFO - Cycle complete - opened: 10 | skipped:0
+2026-04-08 03:51:46,466 [__main__] INFO - ---Cycle complete in 2.5s---
+
+2026-04-08 10:37:40,009 [__main__] INFO - Loading / training calibration model...
+2026-04-08 10:38:11,997 [__main__] INFO - Loading / training calibration model...
+2026-04-08 10:38:52,217 [__main__] INFO - ---Cycle start: 2026-04-08 08:38 UTC---
+2026-04-08 10:38:55,546 [__main__] INFO - Signals generated: 9
+2026-04-08 10:38:55,549 [__main__] INFO - Checking 10 open position(s) for resolution...
+2026-04-08 10:39:07,136 [paper_trader] INFO - EXPIRED (capital returned): MegaETH market cap (FDV) >$2B one day after launch?
+2026-04-08 10:39:07,139 [paper_trader] INFO - EXPIRED (capital returned): Will MegaETH perform an airdrop by June 30? 
+2026-04-08 10:39:07,147 [paper_trader] INFO - 2 position(s) expired (capital returned).
+2026-04-08 10:39:07,152 [paper_trader] INFO - OPENED BUY YES  | $500 | edge=+0.468 | conf=MEDIUM | MegaETH market cap (FDV) >$2B one day after launch?
+2026-04-08 10:39:07,152 [paper_trader] DEBUG - Skipping duplicate: 563650
+2026-04-08 10:39:07,152 [paper_trader] DEBUG - Skipping duplicate: 540844
+2026-04-08 10:39:07,158 [paper_trader] INFO - OPENED BUY YES  | $500 | edge=+0.145 | conf=MEDIUM | Will MegaETH perform an airdrop by June 30? 
+2026-04-08 10:39:07,158 [paper_trader] DEBUG - Skipping duplicate: 540816
+2026-04-08 10:39:07,158 [paper_trader] DEBUG - Skipping duplicate: 540843
+2026-04-08 10:39:07,158 [paper_trader] DEBUG - Skipping duplicate: 540820
+2026-04-08 10:39:07,161 [paper_trader] DEBUG - Skipping duplicate: 540817
+2026-04-08 10:39:07,161 [paper_trader] DEBUG - Skipping duplicate: 540818
+2026-04-08 10:39:07,161 [paper_trader] INFO - Cycle complete - opened: 2 | skipped:7
+2026-04-08 10:39:07,179 [__main__] INFO - ---Cycle complete in 15.0s---
+

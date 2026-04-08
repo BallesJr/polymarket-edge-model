@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 
 # Reuse functions from our project
-from calibration import fetch_resolved_markets, build_features
+from calibration import fetch_resolved_markets, build_features, train_random_forest
 from expected_value import expected_value, kelly_fraction
 
 # BACKTESTER - Historical P&L Simulation
@@ -41,26 +41,9 @@ def temporal_split(df: pd.DataFrame, train_ratio: float = 0.7) -> tuple[pd.DataF
 
     return df_train, df_test
 
-# Trains the Random Forest only on the train set
-# Returns the fitted pipeline (scaler + model)
+# Trains the Random Forest on the training split
 def train_on_split(df_train: pd.DataFrame, feature_cols: list[str]) -> Pipeline:
-    df_clean = df_train[feature_cols + ["outcome"]].dropna()
-    X = df_clean[feature_cols]
-    y = df_clean["outcome"].values
-
-# class_weight="balanced" compensates the NO/YES imbalance
-    pipeline = Pipeline([
-        ("scaler", StandardScaler()),
-        ("model", RandomForestClassifier(
-            n_estimators=100, random_state=42, min_samples_leaf=5, class_weight="balanced"
-        ))
-    ])
-
-    pipeline.fit(X,y)
-    brier = brier_score_loss(y, pipeline.predict_proba(X)[:,1])
-    print(f"\nModel trained on {len(df_clean)} markets (Brier train: {brier:.4f})")
-
-    return pipeline
+   return train_random_forest(df_train, feature_cols)
 
 # Simulates trades on the test set
 # For each test market:

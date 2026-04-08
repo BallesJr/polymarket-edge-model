@@ -1,0 +1,2 @@
+{"total_trades": 0, "open_positions": 10, "open_exposure_usd": 4878.4, "bankroll": 5121.6, "total_equity": 10000.0, "roi_pct": 0.0, "win_rate_pct": null, "profit_factor": null, "max_drawdown_pct": null, "avg_edge": null, "timestamp": "2026-04-08T01:51:46.464743+00:00"}
+{"total_trades": 2, "open_positions": 10, "open_exposure_usd": 4878.4, "bankroll": 5121.6, "total_equity": 10000.0, "roi_pct": 0.0, "win_rate_pct": 0.0, "profit_factor": Infinity, "max_drawdown_pct": 0.0, "avg_edge": 0.2735, "timestamp": "2026-04-08T08:39:07.179279+00:00"}
