@@ -78,7 +78,7 @@ Position sizing uses **Half-Kelly** capped at 10% of bankroll and 10% of each ma
 
 **BUY NO bias**: The calibration model shows a BUY NO bias when applied to active markets, likely due to the 3:1 NO/YES class imbalance in the training data. `class_weight="balanced"` partially corrects this but does not eliminate it.
 
-**Automation**: The bot (`bot.py`) is fullt implemented and runs the complete pipeline. Contintots 24/7 execution is currently not possible due to hardware constraints (no dedicated server), but the bot is fully functional when run manually. Live order execution is pending two things: validating profitability through paper trading, and the CLOB v2 release (April-May 2026).
+**Automation**: The bot (`bot.py`) runs automatically via GitHub Actions every ~30 minutes, 24/7, at no cost. Live order execution is pending two things: validating profitability through paper trading, and the CLOB v2 release (April-May 2026).
 
 ## REQUIREMENTS
 
