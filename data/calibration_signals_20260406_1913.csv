@@ -1,9 +1,0 @@
-market_id,question,end_date,prob_market,prob_model,edge,kelly_fraction,direction,spread,liquidity,source
-563650,"SCOTUS accepts sports event contract case by July 31, 2026?     ",2026-07-31 00:00:00+00:00,0.125,0.5295,0.4045,0.2311,BUY YES,0.01,6999.5105,calibration_model
-559651,Xi Jinping out before 2027?,2026-12-31 00:00:00+00:00,0.0715,0.4603,0.3888,0.0,BUY YES,0.001,153044.10021,calibration_model
-556062,MegaETH market cap (FDV) >$2B one day after launch?,2025-12-31 00:00:00+00:00,0.105,0.4886,0.3836,0.0,BUY YES,0.01,89915.9476,calibration_model
-560317,"Putin out as President of Russia by December 31, 2026?",2026-12-31 18:30:00+00:00,0.105,0.4534,0.3484,0.0,BUY YES,0.01,339730.0121,calibration_model
-556108,Will MegaETH perform an airdrop by June 30? ,2026-02-01 05:00:00+00:00,0.426,0.5535,0.1275,0.1111,BUY YES,0.038,11033.90717,calibration_model
-540816,Russia-Ukraine Ceasefire before GTA VI?,2026-07-31 12:00:00+00:00,0.53,0.6431,0.1131,0.1203,BUY YES,0.02,50359.805,calibration_model
-540818,New Playboi Carti Album before GTA VI?,2026-07-31 12:00:00+00:00,0.525,0.6241,0.0991,0.1043,BUY YES,0.01,29776.9797,calibration_model
-540844,Will bitcoin hit $1m before GTA VI?,2026-07-31 12:00:00+00:00,0.4875,0.4179,-0.0696,0.0713,BUY NO,0.001,425984.46768,calibration_model

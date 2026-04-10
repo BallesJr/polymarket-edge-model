@@ -1,8 +1,0 @@
-market_id,question,end_date,prob_market,prob_model,edge,kelly_fraction,direction,spread,liquidity,source
-556062,MegaETH market cap (FDV) >$2B one day after launch?,2025-12-31 00:00:00+00:00,0.095,0.575,0.48,0.2652,BUY YES,0.01,91616.0352,calibration_model
-563650,"SCOTUS accepts sports event contract case by July 31, 2026?     ",2026-07-31 00:00:00+00:00,0.125,0.5295,0.4045,0.2311,BUY YES,0.01,6999.5105,calibration_model
-559651,Xi Jinping out before 2027?,2026-12-31 00:00:00+00:00,0.0775,0.4715,0.394,0.0,BUY YES,0.001,301368.32563,calibration_model
-560317,"Putin out as President of Russia by December 31, 2026?",2026-12-31 18:30:00+00:00,0.105,0.4534,0.3484,0.0,BUY YES,0.01,339730.0121,calibration_model
-540843,Will China invades Taiwan before GTA VI?,2026-07-31 12:00:00+00:00,0.515,0.6329,0.1179,0.1215,BUY YES,0.01,98257.1226,calibration_model
-556108,Will MegaETH perform an airdrop by June 30? ,2026-02-01 05:00:00+00:00,0.5575,0.6543,0.0968,0.1094,BUY YES,0.005,12238.47153,calibration_model
-540818,New Playboi Carti Album before GTA VI?,2026-07-31 12:00:00+00:00,0.575,0.6452,0.0702,0.0826,BUY YES,0.01,23320.941,calibration_model

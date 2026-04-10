@@ -1,8 +1,0 @@
-market_id,question,end_date,prob_market,prob_model,edge,kelly_fraction,direction,spread,liquidity,source
-559651,Xi Jinping out before 2027?,2026-12-31 00:00:00+00:00,0.077,0.5652,0.4882,0.2644,BUY YES,0.002,310944.3044,calibration_model
-563650,"SCOTUS accepts sports event contract case by July 31, 2026?     ",2026-07-31 00:00:00+00:00,0.125,0.5295,0.4045,0.2311,BUY YES,0.01,6999.5105,calibration_model
-556062,MegaETH market cap (FDV) >$2B one day after launch?,2025-12-31 00:00:00+00:00,0.095,0.4886,0.3936,0.0,BUY YES,0.01,101037.6728,calibration_model
-560317,"Putin out as President of Russia by December 31, 2026?",2026-12-31 18:30:00+00:00,0.105,0.4534,0.3484,0.0,BUY YES,0.01,339730.0121,calibration_model
-540816,Russia-Ukraine Ceasefire before GTA VI?,2026-07-31 12:00:00+00:00,0.535,0.6255,0.0905,0.0973,BUY YES,0.01,40189.0279,calibration_model
-540843,Will China invades Taiwan before GTA VI?,2026-07-31 12:00:00+00:00,0.475,0.5464,0.0714,0.068,BUY YES,0.01,54916.6963,calibration_model
-540819,Will Jesus Christ return before GTA VI?,2026-07-31 12:00:00+00:00,0.475,0.5416,0.0666,0.0634,BUY YES,0.01,713306.3014,calibration_model
