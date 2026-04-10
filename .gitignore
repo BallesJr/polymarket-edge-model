@@ -1,7 +1,8 @@
+__pycache__/
+.vscode/
+
 data/calibration_signals_*.csv
 data/backtest_trades_*.csv
 data/signals_*.csv
 data/markets_snapshot*.csv
-
-!data/calibration_analysis.png
-!data/backtest_results.png
+bot.log
