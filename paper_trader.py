@@ -12,7 +12,7 @@ from signal_engine import Signal
 logger = logging.getLogger(__name__)
 
 # ---Constants---
-PORTFOLIO_PATH = "data/portfolio.json"
+PORTFOLIO_PATH = "data/paper_portfolio.json"
 TRADES_LOG_PATH = "data/trades_log.csv"
 
 # Position sizing constraints
