@@ -1,5 +1,5 @@
 {
-  "bankroll": 5121.6,
+  "bankroll": 6121.6,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -177,7 +177,9 @@
       "outcome": null,
       "pnl": null,
       "resolved_at": null
-    },
+    }
+  ],
+  "resolved_trades": [
     {
       "market_id": "556062",
       "token_id_yes": "57301498276970257025109591078431189727442302532145853906375186182281603517458",
@@ -195,10 +197,10 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-04-15T20:43:47.080372+00:00",
-      "status": "OPEN",
+      "status": "EXPIRED",
       "outcome": null,
-      "pnl": null,
-      "resolved_at": null
+      "pnl": 0.0,
+      "resolved_at": "2026-04-15T21:42:33.963497+00:00"
     },
     {
       "market_id": "556108",
@@ -217,11 +219,10 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-04-15T20:43:47.082498+00:00",
-      "status": "OPEN",
+      "status": "EXPIRED",
       "outcome": null,
-      "pnl": null,
-      "resolved_at": null
+      "pnl": 0.0,
+      "resolved_at": "2026-04-15T21:42:33.963497+00:00"
     }
-  ],
-  "resolved_trades": []
+  ]
 }
