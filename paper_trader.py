@@ -112,6 +112,13 @@ def open_position(signal: Signal, portfolio: dict) -> Optional[Position]:
         logger.debug(f"Skipping duplicate: {signal.market_id}")
         return None
     
+    # Guard: skip markets whose end_date has already passed
+    # Prevents the open -> expire -> reopen loop on stale markets
+    end_dt = pd.to_datetime (signal.end_date, utc=True)
+    if end_dt < datetime.now(timezone.utc):
+        logger.debug(f"Skipping expired market: {signal.question[:50]}")
+        return None
+    
     size = _compute_size(portfolio["bankroll"], signal.kelly_fraction, signal.liquidity)
     if size < 1.0:
         logger.debug(f"Size too small (${size:.2f}): {signal.question[:50]}")
