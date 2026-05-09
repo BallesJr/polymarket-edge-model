@@ -1,0 +1,2 @@
+market_id,token_id_yes,question,end_date,direction,prob_market,prob_model,edge,kelly,confidence,size_usd,price_paid,source_model,prob_external,source_external,opened_at,status,outcome,pnl,resolved_at
+567687,104071616575689490708756996503755160411785604144351427331378560378097635400347,Russia x Ukraine ceasefire by end of 2026?,2026-12-31 00:00:00+00:00,BUY YES,0.295,0.5635,0.2685,0.1,MEDIUM,415.94,0.295,calibration_rf,,,2026-04-20T05:32:37.452706+00:00,RESOLVED,1,994.03,2026-05-09T19:50:57.967365+00:00

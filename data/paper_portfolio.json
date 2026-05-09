@@ -1,5 +1,5 @@
 {
-  "bankroll": 2729.01,
+  "bankroll": 4138.98,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -267,28 +267,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "567687",
-      "token_id_yes": "104071616575689490708756996503755160411785604144351427331378560378097635400347",
-      "question": "Russia x Ukraine ceasefire by end of 2026?",
-      "end_date": "2026-12-31 00:00:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.295,
-      "prob_model": 0.5635,
-      "edge": 0.2685,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 415.94,
-      "price_paid": 0.295,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-04-20T05:32:37.452706+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "567688",
       "token_id_yes": "114694726451307654528948558967898493662917070661203465131156925998487819889437",
       "question": "Netanyahu out by end of 2026?",
@@ -399,6 +377,28 @@
       "outcome": null,
       "pnl": 0.0,
       "resolved_at": "2026-04-15T21:42:33.963497+00:00"
+    },
+    {
+      "market_id": "567687",
+      "token_id_yes": "104071616575689490708756996503755160411785604144351427331378560378097635400347",
+      "question": "Russia x Ukraine ceasefire by end of 2026?",
+      "end_date": "2026-12-31 00:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.295,
+      "prob_model": 0.5635,
+      "edge": 0.2685,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 415.94,
+      "price_paid": 0.295,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-04-20T05:32:37.452706+00:00",
+      "status": "RESOLVED",
+      "outcome": 1,
+      "pnl": 994.03,
+      "resolved_at": "2026-05-09T19:50:57.967365+00:00"
     }
   ]
 }
