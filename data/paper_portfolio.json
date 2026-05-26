@@ -1,5 +1,5 @@
 {
-  "bankroll": 2875.66,
+  "bankroll": 2588.09,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -415,6 +415,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-05-25T18:21:39.189420+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "593975",
+      "token_id_yes": "78994096084018614649961134380557835172033452849084058029827070275341232468538",
+      "question": "Will Bernie endorse Antonio Delgado for NY-Gov by Nov 2 2026 ET?",
+      "end_date": "2026-11-30 00:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.1035,
+      "prob_model": 0.5121,
+      "edge": 0.4086,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 287.57,
+      "price_paid": 0.1035,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-05-26T06:30:24.806355+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
