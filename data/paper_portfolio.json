@@ -1,5 +1,5 @@
 {
-  "bankroll": 1996.74,
+  "bankroll": 2239.9,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -465,28 +465,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "569454",
-      "token_id_yes": "112000997367369775705892760747740706713090189173150311174658104010356449962658",
-      "question": "Will any presidential candidate win outright in the first round of the Colombia's election?",
-      "end_date": "2026-05-31 14:00:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.13,
-      "prob_model": 0.5767,
-      "edge": 0.4467,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 243.16,
-      "price_paid": 0.13,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-05-28T19:52:35.271513+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "573647",
       "token_id_yes": "71552623345730992280501476931299615437386807576519105089437764117985071980606",
       "question": "Will GPT-6 be released before GTA VI?",
@@ -597,6 +575,28 @@
       "outcome": null,
       "pnl": 0.0,
       "resolved_at": "2026-05-27T02:47:42.335347+00:00"
+    },
+    {
+      "market_id": "569454",
+      "token_id_yes": "112000997367369775705892760747740706713090189173150311174658104010356449962658",
+      "question": "Will any presidential candidate win outright in the first round of the Colombia's election?",
+      "end_date": "2026-05-31 14:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.13,
+      "prob_model": 0.5767,
+      "edge": 0.4467,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 243.16,
+      "price_paid": 0.13,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-05-28T19:52:35.271513+00:00",
+      "status": "EXPIRED",
+      "outcome": null,
+      "pnl": 0.0,
+      "resolved_at": "2026-05-31T14:26:11.703117+00:00"
     }
   ]
 }
