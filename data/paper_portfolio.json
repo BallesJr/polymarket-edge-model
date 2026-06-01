@@ -1,5 +1,5 @@
 {
-  "bankroll": 2239.9,
+  "bankroll": 2015.91,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -481,6 +481,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-05-29T09:34:20.044697+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "598936",
+      "token_id_yes": "13894524895366006997415301184483786855853683638290113202814526270024185311964",
+      "question": "Will the next UK election be called by June 30, 2026?",
+      "end_date": "2026-06-30 12:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.0525,
+      "prob_model": 0.5127,
+      "edge": 0.4602,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 223.99,
+      "price_paid": 0.0525,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-06-01T08:25:07.007955+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
