@@ -1,5 +1,5 @@
 {
-  "bankroll": 1814.32,
+  "bankroll": 1632.89,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -525,6 +525,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-06-04T09:08:22.640745+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "540819",
+      "token_id_yes": "90435811253665578014957380826505992530054077692143838383981805324273750424057",
+      "question": "Will Jesus Christ return before GTA VI?",
+      "end_date": "2026-07-31 12:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.495,
+      "prob_model": 0.6047,
+      "edge": 0.1097,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 181.43,
+      "price_paid": 0.495,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-06-05T16:25:18.716232+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
