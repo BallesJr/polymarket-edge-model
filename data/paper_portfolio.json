@@ -1,5 +1,5 @@
 {
-  "bankroll": 1632.89,
+  "bankroll": 1469.6,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -547,6 +547,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-06-05T16:25:18.716232+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "601924",
+      "token_id_yes": "94836043839323722879469870987760750290024098891115577626325361529691242606761",
+      "question": "Will Fernando Haddad qualify for Brazil's presidential runoff?",
+      "end_date": "2026-10-04 00:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.096,
+      "prob_model": 0.5169,
+      "edge": 0.4209,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 163.29,
+      "price_paid": 0.096,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-06-08T06:28:31.276416+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
