@@ -88,6 +88,7 @@ def generate_signals(
         min_edge: float = 0.05,
         max_edge: float = 0.30,
         max_kelly: float = 0.10,
+        max_days_to_end: int = 90,
         use_external: bool =  True,
 ) -> list[Signal]:
      
@@ -120,6 +121,14 @@ def generate_signals(
         liquidity = float(row["liquidity"]) if pd.notna(row.get("liquidity")) else 0.0
 
         if np.isnan(prob_model) or np.isnan(prob_market):
+            continue
+
+        # Expiry window: only markets resolving within max_days_to_end
+        # Long-dated markets lock capital for months and kill portfolio rotation
+        # (live-only portfolio control; the backtest has no entry-time dimension)
+        end_dt = pd.to_datetime(row.get("end_date"), utc=True, errors="coerce")
+        now = datetime.now(timezone.utc)
+        if pd.isna(end_dt) or end_dt < now or end_dt > now + pd.Timedelta(days=max_days_to_end):
             continue
 
         # STEP 4: Optionally search Metaculus / Manifold for external consensus

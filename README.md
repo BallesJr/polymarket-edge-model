@@ -82,7 +82,7 @@ Position sizing uses **Half-Kelly** capped at 10% of bankroll, 10% of each marke
 
 **Distribution shift on active markets**: The model is trained on resolved markets, whose recorded price is the near-final bid/ask. Applied to active markets mid-life, `class_weight="balanced"` inflates P(YES) toward 0.5 on longshots, producing large fake edges that always point to BUY YES (live paper trading showed 26/27 open positions were BUY YES on markets priced 0.03–0.13). The signal engine now guards against this: it skips BUY YES signals on markets priced below 0.15 (and BUY NO above 0.85), and rejects any signal with |edge| > 0.30 as a likely model error rather than a real mispricing.
 
-**Automation**: The bot (`bot.py`) runs automatically via GitHub Actions every ~30 minutes, 24/7, at no cost. Live order execution is pending two things: validating profitability through paper trading, and the CLOB v2 release (April-May 2026).
+**Automation**: The bot (`bot.py`) runs automatically via GitHub Actions every ~30 minutes, 24/7, at no cost. Live-only portfolio controls (not part of the backtest, which has no entry-time dimension): max 70% of equity deployed, max 5 new positions per cycle, and only markets resolving within 90 days. Live order execution is pending two things: validating profitability through paper trading, and the CLOB v2 release (April-May 2026).
 
 ## REQUIREMENTS
 

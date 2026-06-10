@@ -20,6 +20,12 @@ MAX_KELLY = 0.10 # Never risk more than 10% of bankroll on a single trade
 MAX_POSITION_USD = 250.0 # Hard cap per trade regardless of Kelly: smaller positions spread the bankroll over more trades
 LIQUIDITY_TAKE = 0.10 # Max fraction of market liquidity we absorb (slippage control)
 
+# Portfolio-level risk controls
+# Without these the bot deployed 96% of the bankroll on its first day and
+# stalled: no free capital left to trade until positions resolved months later
+MAX_TOTAL_EXPOSURE = 0.70 # Max fraction of total equity deployed across open positions
+MAX_NEW_POSITIONS_PER_CYCLE = 5 # Spread entries over time instead of buying every signal at once
+
 # UMA resolution often lands days after a market's end_date. Expiring at end_date
 # refunds positions at PnL 0 before the real outcome is known, hiding losses
 # (e.g. a lost BUY YES gets its full stake back). Keep positions open this long
@@ -126,6 +132,13 @@ def open_position(signal: Signal, portfolio: dict) -> Optional[Position]:
         return None
     
     size = _compute_size(portfolio["bankroll"], signal.kelly_fraction, signal.liquidity)
+
+    # Total exposure cap: trim the position to whatever headroom is left
+    # below MAX_TOTAL_EXPOSURE of equity (bankroll + open exposure)
+    exposure = sum(p["size_usd"] for p in portfolio["open_positions"])
+    headroom = MAX_TOTAL_EXPOSURE * (portfolio["bankroll"] + exposure) - exposure
+    size = min(size, round(max(headroom, 0.0), 2))
+
     if size < 1.0:
         logger.debug(f"Size too small (${size:.2f}): {signal.question[:50]}")
         return None
@@ -313,6 +326,9 @@ def process_signals(signals: list[Signal], initial_bankroll: float = 10_000.0,) 
 
     opened = skipped = 0
     for signal in signals:
+        if opened >= MAX_NEW_POSITIONS_PER_CYCLE:
+            logger.info(f"Per-cycle cap reached ({MAX_NEW_POSITIONS_PER_CYCLE} new positions); deferring remaining signals.")
+            break
         pos = open_position(signal, portfolio)
         if pos:
             opened += 1

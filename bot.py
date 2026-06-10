@@ -114,6 +114,7 @@ def run_cycle(model, feature_cols: list[str]) -> dict:
             min_edge = 0.05,
             max_edge = 0.30,
             max_kelly = 0.10,
+            max_days_to_end = 90,
             use_external = USE_EXTERNAL,
         )
         logger.info(f"Signals generated: {len(signals)}")
