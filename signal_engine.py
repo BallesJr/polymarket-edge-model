@@ -1,3 +1,4 @@
+import re
 import time
 import pandas as pd
 import numpy as np
@@ -13,6 +14,15 @@ from sklearn.pipeline import Pipeline
 from polymarket_api import fetch_all_active_markets
 from calibration import fetch_resolved_markets, build_features, train_random_forest
 from expected_value import filter_tradeable_markets, find_best_external_match, expected_value, kelly_fraction
+
+# Markets excluded from trading regardless of model edge
+# "X before GTA VI?" markets have a special resolution clause: if GTA VI has not
+# released before the market's end date they resolve 50/50, which breaks the
+# binary $1/$0 payoff assumed by the P&L model and the Kelly sizing
+# (they are also all correlated bets on the same underlying: GTA VI's release date)
+EXCLUDED_QUESTION_PATTERNS = [
+    re.compile(r"GTA\s*(VI|6)", re.IGNORECASE),
+]
 
 # ---Data Classes---
 # A single actionable trading opportunity identified by the engine
@@ -121,6 +131,11 @@ def generate_signals(
         liquidity = float(row["liquidity"]) if pd.notna(row.get("liquidity")) else 0.0
 
         if np.isnan(prob_model) or np.isnan(prob_market):
+            continue
+
+        # Skip markets with non-binary resolution rules (see EXCLUDED_QUESTION_PATTERNS)
+        question = str(row.get("question", ""))
+        if any(pat.search(question) for pat in EXCLUDED_QUESTION_PATTERNS):
             continue
 
         # Expiry window: only markets resolving within max_days_to_end
