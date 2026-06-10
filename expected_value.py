@@ -125,13 +125,17 @@ def kelly_fraction(prob_model: float, prob_market: float, half_kelly: bool = Tru
     p = prob_model # Estimated probability of winning
     q = 1 - p   # Estimated probability of losing
 
-    if p >= 0.5:
+    # Side selection must match the trade direction, which everywhere else is
+    # decided by the sign of the edge (prob_model - prob_market), not by p >= 0.5
+    # Otherwise signals like model=0.55 / market=0.70 (BUY NO) get sized on the
+    # YES side, return f <= 0 and are silently dropped
+    if prob_model > prob_market:
         # Buy YES: b is net gain per unit if YES wins
         b = (1 - prob_market) / prob_market
         f = (p * b - q) / b
     else:
         # Buy NO: b is calculated from the NO side
-        price_no = 1 - prob_market 
+        price_no = 1 - prob_market
         b = prob_market / price_no # Net gain per unit if NO wins
         f = (q * b - p) / b # Kelly formula from NO perspective
 

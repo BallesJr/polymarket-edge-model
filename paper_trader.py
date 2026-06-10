@@ -20,6 +20,12 @@ MAX_KELLY = 0.10 # Never risk more than 10% of bankroll on a single trade
 MAX_POSITION_USD = 500.0 # Hard cap per trade regardless of Kelly
 LIQUIDITY_TAKE = 0.10 # Max fraction of market liquidity we absorb (slippage control)
 
+# UMA resolution often lands days after a market's end_date. Expiring at end_date
+# refunds positions at PnL 0 before the real outcome is known, hiding losses
+# (e.g. a lost BUY YES gets its full stake back). Keep positions open this long
+# past end_date so check_resolutions can record the true outcome first
+RESOLUTION_GRACE_DAYS = 7
+
 # ---Position Dataclass---
 # Separating Position from Signal keep concerns clean:
 # Signal is read-only market intelligence, Position is a mutable financial record with lifecycle
@@ -194,7 +200,8 @@ def resolve_position(market_id: str, outcome: int, portfolio: dict) -> Optional[
     logger.warning(f"resolve_position: market_id {market_id} not found in open positions.")
     return None
 
-# Close positions whose end_date has passed with no resolution
+# Close positions whose end_date passed RESOLUTION_GRACE_DAYS ago with no resolution
+# (markets still unresolved after the grace period are likely cancelled/unresolvable)
 def expire_stale_positions(portfolio: dict) -> list[dict]:
     now = datetime.now(timezone.utc)
     expired, remaining = [], []
@@ -206,7 +213,7 @@ def expire_stale_positions(portfolio: dict) -> list[dict]:
             remaining.append(pos_dict)
             continue
 
-        if end_dt < now:
+        if end_dt + pd.Timedelta(days=RESOLUTION_GRACE_DAYS) < now:
             pos_dict.update({
                 "status": "EXPIRED",
                 "pnl": 0.0,

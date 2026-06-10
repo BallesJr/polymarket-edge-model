@@ -89,7 +89,6 @@ def simulate_trades(
 
     trades = []
     current_bankroll = bankroll
-    skipped_kelly = 0 # Track how many are killed by Kelly returning 0
 
     for idx, (i, row) in enumerate(df_clean.iterrows()):
         prob_market = row["prob_market"]
@@ -152,9 +151,6 @@ def simulate_trades(
             "pnl": round(pnl, 2),
             "bankroll": round(current_bankroll, 2),
         })
-
-    if skipped_kelly > 0: 
-            print(f"Skipped by Kelly (position < 1$): {skipped_kelly}")
 
     return pd.DataFrame(trades)
     

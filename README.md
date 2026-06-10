@@ -20,8 +20,8 @@ This project builds a systematic pipeline to find mispriced markets using two co
 - `expected_value.py`: External comparison pipeline (Metaculus + Manifold + Kelly sizing).
 - `calibration.py`: ML calibration model (training, evaluation, and signal generation). Exposes `train_random_forest()` as a canonical production model shared with the backtester.
 - `backtester.py`: Historical P&L simulation with temporal split and risk management.
-- `signal_engine.py`: Unified signal generator. Combines the calibration model and external consensus (Metaculus/Manifold) into a ranked list of trading opportunities. External sources upgrade signla confidence to HIGH but do not modify position sizing, which is based solely on the back tested RF model.
-- `paper_trader.py`: Paper trading portfolio manager: tracls open positions, computes P&L on resolution, and persists state to disk across bot restarts.
+- `signal_engine.py`: Unified signal generator. Combines the calibration model and external consensus (Metaculus/Manifold) into a ranked list of trading opportunities. External sources upgrade signal confidence to HIGH but do not modify position sizing, which is based solely on the back tested RF model.
+- `paper_trader.py`: Paper trading portfolio manager: tracks open positions, computes P&L on resolution, and persists state to disk across bot restarts.
 - `bot.py`: Main loop, orchestrates the full pipeline on demand. Trains the model once, generates signals, checks open position resolutions via the Gamma API, and opens new positions.
 
 ## CALIBRATION RESULTS
@@ -76,7 +76,7 @@ Position sizing uses **Half-Kelly** capped at 10% of bankroll and 10% of each ma
 
 **External match quality**: External matches in `expected_value.py` rely on text search and can return semantically similar but non-identical questions. Always verify the `match_title` before acting on a signal.
 
-**BUY NO bias**: The calibration model shows a BUY NO bias when applied to active markets, likely due to the 3:1 NO/YES class imbalance in the training data. `class_weight="balanced"` partially corrects this but does not eliminate it.
+**Distribution shift on active markets**: The model is trained on resolved markets, whose recorded price is the near-final bid/ask. Applied to active markets mid-life, `class_weight="balanced"` inflates P(YES) toward 0.5 on longshots, producing large fake edges that always point to BUY YES (live paper trading showed 26/27 open positions were BUY YES on markets priced 0.03–0.13). The signal engine now guards against this: it skips BUY YES signals on markets priced below 0.15 (and BUY NO above 0.85), and rejects any signal with |edge| > 0.30 as a likely model error rather than a real mispricing.
 
 **Automation**: The bot (`bot.py`) runs automatically via GitHub Actions every ~30 minutes, 24/7, at no cost. Live order execution is pending two things: validating profitability through paper trading, and the CLOB v2 release (April-May 2026).
 

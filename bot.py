@@ -48,11 +48,12 @@ def _fetch_outcome(market_id: str) -> int | None:
             return None
         
         data = resp.json()
-        if data.get("active", True):
+        # Use "closed", not "active": Gamma can keep active=true on markets that
+        # have already resolved, which would leave positions stuck open forever
+        if not data.get("closed", False):
             return None # Market still open
-        
-        import json as _json
-        prices = _json.loads(data.get("outcomePrices", "[]"))
+
+        prices = json.loads(data.get("outcomePrices", "[]"))
         if len(prices) < 2:
             return None
         
@@ -111,6 +112,7 @@ def run_cycle(model, feature_cols: list[str]) -> dict:
             feature_cols = feature_cols,
             max_markets = MAX_MARKETS,
             min_edge = 0.05,
+            max_edge = 0.30,
             max_kelly = 0.10,
             use_external = USE_EXTERNAL,
         )
@@ -190,6 +192,8 @@ def main():
     while True:
         try:
             run_cycle(model, feature_cols)
+            logger.info(f"Sleeping {RUN_INTERVAL_MINUTES} min...")
+            time.sleep(RUN_INTERVAL_MINUTES * 60)
         except KeyboardInterrupt:
             logger.info("Bot stopped by user.")
             break

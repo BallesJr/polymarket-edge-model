@@ -86,6 +86,7 @@ def generate_signals(
         feature_cols: list[str],
         max_markets: int = 300,
         min_edge: float = 0.05,
+        max_edge: float = 0.30,
         max_kelly: float = 0.10,
         use_external: bool =  True,
 ) -> list[Signal]:
@@ -151,6 +152,20 @@ def generate_signals(
         # The backtest only validated the RF. Blending an unvalidated source would make live performance inconsistent with the backtest
         edge = expected_value(prob_model, prob_market)
         direction = "BUY YES" if edge > 0 else "BUY NO"
+
+        # Guard against distribution-shift artifacts:
+        # The model was trained on resolved markets (near-final prices). On active
+        # longshots class_weight="balanced" inflates P(YES) toward 0.5, producing
+        # huge fake edges that always point to BUY YES. Live paper trading showed
+        # 26/27 positions were BUY YES on markets priced 0.03-0.13
+        if direction == "BUY YES" and prob_market < 0.15:
+            continue
+        if direction == "BUY NO" and prob_market > 0.85:
+            continue
+        # An edge above max_edge is far more likely a model error than a real
+        # mispricing - skip instead of allocating capital to it
+        if abs(edge) > max_edge:
+            continue
 
         # Edge must exceed spread (transaction cost) plus minimum threshold
         if abs(edge) < spread + min_edge:

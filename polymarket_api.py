@@ -13,9 +13,10 @@ def fetch_markets(limit: int = 50, offset: int = 0, active_only: bool = True) ->
     params = {
         "limit": limit,
         "offset": offset,
-        "active": "true" if active_only else "false", 
-        "closed": "false" 
     }
+    if active_only:
+        params["active"] = "true"
+        params["closed"] = "false"
 
     resp = requests.get(f"{GAMMA_URL}/markets", params=params, timeout=10)
     resp.raise_for_status() # Raises exception on HTTP error (4xx, 5xx)
