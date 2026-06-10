@@ -17,7 +17,7 @@ TRADES_LOG_PATH = "data/trades_log.csv"
 
 # Position sizing constraints
 MAX_KELLY = 0.10 # Never risk more than 10% of bankroll on a single trade
-MAX_POSITION_USD = 500.0 # Hard cap per trade regardless of Kelly
+MAX_POSITION_USD = 250.0 # Hard cap per trade regardless of Kelly: smaller positions spread the bankroll over more trades
 LIQUIDITY_TAKE = 0.10 # Max fraction of market liquidity we absorb (slippage control)
 
 # UMA resolution often lands days after a market's end_date. Expiring at end_date

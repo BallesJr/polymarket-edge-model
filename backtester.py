@@ -59,7 +59,7 @@ def simulate_trades(
         min_edge: float = 0.02, # Minimum edge to trigger a trade
         max_edge: float = 0.30, # Edges above this are model errors, not mispricings
         max_kelly: float = 0.10, # Cap to avoid oversized positions
-        max_position: float = 500.0,
+        max_position: float = 250.0,
         bankroll: float = 10_000.0, # Starting capital in $
 ) -> pd.DataFrame:
     
@@ -296,7 +296,7 @@ if __name__ == "__main__":
     MAX_EDGE = 0.30 # Skip edges above this (model error, not mispricing)
     USE_KELLY = True # True = Half-Kelly, False = fixed 2% fraction
     MAX_KELLY = 0.10 # Max 10% of bankroll per trade
-    MAX_POSITION = 500.0 # Max $500 per trade (realistic Polymarket liquidity)
+    MAX_POSITION = 250.0 # Max $250 per trade, same hard cap as paper_trader.MAX_POSITION_USD
     TRAIN_RATIO = 0.70 # 70% train, 30% test
 
     print("="*50)

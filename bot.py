@@ -12,7 +12,7 @@ from paper_trader import process_signals, resolve_position, expire_stale_positio
 
 # ---Configuration---
 RUN_INTERVAL_MINUTES = 30 # How often the full pipeline run
-MAX_MARKETS = 300 # Active markets scanned per cycle
+MAX_MARKETS = 1000 # Active markets scanned per cycle: more breadth = more signals without loosening quality filters
 INITIAL_BANKROLL = 10_000.0
 USE_EXTERNAL = False # Set True to also query Metaculus/Manifold
 

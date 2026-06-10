@@ -48,15 +48,15 @@ The backtester uses a **temporal split** (not random) to avoid look-ahead bias: 
 | Test period       | May 2024 - Jan 2025 (8 months) |
 | Total trades      | 336                            |
 | Win rate          | 66.4%                          |
-| ROI               | +124.4%                        |
-| Max drawdown      | -6.01%                         |
-| Profit factor     | 3.07                           |
-| Avg position size | $73                            |
+| ROI               | +77.9%                         |
+| Max drawdown      | -3.74%                         |
+| Profit factor     | 3.56                           |
+| Avg position size | $41                            |
 | Brier improvement | +4.0% over raw market          |
 
-_Last re-run: 2026-06-10, after the Kelly side-selection fix, with the live signal guards applied (see below) and the minimum edge aligned with the live bot (5%)._
+_Last re-run: 2026-06-10, after the Kelly side-selection fix, with the live signal guards applied (see below), the minimum edge aligned with the live bot (5%) and the live $250 per-position hard cap._
 
-Position sizing uses **Half-Kelly** capped at 10% of bankroll and 10% of each market's reported liquidity. The model shows a strong BUY NO bias which is consistent with the longshot bias where Polymarket overprices unlikely YES outcomes.
+Position sizing uses **Half-Kelly** capped at 10% of bankroll, 10% of each market's reported liquidity, and a $250 hard cap per position (the same limits the live bot uses). The model shows a strong BUY NO bias which is consistent with the longshot bias where Polymarket overprices unlikely YES outcomes.
 
 ![Backtest Results](data/backtest_results.png)
 
