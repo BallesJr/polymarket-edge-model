@@ -64,6 +64,12 @@ def _fetch_outcome(market_id: str) -> float | None:
         if p0 == 0.0 and p1 == 1.0:
             return 0 # NO won
         if p0 == 0.5 and p1 == 0.5:
+            # Don't settle prematurely: a closed-but-unresolved market can show
+            # 0.5/0.5 simply because its last traded price was 50c. Only trust
+            # it once UMA reports the market as actually resolved
+            uma = str(data.get("umaResolutionStatus") or "").lower()
+            if uma and "resolved" not in uma:
+                return None
             return 0.5 # 50/50 resolution (cancelled or rule-based): both tokens pay $0.50
         return None # Ambiguous
     
