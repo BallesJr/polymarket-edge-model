@@ -61,7 +61,7 @@ class Position:
 
     # Resolution (filled on close)
     status: str = "OPEN" # "OPEN" | "RESOLVED" | "EXPIRED"
-    outcome: Optional[int] = None # 1=YES won, 0=NO won
+    outcome: Optional[float] = None # 1=YES won, 0=NO won, 0.5=50/50 resolution
     pnl: Optional[float] = None
     resolved_at: Optional[str] = None
 
@@ -106,7 +106,11 @@ def _compute_size(bankroll: float, kelly: float, liquidity: Optional[float]) -> 
 # Tokens held = size_usd / price_paid
 # Win: net_gain = (1 - price_paid) / price_paid * size_usd
 # Loss: net_loss = -size_usd
-def _compute_pnl(pos: Position, outcome: int) -> float:
+def _compute_pnl(pos: Position, outcome: float) -> float:
+    # 50/50 resolution (cancelled or rule-based): every token pays $0.50
+    # regardless of direction, so P&L depends only on the price paid
+    if outcome == 0.5:
+        return round(pos.size_usd * (0.5 - pos.price_paid) / pos.price_paid, 2)
     won = (pos.direction == "BUY YES" and outcome == 1) or (pos.direction == "BUY NO" and outcome == 0)
     if won:
         return round(pos.size_usd * (1 - pos.price_paid) / pos.price_paid, 2)
@@ -181,7 +185,7 @@ def open_position(signal: Signal, portfolio: dict) -> Optional[Position]:
 
 # ---Trade Resolution---
 # Resolve an open position once the market outcome is known
-def resolve_position(market_id: str, outcome: int, portfolio: dict) -> Optional[dict]:
+def resolve_position(market_id: str, outcome: float, portfolio: dict) -> Optional[dict]:
     for i, pos_dict  in enumerate(portfolio["open_positions"]):
         if pos_dict["market_id"] != market_id:
             continue

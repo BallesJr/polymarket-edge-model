@@ -41,7 +41,8 @@ GAMMA_URL = "https://gamma-api.polymarket.com"
 # The Gamma API returns outcome prices = ["1.0", "0.0"] for YES wins, ["0.0", "1.0"] for NO wins, and ["0.5", "0.5"] for cancelled markets
 
 # Query the Gamma API for the resolution outcome of a market
-def _fetch_outcome(market_id: str) -> int | None:
+# Returns 1 (YES won), 0 (NO won), 0.5 (50/50 resolution: every token pays $0.50) or None (still open / unknown)
+def _fetch_outcome(market_id: str) -> float | None:
     try:
         resp = requests.get(f"{GAMMA_URL}/markets/{market_id}", timeout=8)
         if resp.status_code != 200:
@@ -62,7 +63,9 @@ def _fetch_outcome(market_id: str) -> int | None:
             return 1 # YES won
         if p0 == 0.0 and p1 == 1.0:
             return 0 # NO won
-        return None # Cancelled or ambiguous
+        if p0 == 0.5 and p1 == 0.5:
+            return 0.5 # 50/50 resolution (cancelled or rule-based): both tokens pay $0.50
+        return None # Ambiguous
     
     except (requests.RequestException, ValueError):
         return None

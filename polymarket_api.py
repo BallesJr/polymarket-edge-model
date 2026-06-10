@@ -74,6 +74,7 @@ def _markets_to_dataframe(markets: list[dict]) -> pd.DataFrame:
         rows.append({
             "market_id": m.get("id"),
             "question": m.get("question"),
+            "description": m.get("description"), # Resolution rules - needed to detect 50/50 clauses
             "end_date": m.get("endDate"),
             "prob_yes_market": prob_yes, # Implied YES probability (0-1)
             "prob_no_market": prob_no,

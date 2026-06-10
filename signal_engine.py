@@ -24,6 +24,14 @@ EXCLUDED_QUESTION_PATTERNS = [
     re.compile(r"GTA\s*(VI|6)", re.IGNORECASE),
 ]
 
+# Generic safety net for markets we don't know about: the Gamma "description"
+# field contains the full resolution rules, and markets with a non-binary
+# fallback always state it explicitly (e.g. "this market will resolve 50/50")
+EXCLUDED_DESCRIPTION_PATTERNS = [
+    re.compile(r"50\s*[/\-]\s*50"),
+    re.compile(r"resolve[sd]?\s+(at\s+)?50\s*%", re.IGNORECASE),
+]
+
 # ---Data Classes---
 # A single actionable trading opportunity identified by the engine
 @dataclass
@@ -133,9 +141,13 @@ def generate_signals(
         if np.isnan(prob_model) or np.isnan(prob_market):
             continue
 
-        # Skip markets with non-binary resolution rules (see EXCLUDED_QUESTION_PATTERNS)
+        # Skip markets with non-binary resolution rules: known families by title,
+        # unknown ones by the 50/50 clause in their resolution rules
         question = str(row.get("question", ""))
         if any(pat.search(question) for pat in EXCLUDED_QUESTION_PATTERNS):
+            continue
+        description = str(row.get("description") or "")
+        if any(pat.search(description) for pat in EXCLUDED_DESCRIPTION_PATTERNS):
             continue
 
         # Expiry window: only markets resolving within max_days_to_end
