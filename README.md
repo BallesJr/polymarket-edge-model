@@ -12,7 +12,7 @@ This project builds a systematic pipeline to find mispriced markets using two co
 - **External probability comparison**: Searched Metaculus and Manifold Markets for questions matching each Polymarket market, then calculated the edge between platforms using the Kelly Criterion for position sizing.
 - **Calibration model**: Downloaded 3,000 resolved markets (with known YES/NO outcomes) and trained a Random Forest to detect whether Polymarket systematically mis-prices certain types of markets.
 - **Brier Score analysis**: Evaluated the model using proper probabilistic scoring and generated a Reliability Diagram showing where Polymarket's calibration breaks down.
-- **Backtesting**: Simulated historical P&L over 509 trades using a temporal train/test split, Half-Kelly position sizing, and realistic liquidity constraints.
+- **Backtesting**: Simulated historical P&L over 336 trades using a temporal train/test split, Half-Kelly position sizing, and realistic liquidity constraints.
 
 ## PROJECT STRUCTURE
 
@@ -46,15 +46,15 @@ The backtester uses a **temporal split** (not random) to avoid look-ahead bias: 
 | Metric            | Value                          |
 | ----------------- | ------------------------------ |
 | Test period       | May 2024 - Jan 2025 (8 months) |
-| Total trades      | 509                            |
-| Win rate          | 60.7%                          |
-| ROI               | +131.4%                        |
-| Max drawdown      | -5.60%                         |
-| Profit factor     | 2.24                           |
-| Avg position size | $67                            |
+| Total trades      | 336                            |
+| Win rate          | 66.4%                          |
+| ROI               | +124.4%                        |
+| Max drawdown      | -6.01%                         |
+| Profit factor     | 3.07                           |
+| Avg position size | $73                            |
 | Brier improvement | +4.0% over raw market          |
 
-_Last re-run: 2026-06-10, after the Kelly side-selection fix and with the live signal guards applied (see below)._
+_Last re-run: 2026-06-10, after the Kelly side-selection fix, with the live signal guards applied (see below) and the minimum edge aligned with the live bot (5%)._
 
 Position sizing uses **Half-Kelly** capped at 10% of bankroll and 10% of each market's reported liquidity. The model shows a strong BUY NO bias which is consistent with the longshot bias where Polymarket overprices unlikely YES outcomes.
 

@@ -292,7 +292,7 @@ if __name__ == "__main__":
     os.makedirs("data", exist_ok=True)
 
     INITIAL_BANKROLL = 10_000.0
-    MIN_EDGE = 0.02 # Minimum edge to trade (2%)
+    MIN_EDGE = 0.05 # Minimum edge to trade (5%), same threshold the live bot uses
     MAX_EDGE = 0.30 # Skip edges above this (model error, not mispricing)
     USE_KELLY = True # True = Half-Kelly, False = fixed 2% fraction
     MAX_KELLY = 0.10 # Max 10% of bankroll per trade
