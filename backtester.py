@@ -57,6 +57,7 @@ def simulate_trades(
         df_test: pd.DataFrame,
         feature_cols: list[str],
         min_edge: float = 0.02, # Minimum edge to trigger a trade
+        max_edge: float = 0.30, # Edges above this are model errors, not mispricings
         max_kelly: float = 0.10, # Cap to avoid oversized positions
         max_position: float = 500.0,
         bankroll: float = 10_000.0, # Starting capital in $
@@ -103,6 +104,15 @@ def simulate_trades(
             continue
 
         direction = "BUY YES" if edge > 0 else "BUY NO"
+
+        # Same anti-artifact guards as signal_engine.generate_signals, so the
+        # backtest simulates exactly what the live engine would trade
+        if direction == "BUY YES" and prob_market < 0.15:
+            continue
+        if direction == "BUY NO" and prob_market > 0.85:
+            continue
+        if abs(edge) > max_edge:
+            continue
 
         # Position sizing
         
@@ -266,11 +276,11 @@ def print_metrics(metrics: dict) -> None:
     print(f"Total trades: {metrics["total_trades"]}")
     print(f"Wins: {metrics["wins"]} ({metrics["win_rate"]}%)")
     print(f"Losses: {metrics["losses"]}")
-    print(f"{chr(9472)*46}")
+    print("-" * 46) # Plain ASCII: box-drawing chars crash on Windows cp1252 consoles
     print(f"Total P&L: ${metrics["total_pnl"]:+.2f}")
     print(f"ROI: {metrics["roi_pct"]:+.2f}%")
     print(f"Final bankroll: ${metrics["final_bankroll"]:.2f}")
-    print(f"{chr(9472)*46}")
+    print("-" * 46) # Plain ASCII: box-drawing chars crash on Windows cp1252 consoles
     print(f"Max Drawdown: {metrics["max_drawdown_pct"]:.2f}%")
     print(f"Profit Factor: {metrics["profit_factor"]}")
     print(f"Avg position: ${metrics["avg_position"]:.2f}")
@@ -283,6 +293,7 @@ if __name__ == "__main__":
 
     INITIAL_BANKROLL = 10_000.0
     MIN_EDGE = 0.02 # Minimum edge to trade (2%)
+    MAX_EDGE = 0.30 # Skip edges above this (model error, not mispricing)
     USE_KELLY = True # True = Half-Kelly, False = fixed 2% fraction
     MAX_KELLY = 0.10 # Max 10% of bankroll per trade
     MAX_POSITION = 500.0 # Max $500 per trade (realistic Polymarket liquidity)
@@ -334,6 +345,7 @@ if __name__ == "__main__":
         df_test=df_test,
         feature_cols=feature_cols,
         min_edge=MIN_EDGE,
+        max_edge=MAX_EDGE,
         max_kelly=MAX_KELLY,
         max_position=MAX_POSITION,
         bankroll=INITIAL_BANKROLL

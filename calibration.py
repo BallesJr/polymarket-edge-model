@@ -38,12 +38,20 @@ def fetch_resolved_markets(max_markets: int = 3000) -> pd.DataFrame:
             "end_date_min": "2024-01-01", # Older markets lack reliable price data
         }
 
-        try:
-            resp = requests.get(f"{GAMMA_URL}/markets", params=params, timeout=10)
-            resp.raise_for_status()
-            batch_data = resp.json()
-        except requests.RequestException as e:
-            print(f"\nAPI error: {e}")
+        # Retry transient network errors instead of truncating the dataset:
+        # a single connection reset used to silently cut training data from
+        # 3000 markets down to whatever had been downloaded so far
+        batch_data = None
+        for attempt in range(3):
+            try:
+                resp = requests.get(f"{GAMMA_URL}/markets", params=params, timeout=10)
+                resp.raise_for_status()
+                batch_data = resp.json()
+                break
+            except requests.RequestException as e:
+                print(f"\nAPI error (attempt {attempt + 1}/3): {e}")
+                time.sleep(2 * (attempt + 1))
+        if batch_data is None:
             break
         
         if not batch_data:

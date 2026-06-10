@@ -12,7 +12,7 @@ This project builds a systematic pipeline to find mispriced markets using two co
 - **External probability comparison**: Searched Metaculus and Manifold Markets for questions matching each Polymarket market, then calculated the edge between platforms using the Kelly Criterion for position sizing.
 - **Calibration model**: Downloaded 3,000 resolved markets (with known YES/NO outcomes) and trained a Random Forest to detect whether Polymarket systematically mis-prices certain types of markets.
 - **Brier Score analysis**: Evaluated the model using proper probabilistic scoring and generated a Reliability Diagram showing where Polymarket's calibration breaks down.
-- **Backtesting**: Simulated historical P&L over 521 trades using a temporal train/test split, Half-Kelly position sizing, and realistic liquidity constraints.
+- **Backtesting**: Simulated historical P&L over 509 trades using a temporal train/test split, Half-Kelly position sizing, and realistic liquidity constraints.
 
 ## PROJECT STRUCTURE
 
@@ -46,19 +46,23 @@ The backtester uses a **temporal split** (not random) to avoid look-ahead bias: 
 | Metric            | Value                          |
 | ----------------- | ------------------------------ |
 | Test period       | May 2024 - Jan 2025 (8 months) |
-| Total trades      | 521                            |
-| Win rate          | 59.3%                          |
-| ROI               | +125.4%                        |
-| Max drawdown      | -5.84%                         |
-| Profit factor     | 2.12                           |
+| Total trades      | 509                            |
+| Win rate          | 60.7%                          |
+| ROI               | +131.4%                        |
+| Max drawdown      | -5.60%                         |
+| Profit factor     | 2.24                           |
 | Avg position size | $67                            |
 | Brier improvement | +4.0% over raw market          |
+
+_Last re-run: 2026-06-10, after the Kelly side-selection fix and with the live signal guards applied (see below)._
 
 Position sizing uses **Half-Kelly** capped at 10% of bankroll and 10% of each market's reported liquidity. The model shows a strong BUY NO bias which is consistent with the longshot bias where Polymarket overprices unlikely YES outcomes.
 
 ![Backtest Results](data/backtest_results.png)
 
 ### Backtest assumption and limitations
+
+- **Signal guards**: The simulation applies the same anti-artifact filters as the live signal engine: no BUY YES on markets priced below 0.15, no BUY NO above 0.85, and no signals with |edge| > 0.30 (treated as model error rather than mispricing). This keeps the backtest simulating exactly what the bot would trade.
 
 - **Spread**: Resolved markets report unreliable spread (no active trading). I assume a 5¢ spread cap, which is conservative for active markets.
 
