@@ -1,6 +1,29 @@
 {
-  "bankroll": 10000.0,
+  "bankroll": 9753.62,
   "initial_bankroll": 10000.0,
-  "open_positions": [],
+  "open_positions": [
+    {
+      "market_id": "648378",
+      "token_id_yes": "99856222210824511753934292062029650226077573071941153542799123525263447880769",
+      "question": "Billionaire one-time wealth tax on California ballot?",
+      "end_date": "2026-06-25 00:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.615,
+      "prob_model": 0.7933,
+      "edge": 0.1783,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 246.38,
+      "price_paid": 0.615,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-06-12T05:12:50.292542+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    }
+  ],
   "resolved_trades": []
 }
