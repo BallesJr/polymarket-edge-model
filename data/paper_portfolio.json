@@ -1,5 +1,5 @@
 {
-  "bankroll": 9753.62,
+  "bankroll": 9503.62,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -19,6 +19,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-06-12T05:12:50.292542+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "597967",
+      "token_id_yes": "34554555827438551101000555305203609600029621153428996114009350892614396532498",
+      "question": "Starmer out by June 30, 2026?",
+      "end_date": "2026-06-30 12:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.315,
+      "prob_model": 0.5932,
+      "edge": 0.2782,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 250.0,
+      "price_paid": 0.315,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-06-17T07:09:15.616524+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
