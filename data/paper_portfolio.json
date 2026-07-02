@@ -1,7 +1,30 @@
 {
-  "bankroll": 10697.89,
+  "bankroll": 10447.89,
   "initial_bankroll": 10000.0,
-  "open_positions": [],
+  "open_positions": [
+    {
+      "market_id": "690614",
+      "token_id_yes": "79735457862859080351002766294093556714485201637023905402374487672949153842998",
+      "question": "Will Extended launch a token by September 30 2026?",
+      "end_date": "2026-09-30 05:00:00+00:00",
+      "direction": "BUY NO",
+      "prob_market": 0.615,
+      "prob_model": 0.5473,
+      "edge": -0.0677,
+      "kelly": 0.0551,
+      "confidence": "MEDIUM",
+      "size_usd": 250.0,
+      "price_paid": 0.385,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-02T15:38:17.888593+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    }
+  ],
   "resolved_trades": [
     {
       "market_id": "597967",
