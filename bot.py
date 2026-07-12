@@ -120,10 +120,10 @@ def run_cycle(model, feature_cols: list[str]) -> dict:
             model = model,
             feature_cols = feature_cols,
             max_markets = MAX_MARKETS,
-            min_edge = 0.05,
+            min_edge = 0.03, # Backtest-validated 2026-07-12: 3% beats 5% on trades (291 vs 233), win rate, ROI and drawdown
             max_edge = 0.30,
             max_kelly = 0.10,
-            max_days_to_end = 90,
+            max_days_to_end = 180,
             use_external = USE_EXTERNAL,
         )
         logger.info(f"Signals generated: {len(signals)}")

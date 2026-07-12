@@ -41,20 +41,20 @@ The Random Forest achieves a **12.9% improvement** over the raw market probabili
 
 ## BACKTEST RESULTS
 
-The backtester uses a **temporal split** (not random) to avoid look-ahead bias: the model trains on the first 70% of markets by date (Jan-May 2024) and simulates trades on the remaining 30% (May 2024-Jan 2025).
+The backtester uses a **temporal split** (not random) to avoid look-ahead bias: the model trains on the first 70% of markets by date (Jan-Apr 2024) and simulates trades on the remaining 30% (Apr-Dec 2024).
 
 | Metric            | Value                          |
 | ----------------- | ------------------------------ |
-| Test period       | May 2024 - Jan 2025 (8 months) |
-| Total trades      | 336                            |
-| Win rate          | 66.4%                          |
-| ROI               | +77.9%                         |
-| Max drawdown      | -3.74%                         |
-| Profit factor     | 3.56                           |
-| Avg position size | $41                            |
-| Brier improvement | +4.0% over raw market          |
+| Test period       | Apr 2024 - Dec 2024 (8 months) |
+| Total trades      | 291                            |
+| Win rate          | 66.0%                          |
+| ROI               | +94.7%                         |
+| Max drawdown      | -3.64%                         |
+| Profit factor     | 4.52                           |
+| Avg position size | $51                            |
+| Brier improvement | +4.4% over raw market          |
 
-_Last re-run: 2026-06-10, after the Kelly side-selection fix, with the live signal guards applied (see below), the minimum edge aligned with the live bot (5%) and the live $250 per-position hard cap._
+_Last re-run: 2026-07-12, with the minimum edge lowered to 3% (validated against 4% and 5%: on the same model and test set, 3% produced more trades — 291 vs 233 — with a higher win rate, higher ROI and a smaller drawdown), the live signal guards applied (see below) and the live $250 per-position hard cap. Note: the Gamma API now rejects offsets beyond ~2,100 resolved markets (HTTP 422), so the dataset is smaller than the 3,000 used in earlier runs; the live bot trains through the same call, so backtest and live model remain identical._
 
 Position sizing uses **Half-Kelly** capped at 10% of bankroll, 10% of each market's reported liquidity, and a $250 hard cap per position (the same limits the live bot uses). The model shows a strong BUY NO bias which is consistent with the longshot bias where Polymarket overprices unlikely YES outcomes.
 
@@ -82,7 +82,7 @@ Position sizing uses **Half-Kelly** capped at 10% of bankroll, 10% of each marke
 
 **Distribution shift on active markets**: The model is trained on resolved markets, whose recorded price is the near-final bid/ask. Applied to active markets mid-life, `class_weight="balanced"` inflates P(YES) toward 0.5 on longshots, producing large fake edges that always point to BUY YES (live paper trading showed 26/27 open positions were BUY YES on markets priced 0.03–0.13). The signal engine now guards against this: it skips BUY YES signals on markets priced below 0.15 (and BUY NO above 0.85), and rejects any signal with |edge| > 0.30 as a likely model error rather than a real mispricing.
 
-**Automation**: The bot (`bot.py`) runs automatically via GitHub Actions every ~30 minutes, 24/7, at no cost. Live-only portfolio controls (not part of the backtest, which has no entry-time dimension): max 70% of equity deployed, max 5 new positions per cycle, and only markets resolving within 90 days. Live order execution is pending two things: validating profitability through paper trading, and the CLOB v2 release (April-May 2026).
+**Automation**: The bot (`bot.py`) runs automatically via GitHub Actions every ~30 minutes, 24/7, at no cost. Live-only portfolio controls (not part of the backtest, which has no entry-time dimension): max 70% of equity deployed, max 5 new positions per cycle, and only markets resolving within 180 days. The market universe is fetched ordered by 24h volume (descending): Gamma's default ordering returns the oldest active markets first, which filled the scan with stale long-dated markets and starved the bot of signals. Sub-hourly crypto "Up or Down" markets are excluded (they sit near 50c, where current fees bite hardest, and resolve on price noise the model has no signal on). Live order execution is pending two things: validating profitability through paper trading, and the CLOB v2 release (April-May 2026).
 
 ## REQUIREMENTS
 

@@ -22,6 +22,10 @@ from expected_value import filter_tradeable_markets, find_best_external_match, e
 # (they are also all correlated bets on the same underlying: GTA VI's release date)
 EXCLUDED_QUESTION_PATTERNS = [
     re.compile(r"GTA\s*(VI|6)", re.IGNORECASE),
+    # Sub-hourly crypto "Up or Down" markets: they hover around 50c (exactly
+    # where Polymarket's current fees bite hardest) and resolve on short-term
+    # price noise that the calibration model has no signal on
+    re.compile(r"\bUp or Down\b", re.IGNORECASE),
 ]
 
 # Generic safety net for markets we don't know about: the Gamma "description"

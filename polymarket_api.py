@@ -9,11 +9,19 @@ GAMMA_URL = "https://gamma-api.polymarket.com" # Metadata: titles, rules, catego
 CLOB_URL  = "https://clob.polymarket.com" # Markets: real-time orderbook, midpoint...
 
 # Makes a single paginated call to the GAMMA API to get a markets list as raw JSON
-def fetch_markets(limit: int = 50, offset: int = 0, active_only: bool = True) -> list[dict]:
+# Gamma's default ordering returns the OLDEST markets first, which fills the scan
+# with stale long-dated markets and leaves the fresh ones out of the universe.
+# Order by 24h volume (descending) so we scan the markets people trade right now.
+# Note: order="liquidity" is broken server-side (sorts the value as text, so
+# "99.9" > "999.7"); volume24hr and the *Num fields sort numerically.
+def fetch_markets(limit: int = 50, offset: int = 0, active_only: bool = True, order: str | None = "volume24hr") -> list[dict]:
     params = {
         "limit": limit,
         "offset": offset,
     }
+    if order:
+        params["order"] = order
+        params["ascending"] = "false"
     if active_only:
         params["active"] = "true"
         params["closed"] = "false"
