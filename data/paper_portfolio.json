@@ -1,5 +1,5 @@
 {
-  "bankroll": 3862.49,
+  "bankroll": 3787.49,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -597,28 +597,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "2891653",
-      "token_id_yes": "9672673949409772687752072662946310519015132525500329010995933525175067118138",
-      "question": "Spread: England (-1.5)",
-      "end_date": "2026-07-15 19:00:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.165,
-      "prob_model": 0.385,
-      "edge": 0.22,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 250.0,
-      "price_paid": 0.165,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-07-12T20:12:48.399503+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "2608935",
       "token_id_yes": "74262568044285840417555465910703355991632422692108408453199177956025235702892",
       "question": "Will Russia capture Kostyantynivka by July 31?",
@@ -837,6 +815,28 @@
       "outcome": null,
       "pnl": null,
       "resolved_at": null
+    },
+    {
+      "market_id": "2817982",
+      "token_id_yes": "41878064149386815676353154600518964373139503252597415711259793695317457863142",
+      "question": "Will Ethereum dip to $1,700 in July?",
+      "end_date": "2026-08-01 04:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.225,
+      "prob_model": 0.5201,
+      "edge": 0.2951,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 75.0,
+      "price_paid": 0.225,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-15T21:27:57.852027+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
     }
   ],
   "resolved_trades": [
@@ -1037,6 +1037,28 @@
       "outcome": 0,
       "pnl": -87.34,
       "resolved_at": "2026-07-14T21:28:36.045430+00:00"
+    },
+    {
+      "market_id": "2891653",
+      "token_id_yes": "9672673949409772687752072662946310519015132525500329010995933525175067118138",
+      "question": "Spread: England (-1.5)",
+      "end_date": "2026-07-15 19:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.165,
+      "prob_model": 0.385,
+      "edge": 0.22,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 250.0,
+      "price_paid": 0.165,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-12T20:12:48.399503+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -250.0,
+      "resolved_at": "2026-07-15T21:27:53.663367+00:00"
     }
   ]
 }
