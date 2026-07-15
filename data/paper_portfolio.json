@@ -1,5 +1,5 @@
 {
-  "bankroll": 3787.49,
+  "bankroll": 3712.49,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -685,28 +685,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "2891666",
-      "token_id_yes": "74527418458582480822261620327325996776349884696568477779653950974404498632202",
-      "question": "England vs. Argentina: O/U 3.5",
-      "end_date": "2026-07-15 19:00:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.2188,
-      "prob_model": 0.4983,
-      "edge": 0.2795,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 250.0,
-      "price_paid": 0.2188,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-07-14T04:22:12.522831+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "2467208",
       "token_id_yes": "93924969469939330995194645669345334142528685509853517456507765752635309176671",
       "question": "Will Bitcoin reach $80,000 by December 31, 2026?",
@@ -833,6 +811,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-07-15T21:27:57.852027+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "2686770",
+      "token_id_yes": "63808062715546895733626511170499399566995906189739805177191005369034802585003",
+      "question": "Iran full airspace closure by July 31?",
+      "end_date": "2026-07-31 23:59:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.275,
+      "prob_model": 0.5643,
+      "edge": 0.2893,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 75.0,
+      "price_paid": 0.275,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-15T22:28:13.917719+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -1059,6 +1059,28 @@
       "outcome": 0,
       "pnl": -250.0,
       "resolved_at": "2026-07-15T21:27:53.663367+00:00"
+    },
+    {
+      "market_id": "2891666",
+      "token_id_yes": "74527418458582480822261620327325996776349884696568477779653950974404498632202",
+      "question": "England vs. Argentina: O/U 3.5",
+      "end_date": "2026-07-15 19:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.2188,
+      "prob_model": 0.4983,
+      "edge": 0.2795,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 250.0,
+      "price_paid": 0.2188,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-14T04:22:12.522831+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -250.0,
+      "resolved_at": "2026-07-15T22:28:10.883191+00:00"
     }
   ]
 }
