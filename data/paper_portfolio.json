@@ -1,5 +1,5 @@
 {
-  "bankroll": 3712.49,
+  "bankroll": 3637.49,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -239,28 +239,6 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-07-12T07:39:33.102817+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
-      "market_id": "2845814",
-      "token_id_yes": "16742657278435100074275601759254269516929361354023542559843857406004622328860",
-      "question": "Over $40M committed to the Credible public sale?",
-      "end_date": "2026-08-31 23:59:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.235,
-      "prob_model": 0.5107,
-      "edge": 0.2757,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 250.0,
-      "price_paid": 0.235,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-07-12T07:39:33.103364+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -837,6 +815,28 @@
       "outcome": null,
       "pnl": null,
       "resolved_at": null
+    },
+    {
+      "market_id": "2820499",
+      "token_id_yes": "32651963048240301134331200062693811911451239248333881718202960761154439715764",
+      "question": "Will 30 ships transit the Strait of Hormuz on any day by July 31, 2026?",
+      "end_date": "2026-07-31 23:59:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.2895,
+      "prob_model": 0.5743,
+      "edge": 0.2848,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 75.0,
+      "price_paid": 0.2895,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-17T19:38:30.975611+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
     }
   ],
   "resolved_trades": [
@@ -1081,6 +1081,28 @@
       "outcome": 0,
       "pnl": -250.0,
       "resolved_at": "2026-07-15T22:28:10.883191+00:00"
+    },
+    {
+      "market_id": "2845814",
+      "token_id_yes": "16742657278435100074275601759254269516929361354023542559843857406004622328860",
+      "question": "Over $40M committed to the Credible public sale?",
+      "end_date": "2026-08-31 23:59:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.235,
+      "prob_model": 0.5107,
+      "edge": 0.2757,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 250.0,
+      "price_paid": 0.235,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-12T07:39:33.103364+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -250.0,
+      "resolved_at": "2026-07-17T19:38:21.013103+00:00"
     }
   ]
 }
