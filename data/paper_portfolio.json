@@ -1,5 +1,5 @@
 {
-  "bankroll": 3957.23,
+  "bankroll": 3882.23,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -839,28 +839,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "2942101",
-      "token_id_yes": "107315532298789701436237363960672430085793514173994076548684716531610645605062",
-      "question": "Spread: France (-1.5)",
-      "end_date": "2026-07-18 21:00:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.295,
-      "prob_model": 0.5507,
-      "edge": 0.2557,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 250.0,
-      "price_paid": 0.295,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-07-18T01:24:59.265818+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "1808547",
       "token_id_yes": "85779851379341776458330036851548114381176093953202542863538086591922931585951",
       "question": "Fed Rate Hike by September 2026 Meeting?",
@@ -899,6 +877,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-07-18T01:24:59.268620+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "2906909",
+      "token_id_yes": "47986295081036275375221155178061667246286004314210754704585877421328983612340",
+      "question": "Will the price of Ethereum be above $1,900 on July 20?",
+      "end_date": "2026-07-20 16:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.205,
+      "prob_model": 0.501,
+      "edge": 0.296,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 75.0,
+      "price_paid": 0.205,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-18T23:42:24.028247+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -1191,6 +1191,28 @@
       "outcome": 1,
       "pnl": 1065.79,
       "resolved_at": "2026-07-18T01:24:51.073355+00:00"
+    },
+    {
+      "market_id": "2942101",
+      "token_id_yes": "107315532298789701436237363960672430085793514173994076548684716531610645605062",
+      "question": "Spread: France (-1.5)",
+      "end_date": "2026-07-18 21:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.295,
+      "prob_model": 0.5507,
+      "edge": 0.2557,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 250.0,
+      "price_paid": 0.295,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-18T01:24:59.265818+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -250.0,
+      "resolved_at": "2026-07-18T23:42:22.929940+00:00"
     }
   ]
 }
