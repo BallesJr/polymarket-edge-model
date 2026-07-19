@@ -1,5 +1,5 @@
 {
-  "bankroll": 3882.23,
+  "bankroll": 3807.23,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -619,28 +619,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "2380751",
-      "token_id_yes": "104875439705027288073723941656024388046076949945630266522248190137335785546298",
-      "question": "Will Michael Olise score a goal at the 2026 FIFA World Cup?",
-      "end_date": "2026-07-20 00:00:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.37,
-      "prob_model": 0.625,
-      "edge": 0.255,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 250.0,
-      "price_paid": 0.37,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-07-13T18:15:42.680904+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "2467208",
       "token_id_yes": "93924969469939330995194645669345334142528685509853517456507765752635309176671",
       "question": "Will Bitcoin reach $80,000 by December 31, 2026?",
@@ -899,6 +877,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-07-18T23:42:24.028247+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "665374",
+      "token_id_yes": "55115078421062885512539156303747803058407616201213034911037320915726138659123",
+      "question": "Will the U.S. invade Iran before 2027?",
+      "end_date": "2026-12-31 00:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.315,
+      "prob_model": 0.5908,
+      "edge": 0.2758,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 75.0,
+      "price_paid": 0.315,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-19T01:31:51.249650+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -1213,6 +1213,28 @@
       "outcome": 0,
       "pnl": -250.0,
       "resolved_at": "2026-07-18T23:42:22.929940+00:00"
+    },
+    {
+      "market_id": "2380751",
+      "token_id_yes": "104875439705027288073723941656024388046076949945630266522248190137335785546298",
+      "question": "Will Michael Olise score a goal at the 2026 FIFA World Cup?",
+      "end_date": "2026-07-20 00:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.37,
+      "prob_model": 0.625,
+      "edge": 0.255,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 250.0,
+      "price_paid": 0.37,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-13T18:15:42.680904+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -250.0,
+      "resolved_at": "2026-07-19T01:31:45.936888+00:00"
     }
   ]
 }
