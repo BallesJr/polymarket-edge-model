@@ -1,5 +1,5 @@
 {
-  "bankroll": 4373.31,
+  "bankroll": 4298.31,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -927,28 +927,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "2934926",
-      "token_id_yes": "102797990318779943579861083946720467464897379005299055569580882088869771212809",
-      "question": "Will the next Claude Opus model be released by July 22, 2026?",
-      "end_date": "2026-07-22 23:59:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.27,
-      "prob_model": 0.5434,
-      "edge": 0.2734,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 250.0,
-      "price_paid": 0.27,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-07-19T21:42:41.217306+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "2732525",
       "token_id_yes": "75664220377459757647456485621449233559415637505632291241092085394055106279391",
       "question": "Will Russia and Ukraine hold any diplomatic meeting by July 31, 2026?",
@@ -1031,6 +1009,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-07-22T00:15:00.628563+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "2947133",
+      "token_id_yes": "29552001873099353964391754654409748155324541113890185087517179801487691311344",
+      "question": "Will the price of Bitcoin be above $66,000 on July 23?",
+      "end_date": "2026-07-23 16:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.185,
+      "prob_model": 0.4758,
+      "edge": 0.2908,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 75.0,
+      "price_paid": 0.185,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-23T07:55:00.235116+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -1455,6 +1455,28 @@
       "outcome": null,
       "pnl": 0.0,
       "resolved_at": "2026-07-22T00:15:00.603661+00:00"
+    },
+    {
+      "market_id": "2934926",
+      "token_id_yes": "102797990318779943579861083946720467464897379005299055569580882088869771212809",
+      "question": "Will the next Claude Opus model be released by July 22, 2026?",
+      "end_date": "2026-07-22 23:59:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.27,
+      "prob_model": 0.5434,
+      "edge": 0.2734,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 250.0,
+      "price_paid": 0.27,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-19T21:42:41.217306+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -250.0,
+      "resolved_at": "2026-07-23T07:54:58.441056+00:00"
     }
   ]
 }
