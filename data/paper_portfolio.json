@@ -1,5 +1,5 @@
 {
-  "bankroll": 4200.81,
+  "bankroll": 4125.81,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -597,28 +597,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "1808546",
-      "token_id_yes": "44805157856729475543761918918614273394865032511345958532719893352163987391326",
-      "question": "Fed Rate Hike by July 2026 Meeting?",
-      "end_date": "2026-12-09 00:00:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.3365,
-      "prob_model": 0.6033,
-      "edge": 0.2668,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 250.0,
-      "price_paid": 0.3365,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-07-14T04:22:12.525661+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "2668005",
       "token_id_yes": "17306927942046812963523554047158683729350184908440966752162806116949623483484",
       "question": "Will Iran Reconstruction Funding be in a US-Iran deal in 2026?",
@@ -1031,6 +1009,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-07-24T17:01:01.484789+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "2686766",
+      "token_id_yes": "9225500616646857630124704690284065786811292595510371759719805962740870955812",
+      "question": "Iran charges Hormuz fees by August 31?",
+      "end_date": "2026-08-31 23:59:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.28,
+      "prob_model": 0.5791,
+      "edge": 0.2991,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 75.0,
+      "price_paid": 0.28,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-29T20:08:25.039373+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -1521,6 +1521,28 @@
       "outcome": 0,
       "pnl": -250.0,
       "resolved_at": "2026-07-24T17:01:00.816514+00:00"
+    },
+    {
+      "market_id": "1808546",
+      "token_id_yes": "44805157856729475543761918918614273394865032511345958532719893352163987391326",
+      "question": "Fed Rate Hike by July 2026 Meeting?",
+      "end_date": "2026-12-09 00:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.3365,
+      "prob_model": 0.6033,
+      "edge": 0.2668,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 250.0,
+      "price_paid": 0.3365,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-14T04:22:12.525661+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -250.0,
+      "resolved_at": "2026-07-29T20:08:17.039568+00:00"
     }
   ]
 }
