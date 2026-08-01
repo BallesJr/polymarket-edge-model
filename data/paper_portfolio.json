@@ -1,5 +1,5 @@
 {
-  "bankroll": 3342.35,
+  "bankroll": 3328.44,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -795,22 +795,22 @@
       "resolved_at": null
     },
     {
-      "market_id": "2994397",
-      "token_id_yes": "88260722027423030494963507237328688347185972705657026302152513710388217764842",
-      "question": "Gangwon FC vs. Bucheon FC 1995: O/U 3.5",
-      "end_date": "2026-08-01 10:30:00+00:00",
+      "market_id": "1795655",
+      "token_id_yes": "53234778776980446933865634417069505413088346571446174643595097158969361636244",
+      "question": "Kash Patel out by December 31?",
+      "end_date": "2026-12-31 00:00:00+00:00",
       "direction": "BUY YES",
-      "prob_market": 0.245,
-      "prob_model": 0.5278,
-      "edge": 0.2828,
+      "prob_market": 0.265,
+      "prob_model": 0.5646,
+      "edge": 0.2996,
       "kelly": 0.1,
       "confidence": "MEDIUM",
-      "size_usd": 46.36,
-      "price_paid": 0.245,
+      "size_usd": 13.91,
+      "price_paid": 0.265,
       "source_model": "calibration_rf",
       "prob_external": null,
       "source_external": null,
-      "opened_at": "2026-08-01T09:49:35.383826+00:00",
+      "opened_at": "2026-08-01T15:34:32.635031+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -1675,6 +1675,28 @@
       "outcome": 0,
       "pnl": -154.52,
       "resolved_at": "2026-08-01T09:49:32.427383+00:00"
+    },
+    {
+      "market_id": "2994397",
+      "token_id_yes": "88260722027423030494963507237328688347185972705657026302152513710388217764842",
+      "question": "Gangwon FC vs. Bucheon FC 1995: O/U 3.5",
+      "end_date": "2026-08-01 10:30:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.245,
+      "prob_model": 0.5278,
+      "edge": 0.2828,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 46.36,
+      "price_paid": 0.245,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-08-01T09:49:35.383826+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -46.36,
+      "resolved_at": "2026-08-01T15:34:32.311120+00:00"
     }
   ]
 }
