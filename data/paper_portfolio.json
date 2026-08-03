@@ -1,5 +1,5 @@
 {
-  "bankroll": 3328.44,
+  "bankroll": 3253.44,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -707,28 +707,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "3126378",
-      "token_id_yes": "16752251644267461444235583231570554371387741656475872991426237234309301489773",
-      "question": "Will Bitcoin dip to $62,000 July 27-August 2?",
-      "end_date": "2026-08-03 04:00:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.295,
-      "prob_model": 0.5798,
-      "edge": 0.2848,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 250.0,
-      "price_paid": 0.295,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-08-01T05:18:00.448029+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "690675",
       "token_id_yes": "71078398046052513900454776889035397076918632655062606631549824290745001594270",
       "question": "Will Arc launch a token by December 31 2026?",
@@ -811,6 +789,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-08-01T15:34:32.635031+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "1163699",
+      "token_id_yes": "35198549486569600595408965368290795524428922595732253580266052028158040373233",
+      "question": "Clarity Act (H.R.3633) signed into law in 2026?",
+      "end_date": "2027-01-01 05:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.285,
+      "prob_model": 0.5842,
+      "edge": 0.2992,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 75.0,
+      "price_paid": 0.285,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-08-03T04:57:03.751227+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -1697,6 +1697,28 @@
       "outcome": 0,
       "pnl": -46.36,
       "resolved_at": "2026-08-01T15:34:32.311120+00:00"
+    },
+    {
+      "market_id": "3126378",
+      "token_id_yes": "16752251644267461444235583231570554371387741656475872991426237234309301489773",
+      "question": "Will Bitcoin dip to $62,000 July 27-August 2?",
+      "end_date": "2026-08-03 04:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.295,
+      "prob_model": 0.5798,
+      "edge": 0.2848,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 250.0,
+      "price_paid": 0.295,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-08-01T05:18:00.448029+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -250.0,
+      "resolved_at": "2026-08-03T04:57:01.572437+00:00"
     }
   ]
 }
