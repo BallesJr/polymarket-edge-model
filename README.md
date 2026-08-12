@@ -72,7 +72,31 @@ Position sizing uses **Half-Kelly** capped at 10% of bankroll, 10% of each marke
 
 - **Fees**: Polymarket had zero fees until early 2026. Current fee structure only significantly impacts positions near 50¢. The test period (2024) was fee-free.
 
-- **No live validation**: The model has not been validated with real trades or P&L tracking.
+- **Live validation**: Two months of live paper trading are now recorded — see the section below. So far the live results do not validate the backtest.
+
+## LIVE PAPER TRADING RESULTS
+
+The bot has been paper trading live via GitHub Actions since **2026-06-12**, starting from a $10,000 bankroll.
+
+_Snapshot 2026-08-12 (two months live):_
+
+| Metric                    | Value                              |
+| ------------------------- | ---------------------------------- |
+| Resolved trades           | 44                                 |
+| Total P&L                 | +$1,292 (equity at cost: $11,292)  |
+| Win rate                  | 27.3%                              |
+| By month                  | Jun +$698, Jul +$3,113, Aug −$2,518 |
+| Open positions            | 39 ($7,905 at cost)                |
+
+The headline +12.9% is not validation; the composition says otherwise:
+
+- **The claimed edge does not realize.** 43 of 44 resolved trades were BUY YES at an average price of 0.280, and 25.6% of them won — exactly the market-implied rate. The model claimed an average edge of +0.267 on those trades (implying a ~55% win rate). Realized win rate ≈ price paid is precisely what "the market was right and the model edge is an artifact" predicts.
+- **P&L is carried by three trades.** Two near-duplicate Iran markets resolved YES on 07-17/18 (+$1,979 combined — one bet, counted twice) and one BUY NO (+$1,179). BUY YES excluding the Iran pair is **−$1,865**.
+- **August is significantly negative**: −$2,518 over 20 trades (mean −$126/trade, t = −2.89).
+- **Sports markets are pure leakage**: 7 spread/over-under trades, 0 wins, −$1,384. Like the sub-hourly crypto markets already excluded, the model has no signal on game outcomes.
+- **The distribution-shift artifact migrated past the guard.** The 0.15 price floor stopped the sub-0.15 BUY YES flood, but the same inflated-P(YES) signal now fires on markets priced 0.18–0.39: 38 of 39 open positions are BUY YES with claimed edges packed into the 0.20–0.30 band, just under the |edge| > 0.30 rejection cap. 27 of 39 sit at the $250 cap and $4,212 (53% of open cost) is one correlated Iran/Mid-East cluster.
+
+Conclusion so far: live paper trading has not validated the backtest — it has reproduced the known failure mode one price band higher. Candidate fixes to evaluate before any live execution: exclude sports spread/total markets, and treat the 0.20–0.30 edge band on BUY YES as suspect rather than tradeable.
 
 ## LIMITATIONS
 
