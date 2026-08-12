@@ -84,22 +84,22 @@ The bot has been paper trading live via GitHub Actions since 2026-06-12, startin
 
 | Metric          | Value                               |
 | --------------- | ----------------------------------- |
-| Resolved trades | 44                                  |
+| Resolved trades | 43                                  |
 | Total P&L       | +$1,292 (equity at cost: $11,292)   |
-| Win rate        | 27.3%                               |
+| Win rate        | 27.9%                               |
 | By month        | Jun +$698, Jul +$3,113, Aug -$2,518 |
-| Open positions  | 39 ($7,905 at cost)                 |
+| Open positions  | 40 ($8,155 at cost)                 |
 
 That +$1,292 does not hold up once you look at where it comes from:
 
-- **Edge realization**: 43 of the 44 resolved trades were BUY YES at an average price of 0.280, and 25.6% of them won, which is the market-implied rate. The model claimed an average edge of +0.267 on these trades, implying a win rate near 55%. A win rate that matches the price paid is what "the market was right and the edge is an artifact" looks like.
+- **Edge realization**: 42 of the 43 resolved trades were BUY YES at an average price of 0.281, and 26.2% of them won, which is the market-implied rate. The model claimed an average edge of +0.266 on these trades, implying a win rate near 55%. A win rate that matches the price paid is what "the market was right and the edge is an artifact" looks like.
 - **Concentration**: the P&L is carried by three trades: two near-duplicate Iran markets resolved YES on 07-17/18 (one bet counted twice, +$1,979 combined) plus one BUY NO (+$1,179). BUY YES without the Iran pair is -$1,865.
 - **August**: -$2,518 over 20 trades (mean -$126 per trade, t = -2.89).
 - **Sports**: 7 spread and over/under trades, 0 wins, -$1,384. Like the sub-hourly crypto markets already excluded, the model has no signal on game outcomes.
-- **Guards**: the distribution-shift artifact moved past them. The 0.15 price floor stopped the sub-0.15 BUY YES flood, but the same inflated P(YES) now fires on markets priced 0.18 to 0.39: 38 of 39 open positions are BUY YES with claimed edges packed into the 0.20 to 0.30 band, just under the |edge| > 0.30 rejection cap. 27 of the 39 positions sit at the $250 cap, and $4,212 (53% of open cost) is a single correlated Iran/Mid-East cluster.
-- **Expiry refund**: one of the 44 "resolved" trades is not a resolution. The bot returned the $250 stake of "Israel closes its airspace by August 31?" after its listed end date passed, but the market is still trading (0.055 YES at snapshot time): the expiry logic trusts `end_date` plus 7 days of grace without checking whether the market actually closed. Counted as the near-certain loss it is, live P&L drops to about +$1,042.
+- **Guards**: the distribution-shift artifact moved past them. The 0.15 price floor stopped the sub-0.15 BUY YES flood, but the same inflated P(YES) now fires on markets priced 0.18 to 0.39: 39 of 40 open positions are BUY YES with claimed edges packed into the 0.20 to 0.30 band, just under the |edge| > 0.30 rejection cap. 28 of the 40 positions sit at the $250 cap, and $4,462 (55% of open cost) is a single correlated Iran/Mid-East cluster.
+- **Expiry refund (fixed 2026-08-12)**: the bot had refunded "Israel closes its airspace by August 31?" at P&L 0 after its listed end date passed, while the market was still trading (0.055 YES at snapshot time): expiry trusted `end_date` plus 7 days of grace without asking whether the market actually closed. It now requires Gamma's `closed` flag, and the position was reopened, so its near-certain loss will be recorded when the market resolves. Counting that loss today puts live P&L closer to +$1,042.
 
-Two months of paper trading have not validated the backtest; they have reproduced the known failure mode one price band higher. Before any live execution: exclude sports spread and over/under markets, treat BUY YES edges in the 0.20 to 0.30 band as suspect rather than tradeable, and make expiry check the market's closed flag instead of its listed end date.
+Two months of paper trading have not validated the backtest; they have reproduced the known failure mode one price band higher. Before any live execution: exclude sports spread and over/under markets, and treat BUY YES edges in the 0.20 to 0.30 band as suspect rather than tradeable.
 
 ## LIMITATIONS
 
