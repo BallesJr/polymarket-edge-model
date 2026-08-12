@@ -3,10 +3,12 @@ import os
 import logging
 import pandas as pd
 import numpy as np
+import requests
 from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 from typing import Optional
 from signal_engine import Signal
+from polymarket_api import GAMMA_URL
 
 # ---Logging---
 logger = logging.getLogger(__name__)
@@ -29,7 +31,11 @@ MAX_NEW_POSITIONS_PER_CYCLE = 5 # Spread entries over time instead of buying eve
 # UMA resolution often lands days after a market's end_date. Expiring at end_date
 # refunds positions at PnL 0 before the real outcome is known, hiding losses
 # (e.g. a lost BUY YES gets its full stake back). Keep positions open this long
-# past end_date so check_resolutions can record the true outcome first
+# past end_date so check_resolutions can record the true outcome first.
+# The grace period alone is not enough: Gamma end_dates can predate the market's
+# real horizon (e.g. "Israel closes its airspace by August 31?" listed with a
+# July end_date), so expiry additionally requires Gamma to report the market as
+# closed - see _market_closed
 RESOLUTION_GRACE_DAYS = 7
 
 # ---Position Dataclass---
@@ -217,8 +223,22 @@ def resolve_position(market_id: str, outcome: float, portfolio: dict) -> Optiona
     logger.warning(f"resolve_position: market_id {market_id} not found in open positions.")
     return None
 
-# Close positions whose end_date passed RESOLUTION_GRACE_DAYS ago with no resolution
-# (markets still unresolved after the grace period are likely cancelled/unresolvable)
+# Ask Gamma whether a market has actually closed. Unknown (API error, non-200)
+# counts as not closed: the position stays open and is re-checked next cycle,
+# which at worst delays a refund but never fabricates one
+def _market_closed(market_id: str) -> bool:
+    try:
+        resp = requests.get(f"{GAMMA_URL}/markets/{market_id}", timeout=8)
+        if resp.status_code != 200:
+            return False
+        return bool(resp.json().get("closed", False))
+    except (requests.RequestException, ValueError):
+        return False
+
+# Close positions whose end_date passed RESOLUTION_GRACE_DAYS ago with no resolution,
+# but only if Gamma confirms the market is closed (closed + still unresolved after
+# the grace period means cancelled/unresolvable). A market past its listed end_date
+# that is still trading keeps its position open until check_resolutions settles it
 def expire_stale_positions(portfolio: dict) -> list[dict]:
     now = datetime.now(timezone.utc)
     expired, remaining = [], []
@@ -231,6 +251,10 @@ def expire_stale_positions(portfolio: dict) -> list[dict]:
             continue
 
         if end_dt + pd.Timedelta(days=RESOLUTION_GRACE_DAYS) < now:
+            if not _market_closed(pos_dict["market_id"]):
+                logger.debug(f"Past end_date but market still open, keeping: {pos_dict["question"][:60]}")
+                remaining.append(pos_dict)
+                continue
             pos_dict.update({
                 "status": "EXPIRED",
                 "pnl": 0.0,
