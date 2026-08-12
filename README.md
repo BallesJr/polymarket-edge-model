@@ -2,7 +2,9 @@
 
 Polymarket is a decentralized prediction market where people trade on the outcomes of real-world events. Each market has an implied probability, but that probability is not always right.
 
-This project builds a systematic pipeline to find mispriced markets using two complementary approaches: comparing Polymarket prices against external forecasting platforms, and training a machine learning model on thousands of historical resolved markets.
+This project builds a systematic pipeline to find mispriced markets in two ways: comparing Polymarket prices against external forecasting platforms, and training a machine learning model on thousands of historical resolved markets.
+
+_Last updated **2026-08-12**. Every results section below is a dated snapshot; the bot keeps trading and committing state to `data/` after that date, so if these dates look old, the numbers are too. Current state lives in `data/paper_portfolio.json` and `data/metrics_history.jsonl`._
 
 ---
 
@@ -20,13 +22,13 @@ This project builds a systematic pipeline to find mispriced markets using two co
 - `expected_value.py`: External comparison pipeline (Metaculus + Manifold + Kelly sizing).
 - `calibration.py`: ML calibration model (training, evaluation, and signal generation). Exposes `train_random_forest()` as a canonical production model shared with the backtester.
 - `backtester.py`: Historical P&L simulation with temporal split and risk management.
-- `signal_engine.py`: Unified signal generator. Combines the calibration model and external consensus (Metaculus/Manifold) into a ranked list of trading opportunities. External sources upgrade signal confidence to HIGH but do not modify position sizing, which is based solely on the back tested RF model.
+- `signal_engine.py`: Unified signal generator. Combines the calibration model and external consensus (Metaculus/Manifold) into a ranked list of trading opportunities. External sources upgrade signal confidence to HIGH but do not modify position sizing, which is based solely on the backtested RF model.
 - `paper_trader.py`: Paper trading portfolio manager: tracks open positions, computes P&L on resolution, and persists state to disk across bot restarts.
 - `bot.py`: Main loop, orchestrates the full pipeline on demand. Trains the model once, generates signals, checks open position resolutions via the Gamma API, and opens new positions.
 
 ## CALIBRATION RESULTS
 
-The calibration model was trained on **3,000 resolved markets** from 2024–2025:
+The calibration model was trained on **3,000 resolved markets** from 2024-2025:
 
 | Model               | Brier Score |
 | ------------------- | ----------- |
@@ -54,7 +56,7 @@ The backtester uses a **temporal split** (not random) to avoid look-ahead bias: 
 | Avg position size | $51                            |
 | Brier improvement | +4.4% over raw market          |
 
-_Last re-run: 2026-07-12, with the minimum edge lowered to 3% (validated against 4% and 5%: on the same model and test set, 3% produced more trades — 291 vs 233 — with a higher win rate, higher ROI and a smaller drawdown), the live signal guards applied (see below) and the live $250 per-position hard cap. Note: the Gamma API now rejects offsets beyond ~2,100 resolved markets (HTTP 422), so the dataset is smaller than the 3,000 used in earlier runs; the live bot trains through the same call, so backtest and live model remain identical._
+_Last re-run: 2026-07-12, with the minimum edge lowered to 3% (validated against 4% and 5%: on the same model and test set, 3% produced more trades (291 vs 233) with a higher win rate, higher ROI and a smaller drawdown), the live signal guards applied (see below) and the live $250 per-position hard cap. Note: the Gamma API now rejects offsets beyond ~2,100 resolved markets (HTTP 422), so the dataset is smaller than the 3,000 used in earlier runs; the live bot trains through the same call, so backtest and live model remain identical._
 
 Position sizing uses **Half-Kelly** capped at 10% of bankroll, 10% of each market's reported liquidity, and a $250 hard cap per position (the same limits the live bot uses). The model shows a strong BUY NO bias which is consistent with the longshot bias where Polymarket overprices unlikely YES outcomes.
 
@@ -72,31 +74,32 @@ Position sizing uses **Half-Kelly** capped at 10% of bankroll, 10% of each marke
 
 - **Fees**: Polymarket had zero fees until early 2026. Current fee structure only significantly impacts positions near 50¢. The test period (2024) was fee-free.
 
-- **Live validation**: Two months of live paper trading are now recorded — see the section below. So far the live results do not validate the backtest.
+- **Live validation**: two months of live paper trading are recorded below. So far they do not validate the backtest.
 
 ## LIVE PAPER TRADING RESULTS
 
-The bot has been paper trading live via GitHub Actions since **2026-06-12**, starting from a $10,000 bankroll.
+The bot has been paper trading live via GitHub Actions since 2026-06-12, starting from a $10,000 bankroll. The numbers below are a snapshot, last updated **2026-08-12**. They go stale the moment the bot runs again; if that date is old, trust `data/paper_portfolio.json` and `data/metrics_history.jsonl` over this section.
 
-_Snapshot 2026-08-12 (two months live):_
+### Snapshot as of 2026-08-12 (two months live)
 
-| Metric                    | Value                              |
-| ------------------------- | ---------------------------------- |
-| Resolved trades           | 44                                 |
-| Total P&L                 | +$1,292 (equity at cost: $11,292)  |
-| Win rate                  | 27.3%                              |
-| By month                  | Jun +$698, Jul +$3,113, Aug −$2,518 |
-| Open positions            | 39 ($7,905 at cost)                |
+| Metric          | Value                               |
+| --------------- | ----------------------------------- |
+| Resolved trades | 44                                  |
+| Total P&L       | +$1,292 (equity at cost: $11,292)   |
+| Win rate        | 27.3%                               |
+| By month        | Jun +$698, Jul +$3,113, Aug -$2,518 |
+| Open positions  | 39 ($7,905 at cost)                 |
 
-The headline +12.9% is not validation; the composition says otherwise:
+That +$1,292 does not hold up once you look at where it comes from:
 
-- **The claimed edge does not realize.** 43 of 44 resolved trades were BUY YES at an average price of 0.280, and 25.6% of them won — exactly the market-implied rate. The model claimed an average edge of +0.267 on those trades (implying a ~55% win rate). Realized win rate ≈ price paid is precisely what "the market was right and the model edge is an artifact" predicts.
-- **P&L is carried by three trades.** Two near-duplicate Iran markets resolved YES on 07-17/18 (+$1,979 combined — one bet, counted twice) and one BUY NO (+$1,179). BUY YES excluding the Iran pair is **−$1,865**.
-- **August is significantly negative**: −$2,518 over 20 trades (mean −$126/trade, t = −2.89).
-- **Sports markets are pure leakage**: 7 spread/over-under trades, 0 wins, −$1,384. Like the sub-hourly crypto markets already excluded, the model has no signal on game outcomes.
-- **The distribution-shift artifact migrated past the guard.** The 0.15 price floor stopped the sub-0.15 BUY YES flood, but the same inflated-P(YES) signal now fires on markets priced 0.18–0.39: 38 of 39 open positions are BUY YES with claimed edges packed into the 0.20–0.30 band, just under the |edge| > 0.30 rejection cap. 27 of 39 sit at the $250 cap and $4,212 (53% of open cost) is one correlated Iran/Mid-East cluster.
+- **Edge realization**: 43 of the 44 resolved trades were BUY YES at an average price of 0.280, and 25.6% of them won, which is the market-implied rate. The model claimed an average edge of +0.267 on these trades, implying a win rate near 55%. A win rate that matches the price paid is what "the market was right and the edge is an artifact" looks like.
+- **Concentration**: the P&L is carried by three trades: two near-duplicate Iran markets resolved YES on 07-17/18 (one bet counted twice, +$1,979 combined) plus one BUY NO (+$1,179). BUY YES without the Iran pair is -$1,865.
+- **August**: -$2,518 over 20 trades (mean -$126 per trade, t = -2.89).
+- **Sports**: 7 spread and over/under trades, 0 wins, -$1,384. Like the sub-hourly crypto markets already excluded, the model has no signal on game outcomes.
+- **Guards**: the distribution-shift artifact moved past them. The 0.15 price floor stopped the sub-0.15 BUY YES flood, but the same inflated P(YES) now fires on markets priced 0.18 to 0.39: 38 of 39 open positions are BUY YES with claimed edges packed into the 0.20 to 0.30 band, just under the |edge| > 0.30 rejection cap. 27 of the 39 positions sit at the $250 cap, and $4,212 (53% of open cost) is a single correlated Iran/Mid-East cluster.
+- **Expiry refund**: one of the 44 "resolved" trades is not a resolution. The bot returned the $250 stake of "Israel closes its airspace by August 31?" after its listed end date passed, but the market is still trading (0.055 YES at snapshot time): the expiry logic trusts `end_date` plus 7 days of grace without checking whether the market actually closed. Counted as the near-certain loss it is, live P&L drops to about +$1,042.
 
-Conclusion so far: live paper trading has not validated the backtest — it has reproduced the known failure mode one price band higher. Candidate fixes to evaluate before any live execution: exclude sports spread/total markets, and treat the 0.20–0.30 edge band on BUY YES as suspect rather than tradeable.
+Two months of paper trading have not validated the backtest; they have reproduced the known failure mode one price band higher. Before any live execution: exclude sports spread and over/under markets, treat BUY YES edges in the 0.20 to 0.30 band as suspect rather than tradeable, and make expiry check the market's closed flag instead of its listed end date.
 
 ## LIMITATIONS
 
@@ -104,9 +107,9 @@ Conclusion so far: live paper trading has not validated the backtest — it has 
 
 **External match quality**: External matches in `expected_value.py` rely on text search and can return semantically similar but non-identical questions. Always verify the `match_title` before acting on a signal.
 
-**Distribution shift on active markets**: The model is trained on resolved markets, whose recorded price is the near-final bid/ask. Applied to active markets mid-life, `class_weight="balanced"` inflates P(YES) toward 0.5 on longshots, producing large fake edges that always point to BUY YES (live paper trading showed 26/27 open positions were BUY YES on markets priced 0.03–0.13). The signal engine now guards against this: it skips BUY YES signals on markets priced below 0.15 (and BUY NO above 0.85), and rejects any signal with |edge| > 0.30 as a likely model error rather than a real mispricing.
+**Distribution shift on active markets**: The model is trained on resolved markets, whose recorded price is the near-final bid/ask. Applied to active markets mid-life, `class_weight="balanced"` inflates P(YES) toward 0.5 on longshots, producing large fake edges that always point to BUY YES (live paper trading showed 26/27 open positions were BUY YES on markets priced 0.03 to 0.13). The signal engine now guards against this: it skips BUY YES signals on markets priced below 0.15 (and BUY NO above 0.85), and rejects any signal with |edge| > 0.30 as a likely model error rather than a real mispricing. The 2026-08-12 live snapshot shows these guards are not enough: the same artifact reappears one band higher, on markets priced 0.18 to 0.39.
 
-**Automation**: The bot (`bot.py`) runs automatically via GitHub Actions every ~30 minutes, 24/7, at no cost. Live-only portfolio controls (not part of the backtest, which has no entry-time dimension): max 70% of equity deployed, max 5 new positions per cycle, and only markets resolving within 180 days. The market universe is fetched ordered by 24h volume (descending): Gamma's default ordering returns the oldest active markets first, which filled the scan with stale long-dated markets and starved the bot of signals. Sub-hourly crypto "Up or Down" markets are excluded (they sit near 50c, where current fees bite hardest, and resolve on price noise the model has no signal on). Live order execution is pending two things: validating profitability through paper trading, and the CLOB v2 release (April-May 2026).
+**Automation**: The bot (`bot.py`) runs automatically via GitHub Actions every ~30 minutes, 24/7, at no cost. Live-only portfolio controls (not part of the backtest, which has no entry-time dimension): max 70% of equity deployed, max 5 new positions per cycle, and only markets resolving within 180 days. The market universe is fetched ordered by 24h volume (descending): Gamma's default ordering returns the oldest active markets first, which filled the scan with stale long-dated markets and starved the bot of signals. Sub-hourly crypto "Up or Down" markets are excluded (they sit near 50c, where current fees bite hardest, and resolve on price noise the model has no signal on). Live order execution is pending two things: paper trading validating profitability (which the 2026-08-12 snapshot does not support), and the CLOB v2 release.
 
 ## REQUIREMENTS
 
