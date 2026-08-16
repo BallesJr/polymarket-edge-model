@@ -597,28 +597,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "3091050",
-      "token_id_yes": "45117272123752214028376460723544361926835506941716663290099518852020253462421",
-      "question": "US x Iran diplomatic meeting by August 15, 2026?",
-      "end_date": "2026-08-15 23:59:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.22,
-      "prob_model": 0.5122,
-      "edge": 0.2922,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 63.0,
-      "price_paid": 0.22,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-07-30T00:55:51.843567+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "690675",
       "token_id_yes": "71078398046052513900454776889035397076918632655062606631549824290745001594270",
       "question": "Will Arc launch a token by December 31 2026?",
@@ -1829,6 +1807,28 @@
       "outcome": 0,
       "pnl": -195.88,
       "resolved_at": "2026-08-16T06:22:12.929006+00:00"
+    },
+    {
+      "market_id": "3091050",
+      "token_id_yes": "45117272123752214028376460723544361926835506941716663290099518852020253462421",
+      "question": "US x Iran diplomatic meeting by August 15, 2026?",
+      "end_date": "2026-08-15 23:59:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.22,
+      "prob_model": 0.5122,
+      "edge": 0.2922,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 63.0,
+      "price_paid": 0.22,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-30T00:55:51.843567+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -63.0,
+      "resolved_at": "2026-08-16T07:52:06.414756+00:00"
     }
   ]
 }
