@@ -69,28 +69,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "2820206",
-      "token_id_yes": "54972485612542353955693785745658417485269741775441019242732798969647627035768",
-      "question": "Will Iran announce withdrawal from MOU negotiations by August 15?",
-      "end_date": "2026-08-15 23:59:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.255,
-      "prob_model": 0.5416,
-      "edge": 0.2866,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 250.0,
-      "price_paid": 0.255,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-07-12T05:16:37.518459+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "1107582",
       "token_id_yes": "91347242536105459969213788769929618447748782724898414007495579710952664644740",
       "question": "US strike on Cuba by December 31?",
@@ -1829,6 +1807,28 @@
       "outcome": 0,
       "pnl": -63.0,
       "resolved_at": "2026-08-16T07:52:06.414756+00:00"
+    },
+    {
+      "market_id": "2820206",
+      "token_id_yes": "54972485612542353955693785745658417485269741775441019242732798969647627035768",
+      "question": "Will Iran announce withdrawal from MOU negotiations by August 15?",
+      "end_date": "2026-08-15 23:59:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.255,
+      "prob_model": 0.5416,
+      "edge": 0.2866,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 250.0,
+      "price_paid": 0.255,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-12T05:16:37.518459+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -250.0,
+      "resolved_at": "2026-08-19T00:37:22.285453+00:00"
     }
   ]
 }
