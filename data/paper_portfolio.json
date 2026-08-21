@@ -1,5 +1,5 @@
 {
-  "bankroll": 3137.68,
+  "bankroll": 3118.33,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -487,28 +487,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "2663611",
-      "token_id_yes": "93838758485682196196905291300375162467135643283271312557929851459086376825083",
-      "question": "US-Iran 60 day negotiation period extended?",
-      "end_date": "2026-08-20 23:59:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.33,
-      "prob_model": 0.5823,
-      "edge": 0.2523,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 138.95,
-      "price_paid": 0.33,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-07-19T09:27:07.019973+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "2758321",
       "token_id_yes": "44065100120054963105325415767944438852907662013988156796875663368795885659100",
       "question": "Will Israel launch a ground operation in Iran by December 31, 2026?",
@@ -789,6 +767,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-07-12T05:16:37.518855+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "3654002",
+      "token_id_yes": "75785963869529016105581858732801673709576087940827048512056358863748709984617",
+      "question": "Will Ethereum reach $2,600 August 17-23?",
+      "end_date": "2026-08-24 04:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.2335,
+      "prob_model": 0.5287,
+      "edge": 0.2952,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 19.35,
+      "price_paid": 0.2335,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-08-21T09:05:50.657084+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -1829,6 +1829,28 @@
       "outcome": 0,
       "pnl": -250.0,
       "resolved_at": "2026-08-19T00:37:22.285453+00:00"
+    },
+    {
+      "market_id": "2663611",
+      "token_id_yes": "93838758485682196196905291300375162467135643283271312557929851459086376825083",
+      "question": "US-Iran 60 day negotiation period extended?",
+      "end_date": "2026-08-20 23:59:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.33,
+      "prob_model": 0.5823,
+      "edge": 0.2523,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 138.95,
+      "price_paid": 0.33,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-07-19T09:27:07.019973+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -138.95,
+      "resolved_at": "2026-08-21T09:05:45.580847+00:00"
     }
   ]
 }
