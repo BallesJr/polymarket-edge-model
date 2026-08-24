@@ -1,5 +1,5 @@
 {
-  "bankroll": 3118.33,
+  "bankroll": 3112.53,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -773,22 +773,22 @@
       "resolved_at": null
     },
     {
-      "market_id": "3654002",
-      "token_id_yes": "75785963869529016105581858732801673709576087940827048512056358863748709984617",
-      "question": "Will Ethereum reach $2,600 August 17-23?",
-      "end_date": "2026-08-24 04:00:00+00:00",
+      "market_id": "2299952",
+      "token_id_yes": "104142036867931412514405371667253870392906648391536505298080565010839115459260",
+      "question": "Will Anthropic's valuation hit (HIGH) $3.0T by December 31?",
+      "end_date": "2027-01-01 12:00:00+00:00",
       "direction": "BUY YES",
-      "prob_market": 0.2335,
-      "prob_model": 0.5287,
-      "edge": 0.2952,
+      "prob_market": 0.285,
+      "prob_model": 0.5842,
+      "edge": 0.2992,
       "kelly": 0.1,
       "confidence": "MEDIUM",
-      "size_usd": 19.35,
-      "price_paid": 0.2335,
+      "size_usd": 5.8,
+      "price_paid": 0.285,
       "source_model": "calibration_rf",
       "prob_external": null,
       "source_external": null,
-      "opened_at": "2026-08-21T09:05:50.657084+00:00",
+      "opened_at": "2026-08-24T05:08:47.999833+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -1851,6 +1851,28 @@
       "outcome": 0,
       "pnl": -138.95,
       "resolved_at": "2026-08-21T09:05:45.580847+00:00"
+    },
+    {
+      "market_id": "3654002",
+      "token_id_yes": "75785963869529016105581858732801673709576087940827048512056358863748709984617",
+      "question": "Will Ethereum reach $2,600 August 17-23?",
+      "end_date": "2026-08-24 04:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.2335,
+      "prob_model": 0.5287,
+      "edge": 0.2952,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 19.35,
+      "price_paid": 0.2335,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-08-21T09:05:50.657084+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -19.35,
+      "resolved_at": "2026-08-24T05:08:47.636587+00:00"
     }
   ]
 }
