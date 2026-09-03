@@ -1,5 +1,5 @@
 {
-  "bankroll": 3078.99,
+  "bankroll": 3003.99,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -729,28 +729,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "3757129",
-      "token_id_yes": "26517902858894264565030234362932286539517211885605574653111145326727913310630",
-      "question": "Spread: Lille OSC (-1.5)",
-      "end_date": "2026-09-03 18:45:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.265,
-      "prob_model": 0.554,
-      "edge": 0.289,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 250.0,
-      "price_paid": 0.265,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-09-03T17:56:22.443528+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "665369",
       "token_id_yes": "11757632442906872075873289411824889013105987655747527211681949526321998978169",
       "question": "Will Trump's approval rating hit 35% in 2026?",
@@ -789,6 +767,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-09-03T17:56:22.447562+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "653788",
+      "token_id_yes": "115755033510457721528230598637869053553488546416290388126901840137082000566077",
+      "question": "OpenAI announces it has achieved AGI before 2027?",
+      "end_date": "2026-12-31 00:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.275,
+      "prob_model": 0.5667,
+      "edge": 0.2917,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 75.0,
+      "price_paid": 0.275,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-09-03T22:41:31.234721+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -2093,6 +2093,28 @@
       "outcome": 1,
       "pnl": 943.27,
       "resolved_at": "2026-09-03T17:56:21.725602+00:00"
+    },
+    {
+      "market_id": "3757129",
+      "token_id_yes": "26517902858894264565030234362932286539517211885605574653111145326727913310630",
+      "question": "Spread: Lille OSC (-1.5)",
+      "end_date": "2026-09-03 18:45:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.265,
+      "prob_model": 0.554,
+      "edge": 0.289,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 250.0,
+      "price_paid": 0.265,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-09-03T17:56:22.443528+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -250.0,
+      "resolved_at": "2026-09-03T22:41:30.145044+00:00"
     }
   ]
 }
