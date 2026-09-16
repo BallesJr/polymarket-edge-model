@@ -1,5 +1,5 @@
 {
-  "bankroll": 3003.99,
+  "bankroll": 2981.49,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -685,28 +685,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "3741669",
-      "token_id_yes": "68841208721123189466733267596244079238151186628537896402606051939475001873930",
-      "question": "Will Russia and Ukraine hold any diplomatic meeting by September 15, 2026?",
-      "end_date": "2026-09-16 03:59:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.18,
-      "prob_model": 0.4793,
-      "edge": 0.2993,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 75.0,
-      "price_paid": 0.18,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-09-01T13:57:45.799873+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "1544795",
       "token_id_yes": "99390970186095476158604553843389938788064583141526825109668507201084266675707",
       "question": "Alexandre de Moraes out as Brazil Supreme Court Justice?",
@@ -789,6 +767,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-09-03T22:41:31.234721+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "4545837",
+      "token_id_yes": "54401086061460660913818529100356758574443078310045192146840071995346721435873",
+      "question": "Will Bitcoin dip to $72,000 September 14-20?",
+      "end_date": "2026-09-21 04:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.195,
+      "prob_model": 0.4939,
+      "edge": 0.2989,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 22.5,
+      "price_paid": 0.195,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-09-16T10:09:56.646635+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -2115,6 +2115,28 @@
       "outcome": 0,
       "pnl": -250.0,
       "resolved_at": "2026-09-03T22:41:30.145044+00:00"
+    },
+    {
+      "market_id": "3741669",
+      "token_id_yes": "68841208721123189466733267596244079238151186628537896402606051939475001873930",
+      "question": "Will Russia and Ukraine hold any diplomatic meeting by September 15, 2026?",
+      "end_date": "2026-09-16 03:59:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.18,
+      "prob_model": 0.4793,
+      "edge": 0.2993,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 75.0,
+      "price_paid": 0.18,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-09-01T13:57:45.799873+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -75.0,
+      "resolved_at": "2026-09-16T10:09:54.316127+00:00"
     }
   ]
 }
