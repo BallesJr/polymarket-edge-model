@@ -1,5 +1,5 @@
 {
-  "bankroll": 3343.0,
+  "bankroll": 3336.25,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -751,28 +751,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "4545837",
-      "token_id_yes": "54401086061460660913818529100356758574443078310045192146840071995346721435873",
-      "question": "Will Bitcoin dip to $72,000 September 14-20?",
-      "end_date": "2026-09-21 04:00:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.195,
-      "prob_model": 0.4939,
-      "edge": 0.2989,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 22.5,
-      "price_paid": 0.195,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-09-16T10:09:56.646635+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "648383",
       "token_id_yes": "38487155026041533062980821872238023790862908049855818921747904019478875496931",
       "question": "Billionaire one-time wealth tax passes in California election 2026?",
@@ -899,6 +877,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-09-21T02:15:40.198586+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "4688838",
+      "token_id_yes": "81301779420425690726624611745200109473128221817411558694403211840886988419880",
+      "question": "Saudi-Houthi ceasefire agreement announced by October 31?",
+      "end_date": "2026-11-01 03:59:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.175,
+      "prob_model": 0.474,
+      "edge": 0.299,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 6.75,
+      "price_paid": 0.175,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-09-21T08:05:04.505754+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -2291,6 +2291,28 @@
       "outcome": 1,
       "pnl": 730.39,
       "resolved_at": "2026-09-21T02:15:38.955253+00:00"
+    },
+    {
+      "market_id": "4545837",
+      "token_id_yes": "54401086061460660913818529100356758574443078310045192146840071995346721435873",
+      "question": "Will Bitcoin dip to $72,000 September 14-20?",
+      "end_date": "2026-09-21 04:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.195,
+      "prob_model": 0.4939,
+      "edge": 0.2989,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 22.5,
+      "price_paid": 0.195,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-09-16T10:09:56.646635+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -22.5,
+      "resolved_at": "2026-09-21T08:05:01.954559+00:00"
     }
   ]
 }
