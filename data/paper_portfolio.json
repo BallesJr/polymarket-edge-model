@@ -1,5 +1,5 @@
 {
-  "bankroll": 3537.19,
+  "bankroll": 3514.69,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -971,22 +971,22 @@
       "resolved_at": null
     },
     {
-      "market_id": "5080436",
-      "token_id_yes": "104964135621265622999004096712719535433576658476492765497550908169559141303416",
-      "question": "Will Russia and Ukraine hold any diplomatic meeting by October 15, 2026?",
-      "end_date": "2026-10-16 03:59:00+00:00",
+      "market_id": "2252540",
+      "token_id_yes": "54008746047030401937229622392846672148881831664328316511258982815120785809185",
+      "question": "Tesla and SpaceX merger officially announced by December 31?",
+      "end_date": "2027-01-01 04:59:00+00:00",
       "direction": "BUY YES",
-      "prob_market": 0.175,
-      "prob_model": 0.4674,
-      "edge": 0.2924,
+      "prob_market": 0.25,
+      "prob_model": 0.5448,
+      "edge": 0.2948,
       "kelly": 0.1,
       "confidence": "MEDIUM",
-      "size_usd": 75.0,
-      "price_paid": 0.175,
+      "size_usd": 22.5,
+      "price_paid": 0.25,
       "source_model": "calibration_rf",
       "prob_external": null,
       "source_external": null,
-      "opened_at": "2026-10-06T19:13:28.567617+00:00",
+      "opened_at": "2026-10-16T09:59:42.005268+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -2665,6 +2665,28 @@
       "outcome": 0,
       "pnl": -250.0,
       "resolved_at": "2026-10-06T19:13:12.903206+00:00"
+    },
+    {
+      "market_id": "5080436",
+      "token_id_yes": "104964135621265622999004096712719535433576658476492765497550908169559141303416",
+      "question": "Will Russia and Ukraine hold any diplomatic meeting by October 15, 2026?",
+      "end_date": "2026-10-16 03:59:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.175,
+      "prob_model": 0.4674,
+      "edge": 0.2924,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 75.0,
+      "price_paid": 0.175,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-10-06T19:13:28.567617+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -75.0,
+      "resolved_at": "2026-10-16T09:59:41.634075+00:00"
     }
   ]
 }
