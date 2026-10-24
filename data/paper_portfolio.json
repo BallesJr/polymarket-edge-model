@@ -1,5 +1,5 @@
 {
-  "bankroll": 3514.69,
+  "bankroll": 3468.68,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -861,28 +861,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "4838804",
-      "token_id_yes": "83032675078561932319983626259066303098535547845075616296727981554424575067174",
-      "question": "Will the next Google Gemini Pro model be released by October 23, 2026?",
-      "end_date": "2026-10-24 03:59:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.185,
-      "prob_model": 0.4782,
-      "edge": 0.2932,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 153.38,
-      "price_paid": 0.185,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-10-01T06:14:12.091261+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "4867451",
       "token_id_yes": "7373188953998978763750058668697245745563786219903783592564578761427965359894",
       "question": "Next US-Iran senior diplomatic meeting by October 31, 2026? (copy)",
@@ -987,6 +965,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-10-16T09:59:42.005268+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "2467356",
+      "token_id_yes": "17572937743553622007574854767800179053257989607150990127742127678112949966531",
+      "question": "Will Ethereum reach $3,000 by December 31, 2026?",
+      "end_date": "2027-01-01 05:00:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.245,
+      "prob_model": 0.5394,
+      "edge": 0.2944,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 46.01,
+      "price_paid": 0.245,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-10-24T07:29:21.959878+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -2687,6 +2687,28 @@
       "outcome": 0,
       "pnl": -75.0,
       "resolved_at": "2026-10-16T09:59:41.634075+00:00"
+    },
+    {
+      "market_id": "4838804",
+      "token_id_yes": "83032675078561932319983626259066303098535547845075616296727981554424575067174",
+      "question": "Will the next Google Gemini Pro model be released by October 23, 2026?",
+      "end_date": "2026-10-24 03:59:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.185,
+      "prob_model": 0.4782,
+      "edge": 0.2932,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 153.38,
+      "price_paid": 0.185,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-10-01T06:14:12.091261+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -153.38,
+      "resolved_at": "2026-10-24T07:29:19.266676+00:00"
     }
   ]
 }
