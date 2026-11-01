@@ -1,5 +1,5 @@
 {
-  "bankroll": 3468.68,
+  "bankroll": 3393.68,
   "initial_bankroll": 10000.0,
   "open_positions": [
     {
@@ -861,28 +861,6 @@
       "resolved_at": null
     },
     {
-      "market_id": "4867451",
-      "token_id_yes": "7373188953998978763750058668697245745563786219903783592564578761427965359894",
-      "question": "Next US-Iran senior diplomatic meeting by October 31, 2026? (copy)",
-      "end_date": "2026-10-31 23:59:00+00:00",
-      "direction": "BUY YES",
-      "prob_market": 0.245,
-      "prob_model": 0.5419,
-      "edge": 0.2969,
-      "kelly": 0.1,
-      "confidence": "MEDIUM",
-      "size_usd": 250.0,
-      "price_paid": 0.245,
-      "source_model": "calibration_rf",
-      "prob_external": null,
-      "source_external": null,
-      "opened_at": "2026-10-01T13:37:26.458188+00:00",
-      "status": "OPEN",
-      "outcome": null,
-      "pnl": null,
-      "resolved_at": null
-    },
-    {
       "market_id": "4412200",
       "token_id_yes": "34819265358532535745389081655110465366205614488485370986851183512281332080312",
       "question": "Will OpenAI announce another Millennium Prize solution by December 31, 2026?",
@@ -987,6 +965,28 @@
       "prob_external": null,
       "source_external": null,
       "opened_at": "2026-10-24T07:29:21.959878+00:00",
+      "status": "OPEN",
+      "outcome": null,
+      "pnl": null,
+      "resolved_at": null
+    },
+    {
+      "market_id": "5087226",
+      "token_id_yes": "115493632799264792730434819071535743213979554073329435975177567583389396615289",
+      "question": "US-Iran Hormuz Agreement by November 30?",
+      "end_date": "2026-12-01 04:59:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.27,
+      "prob_model": 0.5524,
+      "edge": 0.2824,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 75.0,
+      "price_paid": 0.27,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-11-01T10:41:28.889260+00:00",
       "status": "OPEN",
       "outcome": null,
       "pnl": null,
@@ -2709,6 +2709,28 @@
       "outcome": 0,
       "pnl": -153.38,
       "resolved_at": "2026-10-24T07:29:19.266676+00:00"
+    },
+    {
+      "market_id": "4867451",
+      "token_id_yes": "7373188953998978763750058668697245745563786219903783592564578761427965359894",
+      "question": "Next US-Iran senior diplomatic meeting by October 31, 2026? (copy)",
+      "end_date": "2026-10-31 23:59:00+00:00",
+      "direction": "BUY YES",
+      "prob_market": 0.245,
+      "prob_model": 0.5419,
+      "edge": 0.2969,
+      "kelly": 0.1,
+      "confidence": "MEDIUM",
+      "size_usd": 250.0,
+      "price_paid": 0.245,
+      "source_model": "calibration_rf",
+      "prob_external": null,
+      "source_external": null,
+      "opened_at": "2026-10-01T13:37:26.458188+00:00",
+      "status": "RESOLVED",
+      "outcome": 0,
+      "pnl": -250.0,
+      "resolved_at": "2026-11-01T10:41:26.560531+00:00"
     }
   ]
 }
